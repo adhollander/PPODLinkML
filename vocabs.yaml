@@ -1,0 +1,1622 @@
+# PPOD LinkML vocabularies
+
+id: https://github.com/adhollander/ppodvocabs
+name: PPODvocabs
+prefixes:
+  linkml: https://w3id.org/linkml/
+  foaf: http://xmlns.com/foaf/0.1/
+  skos: http://www.w3.org/2004/02/skos/core#
+  dc: http://purl.org/dc/terms/
+  org: http://www.w3.org/ns/org#
+  vivo: http://vivoweb.org/ontology/core#
+  obo: http://purl.obolibrary.org/obo/
+  sds: http://www.sdsconsortium.org/schemas/sds-okn.owl#
+  fsl: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsource.owl#
+  fsli: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsourceindiv.rdf#
+  fsls: https://raw.githubusercontent.com/adhollander/FSLschemas/main/fsisupp.owl#
+  frapo: http://purl.org/cerif/frapo/
+imports: 
+  - linkml:types
+default_range: string
+
+
+enums:
+  OrganizationType:
+    permissible_values:
+      Academic:
+      Commercial:
+      Federal Government:
+      Foundation:
+      Joint Powers Authority:
+      Local Government:
+      Non-profit:
+      Partnership:
+      State Government:
+      Tribal:
+
+  County: 
+    permissible_values:
+       Alameda:
+         meaning: http://www.wikidata.org/entity/Q107146
+       Alpine:
+         meaning: http://www.wikidata.org/entity/Q108077
+       Amador:
+         meaning: http://www.wikidata.org/entity/Q156177
+       Butte:
+         meaning: http://www.wikidata.org/entity/Q156181
+       Calaveras:
+         meaning: http://www.wikidata.org/entity/Q271613
+       Colusa:
+         meaning: http://www.wikidata.org/entity/Q271609
+       Contra Costa:
+         meaning: http://www.wikidata.org/entity/Q108058
+       Del Norte:
+         meaning: http://www.wikidata.org/entity/Q156186
+       El Dorado:
+         meaning: http://www.wikidata.org/entity/Q108093
+       Fresno:
+         meaning: http://www.wikidata.org/entity/Q271915
+       Glenn:
+         meaning: http://www.wikidata.org/entity/Q271601
+       Humboldt:
+         meaning: http://www.wikidata.org/entity/Q109651
+       Imperial:
+         meaning: http://www.wikidata.org/entity/Q169952
+       Inyo:
+         meaning: http://www.wikidata.org/entity/Q109670
+       Kern:
+         meaning: http://www.wikidata.org/entity/Q108047
+       Kings:
+         meaning: http://www.wikidata.org/entity/Q156358
+       Lake:
+         meaning: http://www.wikidata.org/entity/Q156361
+       Lassen:
+         meaning: http://www.wikidata.org/entity/Q156340
+       Los Angeles:
+         meaning: http://www.wikidata.org/entity/Q104994
+       Madera:
+         meaning: http://www.wikidata.org/entity/Q109661
+       Marin:
+         meaning: http://www.wikidata.org/entity/Q108117
+       Mariposa:
+         meaning: http://www.wikidata.org/entity/Q156191
+       Mendocino:
+         meaning: http://www.wikidata.org/entity/Q108087
+       Merced:
+         meaning: http://www.wikidata.org/entity/Q109690
+       Modoc:
+         meaning: http://www.wikidata.org/entity/Q109695
+       Mono:
+         meaning: http://www.wikidata.org/entity/Q156366
+       Monterey:
+         meaning: http://www.wikidata.org/entity/Q108072
+       Napa:
+         meaning: http://www.wikidata.org/entity/Q108137
+       Nevada:
+         meaning: http://www.wikidata.org/entity/Q109681
+       Orange:
+         meaning: http://www.wikidata.org/entity/Q5925
+       Placer:
+         meaning: http://www.wikidata.org/entity/Q156353
+       Plumas:
+         meaning: http://www.wikidata.org/entity/Q156342
+       Riverside:
+         meaning: http://www.wikidata.org/entity/Q108111
+       Sacramento:
+         meaning: http://www.wikidata.org/entity/Q108131
+       San Benito:
+         meaning: http://www.wikidata.org/entity/Q109656
+       San Bernardino:
+         meaning: http://www.wikidata.org/entity/Q108053
+       San Diego:
+         meaning: http://www.wikidata.org/entity/Q108143
+       San Francisco:
+         meaning: http://www.wikidata.org/entity/Q13188841
+       San Joaquin:
+         meaning: http://www.wikidata.org/entity/Q108499
+       San Luis Obispo:
+         meaning: http://www.wikidata.org/entity/Q49014
+       San Mateo:
+         meaning: http://www.wikidata.org/entity/Q108101
+       Santa Barbara:
+         meaning: http://www.wikidata.org/entity/Q108106
+       Santa Clara:
+         meaning: http://www.wikidata.org/entity/Q110739
+       Santa Cruz:
+         meaning: http://www.wikidata.org/entity/Q108122
+       Shasta:
+         meaning: http://www.wikidata.org/entity/Q156350
+       Sierra:
+         meaning: http://www.wikidata.org/entity/Q156370
+       Siskiyou:
+         meaning: http://www.wikidata.org/entity/Q156374
+       Solano:
+         meaning: http://www.wikidata.org/entity/Q108083
+       Sonoma:
+         meaning: http://www.wikidata.org/entity/Q108067
+       Stanislaus:
+         meaning: http://www.wikidata.org/entity/Q108503
+       Sutter:
+         meaning: http://www.wikidata.org/entity/Q156377
+       Tehama:
+         meaning: http://www.wikidata.org/entity/Q109705
+       Trinity:
+         meaning: http://www.wikidata.org/entity/Q156188
+       Tulare:
+         meaning: http://www.wikidata.org/entity/Q109686
+       Tuolumne:
+         meaning: http://www.wikidata.org/entity/Q156346
+       Ventura:
+         meaning: http://www.wikidata.org/entity/Q108127
+       Yolo:
+         meaning: http://www.wikidata.org/entity/Q109709
+       Yuba:
+         meaning: http://www.wikidata.org/entity/Q196014
+
+  OrganizationActivity:
+    permissible_values:
+      Advising:
+      Acquisition:
+      Advocacy:
+      Agricultural Production:
+      Certification:
+      Construction:
+      Coordinating:
+      Education:
+      Funding:
+      Governing:
+      Habitat Enhancement:
+      Management:
+      Planning:
+      Policy:
+      Production:
+      Regulating:
+      Research:
+
+  ProjectType:
+    permissible_values:
+      Acquisition:
+      Education:
+      Habitat Enhancement:
+      Infrastructure:
+      Land Protection:
+      Management:
+      Planning:
+      Remediation:
+      Research:
+
+  ProgramType:
+    permissible_values:
+      Acquisition:
+      Education:
+      Habitat Enhancement:
+      Infrastructure:
+      Land Protection:
+      Management:
+      Planning:
+      Remediation:
+      Research:
+
+  GuidelineMandateType:
+    permissible_values:
+      Agreement:
+      Certification:
+      Executive Order:
+      Guidelines:
+      Legislation:
+      Regulation:
+
+  GovernmentLevelType:
+    permissible_values:
+      Federal:
+      State: 
+      Local: 
+      Private: 
+  
+  CWHRHabitatType:
+    permissible_values:
+      ADS:
+         meaning: fsls:ADS
+         description: ALPINE DWARF-SHRUB
+      AGS:
+         meaning: fsls:AGS
+         description: ANNUAL GRASSLAND
+      ASC:
+         meaning: fsls:ASC
+         description: ALKALI DESERT SCRUB
+      ASP:
+         meaning: fsls:ASP
+         description: ASPEN
+      BAR:
+         meaning: fsls:BAR
+         description: BARREN
+      BBR:
+         meaning: fsls:BBR
+         description: BITTERBRUSH
+      BOP:
+         meaning: fsls:BOP
+         description: BLUE OAK-FOOTHILL PINE
+      BOW:
+         meaning: fsls:BOW
+         description: BLUE OAK WOODLAND
+      COW:
+         meaning: fsls:COW
+         description: COASTAL OAK WOODLAND
+      CPC:
+         meaning: fsls:CPC
+         description: CLOSED-CONE PINE-CYPRESS
+      CRC:
+         meaning: fsls:CRC
+         description: CHAMISE-REDSHANK CHAPARRAL
+      CSC:
+         meaning: fsls:CSC
+         description: COASTAL SCRUB
+      DFR:
+         meaning: fsls:DFR
+         description: DOUGLAS-FIR
+      DGR:
+         meaning: fsls:DGR
+         description: DRYLAND GRAIN CROPS
+      DOR:
+         meaning: fsls:DOR
+         description: DECIDUOUS ORCHARD
+      DRI:
+         meaning: fsls:DRI
+         description: DESERT RIPARIAN
+      DSC:
+         meaning: fsls:DSC
+         description: DESERT SCRUB
+      DSS:
+         meaning: fsls:DSS
+         description: DESERT SUCCULENT SHRUB
+      DSW:
+         meaning: fsls:DSW
+         description: DESERT WASH
+      EOR:
+         meaning: fsls:EOR
+         description: EVERGREEN ORCHARD
+      EPN:
+         meaning: fsls:EPN
+         description: EASTSIDE PINE
+      EST:
+         meaning: fsls:EST
+         description: ESTUARINE
+      EUC:
+         meaning: fsls:EUC
+         description: EUCALYPTUS
+      FEW:
+         meaning: fsls:FEW
+         description: FRESH EMERGENT WETLAND
+      IGR:
+         meaning: fsls:IGR
+         description: IRRIGATED GRAIN CROPS
+      IRF:
+         meaning: fsls:IRF
+         description: IRRIGATED ROW AND FIELD CROPS
+      IRH:
+         meaning: fsls:IRH
+         description: IRRIGATED HAYFIELD
+      JPN:
+         meaning: fsls:JPN
+         description: JEFFREY PINE
+      JST:
+         meaning: fsls:JST
+         description: JOSHUA TREE
+      JUN:
+         meaning: fsls:JUN
+         description: JUNIPER
+      KMC:
+         meaning: fsls:KMC
+         description: KLAMATH MIXED CONIFER
+      LAC:
+         meaning: fsls:LAC
+         description: LACUSTRINE
+      LPN:
+         meaning: fsls:LPN
+         description: LODGEPOLE PINE
+      LSG:
+         meaning: fsls:LSG
+         description: LOW SAGE
+      MCH:
+         meaning: fsls:MCH
+         description: MIXED CHAPARRAL
+      MCP:
+         meaning: fsls:MCP
+         description: MONTANE CHAPARRAL
+      MHC:
+         meaning: fsls:MHC
+         description: MONTANE HARDWOOD-CONIFER
+      MHW:
+         meaning: fsls:MHW
+         description: MONTANE HARDWOOD
+      MRI:
+         meaning: fsls:MRI
+         description: MONTANE RIPARIAN
+      PAS:
+         meaning: fsls:PAS
+         description: PASTURE
+      PGS:
+         meaning: fsls:PGS
+         description: PERENNIAL GRASSLAND
+      PJN:
+         meaning: fsls:PJN
+         description: PINYON-JUNIPER
+      POS:
+         meaning: fsls:POS
+         description: PALM OASIS
+      PPN:
+         meaning: fsls:PPN
+         description: PONDEROSA PINE
+      RDW:
+         meaning: fsls:RDW
+         description: REDWOOD
+      RFR:
+         meaning: fsls:RFR
+         description: RED FIR
+      RIC:
+         meaning: fsls:RIC
+         description: RICE
+      RIV:
+         meaning: fsls:RIV
+         description: RIVERINE
+      SCN:
+         meaning: fsls:SCN
+         description: SUBALPINE CONIFER
+      SEW:
+         meaning: fsls:SEW
+         description: SALINE EMERGENT WETLAND
+      SGB:
+         meaning: fsls:SGB
+         description: SAGEBRUSH
+      SMC:
+         meaning: fsls:SMC
+         description: SIERRAN MIXED CONIFER
+      URB:
+         meaning: fsls:URB
+         description: URBAN
+      VIN:
+         meaning: fsls:VIN
+         description: VINEYARD
+      VOW:
+         meaning: fsls:VOW
+         description: VALLEY OAK WOODLAND
+      VRI:
+         meaning: fsls:VRI
+         description: VALLEY FOOTHILL RIPARIAN
+      WFR:
+         meaning: fsls:WFR
+         description: WHITE FIR
+      WTM:
+         meaning: fsls:WTM
+         description: WET MEADOW
+      
+  CommodityType:
+    permissible_values:
+      alfalfa:
+        meaning: http://aims.fao.org/aos/agrovoc/c_4693
+      almonds:
+        meaning: http://aims.fao.org/aos/agrovoc/c_8734
+      apricots:
+        meaning: http://aims.fao.org/aos/agrovoc/c_545
+      beef: 
+        meaning: http://aims.fao.org/aos/agrovoc/c_861
+      cherries:
+        meaning: http://aims.fao.org/aos/agrovoc/c_1534
+      citrus:
+        meaning: http://aims.fao.org/aos/agrovoc/c_1637
+      dairy:
+        meaning: http://aims.fao.org/aos/agrovoc/c_4827
+      figs:
+        meaning: http://aims.fao.org/aos/agrovoc/c_10840
+      grapes:
+        meaning: http://aims.fao.org/aos/agrovoc/c_3359
+      honey:
+        meaning: http://aims.fao.org/aos/agrovoc/c_3652
+      lemons:
+        meaning: http://aims.fao.org/aos/agrovoc/c_4259
+      oranges:
+        meaning: http://aims.fao.org/aos/agrovoc/c_7550
+      peaches:
+        meaning: http://aims.fao.org/aos/agrovoc/c_5638
+      pears: 
+        meaning: http://aims.fao.org/aos/agrovoc/c_5645
+      pistachios:
+        meaning: http://aims.fao.org/aos/agrovoc/c_13413
+      pomegranates:
+        meaning: http://aims.fao.org/aos/agrovoc/c_13505
+      prunes:
+        meaning: http://aims.fao.org/aos/agrovoc/c_13635
+      raisins:
+        meaning: http://aims.fao.org/aos/agrovoc/c_16502
+      rice:
+        meaning: http://aims.fao.org/aos/agrovoc/c_6599
+      tomatoes:
+        meaning: http://aims.fao.org/aos/agrovoc/c_7805
+      cattle:
+        meaning: http://aims.fao.org/aos/agrovoc/c_1391
+      chickens:
+        meaning: http://aims.fao.org/aos/agrovoc/c_1540
+      eggs:
+        meaning: http://aims.fao.org/aos/agrovoc/c_2502
+      sheep:
+        meaning: http://aims.fao.org/aos/agrovoc/c_7030
+      swine:
+        meaning: http://aims.fao.org/aos/agrovoc/c_7555
+      walnuts:
+        meaning: http://aims.fao.org/aos/agrovoc/c_15254
+      pecans:
+        meaning: http://aims.fao.org/aos/agrovoc/c_13178
+      milk products: 
+        meaning: http://aims.fao.org/aos/agrovoc/c_4827 # same as 'dairy'
+      soft fruits:
+        meaning: http://aims.fao.org/aos/agrovoc/c_7151
+      wine grapes:
+        meaning: http://aims.fao.org/aos/agrovoc/c_8403
+      wines:
+        meaning: http://aims.fao.org/aos/agrovoc/c_8406
+      hay:
+        meaning: http://aims.fao.org/aos/agrovoc/c_3508
+      apples:
+        meaning: http://aims.fao.org/aos/agrovoc/c_541
+      goats:
+        meaning: http://aims.fao.org/aos/agrovoc/c_3324
+      ducks: 
+        meaning: http://aims.fao.org/aos/agrovoc/c_2406
+      turkeys:
+        meaning: http://aims.fao.org/aos/agrovoc/c_8016
+      rabbits:
+        meaning: http://aims.fao.org/aos/agrovoc/c_6414
+      yaks:
+        meaning: http://aims.fao.org/aos/agrovoc/c_8477
+      bison:
+        meaning: http://aims.fao.org/aos/agrovoc/c_939
+      geese:
+        meaning: http://aims.fao.org/aos/agrovoc/c_3208
+      garlic:
+        meaning: http://aims.fao.org/aos/agrovoc/c_11091
+      corn: 
+        meaning: http://aims.fao.org/aos/agrovoc/c_12332
+
+  UseCases:
+    permissible_values:
+      Conservation: 
+      Meat: 
+      Sacramento: 
+      SCAG:
+      Ecuador:
+      JPA:
+      EPA: 
+      BayAreaRAMP:
+       
+  PositionType:
+    permissible_values:
+      Advisor:
+      Board Member:
+      Director:
+      Employee:
+      Faculty:
+      Manager:
+      Member:
+      Owner:
+
+  RoleType:
+    permissible_values:
+
+
+  SustainabilityIssue:
+    permissible_values: # does this nesting work?
+      IntegratedIssue:
+      ComponentIssue:
+
+  IntegratedIssue:
+    permissible_values:
+       Agricultural Sector:
+         meaning: fsl:IS0001
+         description: Refers to the role of agriculture in regional and national economies.
+       Air & Climate:
+         meaning: fsl:IS0002
+         description: GHG emissions, ozone layer depletion, air quality, climate change influenced and extreme weather events, shifts in growing zones for key crops due to climate change.
+       Biodiversity:
+         meaning: fsl:IS0003
+         description: Number of total species, number of endemic species, species loss or introduction, species threatened with extinction or endangerment, trade in wildlife and captive-bred animal species, trophic integrity of ecosystems, extent of specific habitats (or extent of habitat fragmentation), biodiversity as a source of genetic pool for food/medicine.
+       Common Pool Resources:
+         meaning: fsl:IS0004
+         description: Resources that are not the private property of any individual or group, but rather are used by many people for their benefit.
+       Deforestation:
+         meaning: fsl:IS0005
+         description: Removal of forest cover, and conversion to other uses including farming or grazing. Laws and regulations related to preventing deforestation and their enforcement.
+       Disasters:
+         meaning: fsl:IS0006
+         description: Occurrence, frequency, and severity of natural disasters and human influenced disasters such as civil conflict and war, economic crises, and epidemics, in a given area. The number of people affected or projected to be affected, the risk of particular crop or growing region to disasters, and mechanisms for disaster resilience including governmental support and insurance are themes of this issue.
+       Diseases:
+         meaning: fsl:IS0007
+         description: Rates of incidence and information about transmission risks of diseases in a given area, or among a certain population. This issue relates to human diseases; diseases that affect plants or other animals are captured in food production and productivity or other issues.
+       Ecosystem Services:
+         meaning: fsl:IS0008
+         description: The benefits people obtain from ecosystems. These include provisioning services such as food and water; regulating services such as flood and disease control; cultural services such as spiritual, recreational, and cultural benefits; and supporting services such as nutrient cycling that maintain the conditions for life on earth.
+       Educational Resources:
+         meaning: fsl:IS0009
+         description: Educational opportunities and achievement, with attention to gender-based access dimensions. Includes formal education, informal or traditional knowledge transfer, extension services, and vocational training, especially related to improved agricultural practices. Also includes access to legal, public, and reproductive health education services.
+       Energy:
+         meaning: fsl:IS0010
+         description: Proportion and type of renewable or fossil fuel used for energy production, emissions and other impacts associated with energy production, prices of energy by type and as a proportion of household income; access to energy - including liquid fuel, gas, and electricity; energy production and distribution infrastructures; energy regulations, policies, and their enforcement.
+       Finance:
+         meaning: fsl:IS0011
+         description: Access to financial capital including loans, equity investments, and grants; reliable secured savings systems; crop or production insurance against risk, associated costs, and interest rates.
+       Food Production:
+         meaning: fsl:IS0012
+         description: Food produced for direct human consumption; the ratio of cash crops to staple crops or biofuels to food crops Includes food availability and access to a nutritious and culturally acceptable range of food products. Also relates to stability or stochasticity in food access, food prices, and the policies, initiatives, and regulations to support agroecological systems.
+       Geographical Distribution:
+         meaning: fsl:IS0013
+         description: Describes the proportions of total population (often at a national or broader level) that live in rural, suburban, and urban areas; densities of populations across different agro-ecological zones; and seasonal or other forms of migration (may include different/additional geographical classifications).
+       Governance:
+         meaning: fsl:IS0014
+         description: Organizational management, decision-making structure for rules, laws, regulations, and policies across scales and levels. Emphases include diversity and representation of stakeholders involved in decision making and governance; transparency and accessibility of mechanisms for dispute resolution; and enforcement policies and procedures.
+       Human Mortality:
+         meaning: fsl:IS0015
+         description: Average lifespan, rates of infant mortality, child mortality, maternal mortality in a given population.
+       Human Rights:
+         meaning: fsl:IS0016
+         description: Respect for human rights to life, liberty, non-discrimination, privacy, freedom of movement, marriage, property ownership, thought, religion, fair remuneration, safe and dignified working conditions, association, education, food, and all other rights applicable at national, regional, local, and global levels.
+       Income:
+         meaning: fsl:IS0017
+         description: Adequacy, stability, and dependability of financial flows from labor, investment, rents, and goods sold - particularly among primary producers of agricultural raw materials.
+       Inputs:
+         meaning: fsl:IS0018
+         description: Availability, accessibility, adequacy, and/or responsible use of chemical and organic fertilizer, insecticides, fungicides, and improved seed varieties.
+       Institutions:
+         meaning: fsl:IS0019
+         description: Institutions are the humanly devised constraints that structure political, economic and social interaction. They consist of both informal constraints (sanctions, taboos, customs, traditions, and codes of conduct), and formal rules (constitutions, laws, property rights). Throughout history, institutions have been devised by human beings to create order and reduce uncertainty in exchange. (D.C. North, 1991. J. Economic Perspectives 5:97-112). We focus on the institutions at many levels that affect the food and agriculture supply chain.
+       Labor:
+         meaning: fsl:IS0020
+         description: Includes employment and labor conditions in the agricultural production sector, as well as dynamics that affect labor relations such as landholding size, crop production type, and wealth status. Also includes issues of access to labor, i.e. are there enough employable people in a given production system to maximize productivity.
+       Land & Soil:
+         meaning: fsl:IS0021
+         description: Characteristics of and changes in land use, land cover, soil quality. Connected themes include crop yield, production practices, characteristics of arable or pasture land, erosion, desertification, and measures of habitat fragmentation and connectivity.
+       Literacy:
+         meaning: fsl:IS0022
+         description: Rate of literacy in a given population, often classified by age group and gender.
+       Markets:
+         meaning: fsl:IS0023
+         description: Access to markets at local, regional, and global levels. Includes issues of fair pricing, price stability, knowledge transfer, and information to support negotiation and timing of transactions the number, role and communications among mid-supply chain actors. Includes policies to promote more equitable sourcing from small scale, historically underrepresented producers in global supply chains.
+       Nutritional Status:
+         meaning: fsl:IS0024
+         description: Malnutrition - including under-nutrition, stunting, wasting, or failure to thrive as well as over-consumption; macronutrient sufficiency, micronutrient sufficiency, incidence of nutrition related diseases.
+       Oceans & Coasts:
+         meaning: fsl:IS0025
+         description: Water quality in oceans and coastal areas, ecosystem health of harbors, bays, and estuaries; human populations living in coastal areas, risk of coastal areas to sea level rise due to climate change.
+       Participation:
+         meaning: fsl:IS0026
+         description: Opportunities for and the extent to which producers participate in organizations and institutions in which they can share resources, knowledge, and negotiate collectively. Can include metrics related to participation in cooperatives, unions, or other civil organizations, as well as metrics related to the inclusion of women or underrepresented minority stakeholders in civil society.
+       Physical Infrastructure:
+         meaning: fsl:IS0027
+         description: Existence, maintenance, quality, and accessibility of physical and manufactured capital needed to support livelihoods, economies, natural resource management, and ecosystem sustainability. Includes transportation systems; water supply, storage, and sanitation facilities; energy-related infrastructure; and communications infrastructure.
+       Population Growth:
+         meaning: fsl:IS0028
+         description: Growth of population in a given region, local to global. Population growth (which can also be negative) interacts with many of the other issues as a driver or outcome.
+       Population Structure:
+         meaning: fsl:IS0029
+         description: Composition of the population of a given region in terms of age, experience, gender, education, or other variables.
+       Poverty:
+         meaning: fsl:IS0030
+         description: A multi-dimensional condition or outcome that includes deprivation related to human capabilities including consumption and food security, health, education, rights, voice, security, dignity, self-determination, and decent work.
+       Productivity:
+         meaning: fsl:IS0031
+         description: The connection between inputs - both bio-physical and human - and outcomes in agricultural contexts - the net production of agricultural practices. Themes and connected with this issue include crop yields, net farm income, input prices, and efficiency of labor.
+       Property Rights:
+         meaning: fsl:IS0032
+         description: Formal and informal rights, policies, and institutions and the methods, equity, and transparency of enforcement and redress that characterizes access to and use of land and other resources.
+       Protected Areas:
+         meaning: fsl:IS0033
+         description: Land or resources with special status, subject to regulations that restrict human access or resource use. Themes include measures of proportion of land or marine areas in protected status (per given geography), institutional norms of respect for protected area designation, and enforcement of protected status regulations.
+       Public Health:
+         meaning: fsl:IS0034
+         description: The creation and maintenance of the infrastructure, information, capacity, equipment and supplies, and opportunities for the population of a given region to remain in good general health. Themes within this issue include- sanitation, access to reliable safe drinking water, access to healthcare including preventative services, accurate knowledge about nutrition, and food security.
+       Reproductive Health:
+         meaning: fsl:IS0036
+         description: Access to and decision-making authority over family planning, preand post-natal health care. Understanding of and ability to prevent sexually transmitted diseases.
+       Safety:
+         meaning: fsl:IS0037
+         description: The health and safety regulations that ensure safe conditions for agricultural workers. This issue also covers occurrence or risk of accidents in agricultural production systems, and the governmental or corporate responses to accidents.
+       Social Structure:
+         meaning: fsl:IS0038
+         description: Aspects of social organization including distribution of power, leadership, and decision-making authority. Includes households, institutions, norms, rules, laws, and policies about management and control of public funds in a given society. Indicators include those related to corruption among other themes.
+       Sociocultural Systems:
+         meaning: fsl:IS0039
+         description: The social and cultural aspects of a given society that shape material assets; economic, political, and social structures; values and norms; and language. Includes systems of ethics, traditional knowledge in agricultural communities, and cultural traditions.
+       Technology:
+         meaning: fsl:IS0040
+         description: Access to, maintenance of, and innovation in technologies including new seed, plant, or livestock varieties, new production technique innovations, information systems, and other tangible innovations.
+       Trade Policies:
+         meaning: fsl:IS0041
+         description: The laws, regulations, policies, and norms - locally, regionally, and especially internationally - that govern the trade of agricultural raw materials, and the inputs needed to produce them. This includes public policy as well as private or cooperative trade policies.
+       Wastes & Pollution:
+         meaning: fsl:IS0042
+         description: Waste management; domestic, agricultural, and industrial effluents; treatment of hazardous wastes, proportion of waste that is recycled or returned to nutrient cycling, emissions of pollutants especially by farming practices, livestock, or other production practices.
+       Water:
+         meaning: fsl:IS0043
+         description: Access to and availability of appropriate quality water across time and space. Refers broadly to water quantity, water quality, annual renewable freshwater resources per capita, sector, or agro-ecological system. Includes access to drinking, cooking, and cleaning water by individuals, as well as issues of access to and use of water for farming - irrigation, ground water, animal hydration, and in primary processing. Can also include water treatment issues (e.g., desalination) and water at larger geographic scale, e.g. watershed health, riparian ecosystem health.
+       Women & Wages:
+         meaning: fsl:IS0044
+         description: The fair and appropriate compensation of women employees, laborers, and all women working in agricultural production. Includes employment opportunities and business or farm ownership opportunities for women.
+       Women's Participation:
+         meaning: fsl:IS0045
+         description: Women's engagement and opportunities for engagement in political, cultural, legal, and economic decision making groups. Includes opportunities for farm and business ownership or management. Metrics include the number of women who are part of unions or cooperatives, the number of women business owners, and proportion of women on decision making boards at multiple levels of society.
+
+  ComponentIssue:
+    permissible_values:
+       Access to Clean Water:
+         meaning: fsli:CI0001
+         description: Sources that, by nature of their construction or through active intervention, are protected from outside contamination, particularly faecal matter. It comprises piped water on premises such as piped household water connection located inside the userâ€™s dwelling, plot or yard. Other improved drinking water sources include public taps or standpipes, tube wells or boreholes, protected dug wells, protected springs and rainwater collection. [UNICEF]
+       Access to Finance:
+         meaning: fsli:CI0002
+         description: Access to finance refers to the availability of financial services in the form of deposits, credit, payments, or insurance to individuals or enterprises. The availability of such services can be constrained for instance by physical access, affordability or eligibility. [Making Finance Work for Africa Partnership]
+       Access to Healthcare:
+         meaning: fsli:CI0003
+         description: The timely use of personal health services to achieve the best health outcomes [Institute of Medicine, Committee on Monitoring Access to Personal Health Care Services. ]
+       Access to Information and Communication:
+         meaning: fsli:CI0004
+         description: Access to any communication device or application, encompassing - radio, television, cellular phones, computer and network hardware and software, satellite systems and so on, as well as the various services and applications associated with them, such as videoconferencing and distance learning. [TechTarget]
+       Access to Sanitation:
+         meaning: fsli:CI0005
+         description: Access to the provision of facilities and services for the safe disposal of human urine and faeces. [World Health Organization]
+       Access to Technology:
+         meaning: fsli:CI0006
+         description: Human access to internet and other technology [self-defined]
+       Accident Benefits:
+         meaning: fsli:CI0007
+         description: Fringe benefits provided to employees for sickness, accidental injury, or accidental death. These benefits include payment of hospital and medical expenses as well as income payments. [Investopedia]
+       Age Distribution:
+         meaning: fsli:CI0008
+         description: The proportionate numbers of persons in successive age categories in a given population. [Encyclopedia Britannica]
+       Agricultural Barter:
+         meaning: fsli:CI0009
+         description: Trading an agricultural good or service directly for another good or service, without using money or credit. [self-defined]
+       Agricultural Debt:
+         meaning: fsli:CI0010
+         description: Money owed by agricultural enterprises [self-defined]
+       Agricultural Education:
+         meaning: fsli:CI0011
+         description: The teaching of agriculture, natural resources, and land management through hands on experience and guidance to prepare students for entry level jobs or to further education to prepare them for advanced agricultural jobs. [DBPedia]
+       Agricultural Employment:
+         meaning: fsli:CI0012
+         description: People working for pay or in a family-owned agricultural enterprise or farm. [self-defined]
+       Agricultural Exports:
+         meaning: fsli:CI0013
+         description: Agricultural products sold for use outside of the country of production [self-defined]
+       Agricultural Imports:
+         meaning: fsli:CI0014
+         description: Agricultural products purchased from sellers outside of a given country [self-defined]
+       Agricultural Intermediate Goods:
+         meaning: fsli:CI0015
+         description: A good that is used in the production of final agricultural goods and services. [self-defined]
+       Agricultural Prices:
+         meaning: fsli:CI0016
+         description: The amount of money paid for an agricultural good or service [self-defined]
+       Agricultural Production Costs:
+         meaning: fsli:CI0017
+         description: The total sum of money needed for the production of a particular quantity of agricultural output. [self-defined]
+       Agricultural Productivity:
+         meaning: fsli:CI0018
+         description: Agricultural productivity is measured as the ratio of agricultural outputs to agricultural inputs. [DBPedia]
+       Agricultural Subsidies:
+         meaning: fsli:CI0019
+         description: Export subsidies consist of all subsidies on goods and services that become payable to resident producers when the goods leave the economic territory or when the services are delivered to non-resident units [OECD glossary of statistical terms]
+       Agricultural Tariffs and Quotas:
+         meaning: fsli:CI0020
+         description: A tax on an imported Agricultural good or service. [self-defined]
+       Agricultural Taxes:
+         meaning: fsli:CI0021
+         description: Compulsory payments to governments by agricultural businesses. [self-defined]
+       Agricultural Value Added:
+         meaning: fsli:CI0022
+         description: The difference between the value of an agricultural output and the value of the intermediate goods used in the production of that output. [self-defined]
+       Agrobiodiversity:
+         meaning: fsli:CI0023
+         description: Agrobiodiversity refers to all crops and animal breeds, their wild relatives, and the species that interact with and support these species, e.g.,pollinators, symbionts, pests, parasites, predators,decomposers, and competitors, together with the wholerange of environments in which agriculture is practiced,not just crop lands or fields. [Food and Agriculture Organization of the United Nations]
+       Air Pollution:
+         meaning: fsli:CI0024
+         description: Air pollution occurs when the air contains gases, dust, fumes or odour in harmful amounts. [EPA]
+       Air Quality:
+         meaning: fsli:CI0025
+         description: A measurement of the pollutants in the air; a description of healthiness and safety of the atmosphere [Dictionary.com]
+       Animal Production:
+         meaning: fsli:CI0026
+         description: The technology applied to the keeping of animals for profit. Includes feeding, breeding, housing and marketing. Of great importance is the making of the financial arrangements necessary to the successful carrying out of each enterprise in the light of the market conditions for the sale of the end products. [TheFreeDictionary]
+       Aquaculture:
+         meaning: fsli:CI0027
+         description: The cultivation of aquatic animals and plants, including freshwater and marine species, for food or other purposes. [National Agricultural Library Thesaurus]
+       Banking Systems:
+         meaning: fsli:CI0028
+         description: The structural network of institutions that offer financial services within a county. The members of the banking system and the functions they typically perform include - (1) commercial banks that take deposits and make loans, (2) investment banks which specialize in capital market issues and trading, and (3) national central banks that issue currency and set monetary policy. [Business dictionary]
+       Basic Needs:
+         meaning: fsli:CI0029
+         description: The basic needs approach is one of the major approaches to the measurement of absolute poverty in developing countries. It attempts to define the absolute minimum resources necessary for long-term physical well-being, usually in terms of consumption goods. The poverty line is then defined as the amount of income required to satisfy those needs. The 'basic needs' approach was introduced by the International Labour Organization's World Employment Conference in 1976. [DBPedia]
+       Birth Defects:
+         meaning: fsli:CI0030
+         description: Structural or functional anomalies (e.g. metabolic disorders) that occur during intrauterine life and can be identified prenatally, at birth or later in life. [World Health Organization]
+       Buildings:
+         meaning: fsli:CI0031
+         description: A structure (such as a house, hospital, school, etc.) with a roof and walls that is used as a place for people to live, work, do activities, store things, etc. [Merriam-Webster]
+       Capacity for Participation:
+         meaning: fsli:CI0032
+         description: A set of dynamic community traits, resources, and associational patterns that can be brought to bear for community building and community health improvement [Norton B et al. 2002]
+       Capital Productivity:
+         meaning: fsli:CI0033
+         description: Capital productivity growth shows how a change in the volume of assets, such as buildings, machinery, computers and IT, and land, affect output growth. [Statistics NZ]
+       Carbon Sequestration:
+         meaning: fsli:CI0034
+         description: Both natural and deliberate processes by which CO2 is either removed from the atmosphere or diverted from emission sources and stored in the ocean, terrestrial environments (vegetation, soils, and sediments), and geologic formations. [United States Geological Survey]
+       Cash Food Crops:
+         meaning: fsli:CI0035
+         description: Crops that are intended entirely or primarily for market [Crop Post Harvest Programme]
+       Certification:
+         meaning: fsli:CI0036
+         description: Certification refers to the confirmation of certain characteristics of an object, person, or organization. This confirmation is often, but not always, provided by some form of external review, education, assessment, or audit. Accreditation is a specific organization's process of certification. [DBPedia]
+       Child Labor:
+         meaning: fsli:CI0037
+         description: Child labour refers to the employment of children in any work that deprives children of their childhood, interferes with their ability to attend regular school, and that is mentally, physically, socially or morally dangerous and harmful. [DBPedia]
+       Child Mortality:
+         meaning: fsli:CI0038
+         description: Deaths that might somehow be attributed to obstetric events, such as stillbirths and neonatal deaths in the first week of life. [World Health Organization]
+       Civil Rights:
+         meaning: fsli:CI0039
+         description: the rights of citizens to political and social freedom and equality [Oxford Dictionary]
+       Climate Change:
+         meaning: fsli:CI0040
+         description: Climate change refers to a change in the state of the climate that can be identified (e.g., by using statistical tests) by changes in the mean and/orthe variability of its properties, and that persists for an extended period,typically decades or longer. Climate change may be due to natural internalprocesses or external forcings, or to persistent anthropogenic changes inthe composition of the atmosphere or in land use. [IPCC]
+       Climate Change Adaptation:
+         meaning: fsli:CI0041
+         description: Adjustment in natural or human systems in response to actual or expected climatic stimuli or their effects, which moderates harm or exploits beneficial opportunities. [IPCC]
+       Commercial Policies:
+         meaning: fsli:CI0042
+         description: The basic attitudes underlying a companyâ€™s marketing activities [AGROVOC]
+       Community Participation:
+         meaning: fsli:CI0043
+         description: Community engagement or community action through consulting, information, involvement and collaboration [Tasmanian Government]
+       Compensation:
+         meaning: fsli:CI0044
+         description: All payments by producers of wages and salaries to their employees, in kind as well as in cash, and of contributions in respect of their employees to social security and to private pension, casualty insurance, life insurance and similar schemes. [International Labour Organization]
+       Compliance Costs:
+         meaning: fsli:CI0045
+         description: Compliance costs are the costs incurred by the taxpayer for making arrangements for the payment of taxes and for meeting the statutory compliance requirements for such payment. Compliance costs include the value of the taxpayer's time and resources, along with any out-of-pocket costs paid to tax preparers and other tax advisors, etc. [US Legal.dictionary]
+       Contamination:
+         meaning: fsli:CI0046
+         description: Introduction into or onto water, air, soil or other media of microorganisms, chemicals, toxic substances, wastes, wastewater or other pollutants in a concentration that makes the medium unfit for its next intended use. [GEMET]
+       Contraception:
+         meaning: fsli:CI0047
+         description: NA [NA]
+       Corruption:
+         meaning: fsli:CI0048
+         description: The abuse of entrusted power for private gain. Corruption can be classified as grand, petty and political, depending on the amounts of money lost and the sector where it occurs. [Transparency International]
+       Crop Yield:
+         meaning: fsli:CI0049
+         description: The amount of plant crop (such as cereal, grain or legume) harvested per unit area for a given time. [AGROVOC]
+       Cropping Systems:
+         meaning: fsli:CI0050
+         description: The pattern of crops grown on a given piece of land, or order in which the crops are cultivated over a fixed period. [AGROVOC]
+       Cultural Appropriateness of Foods:
+         meaning: fsli:CI0051
+         description: Food that corresponds to individual and collective consumer demand and preferences, in line with national and international law as applicable. [Food and Agriculture Organization of the United Nations]
+       Cultural Protection and Conservation:
+         meaning: fsli:CI0052
+         description: The deliberate act of keeping cultural heritage from the present for the future is known as preservation (American English) or conservation (British English), though these terms may have more specific or technical meaning in the same contexts in the other dialect. [Wikipedia (as cultural heritage)]
+       Cultural Services:
+         meaning: fsli:CI0053
+         description: Nonmaterial benefits people obtain from ecosystems through spiritual enrichment, cognitive development, reflection, recreation, and aesthetic experiences. [Millennium Ecosystem Assessment]
+       Desertification:
+         meaning: fsli:CI0054
+         description: Desertification is a type of land degradation in which a relatively dry land region becomes increasingly arid, typically losing its bodies of water as well as vegetation and wildlife. [DBPedia]
+       Diet:
+         meaning: fsli:CI0055
+         description: Food and drink regularly provided or consumed [Merriam-Webster]
+       Disaster Mitigation:
+         meaning: fsli:CI0056
+         description: Disaster mitigation is permanent reduction of the risk of a disaster. Primary mitigation refers to reducing the resistance of the hazard and reducing vulnerability. Mitigation includes recognizing that disasters will occur; attempts are made to reduce the harmful effects of a disaster, and to limit their impact on human suffering and economic assets. [World Health Organization]
+       Disaster Preparedness:
+         meaning: fsli:CI0057
+         description: Process of ensuring that an organization has complied with the preventive measures, is in a state of readiness to contain the effects of a forecasted disastrous event to minimize loss of life, injury, and damage to property. [AGROVOC]
+       Disaster Prevention:
+         meaning: fsli:CI0058
+         description: Defined as those activities taken to prevent a natural phenomenon or potential hazard from having harmful effects on either people or economic assets. Delayed actions drain the economy and the resources for emergency response within a region. For developing nations, prevention is perhaps the most critical components in managing disasters, however, it is clearly one of the most difficult to promote. Prevention planning is based on two issues - hazard identification (identifying the actual threats facing a community) and vulnerability assessment (evaluating the risk and capacity of a community to handle the consequences of the disaster). Once these issues put in order of priority, emergency managers can determine the appropriate prevention strategies. Disaster prevention refers to measures taken to eliminate the root-causes that make people vulnerable to disasters. [World Health Organization]
+       Disaster Relief:
+         meaning: fsli:CI0059
+         description: Disaster relief (or emergency management) refers to the process of responding to a catastrophic situation, providing humanitarian aid to persons and communities who have suffered from some form of disaster. [New World Encyclopedia]
+       Disasters - Economic Impact:
+         meaning: fsli:CI0060
+         description: The economic impact of a specific disaster [self-defined]
+       Disasters - Environmental Impact:
+         meaning: fsli:CI0061
+         description: The environmental impact of a specific disaster [self-defined]
+       Disasters - Health Impact:
+         meaning: fsli:CI0062
+         description: The impact of human health and health systems by a specific disaster [self-defined]
+       Disasters - Human and Social Impact:
+         meaning: fsli:CI0063
+         description: The impact of human and social systems by a specific disaster [self-defined]
+       Discrimination:
+         meaning: fsli:CI0064
+         description: Discrimination is treatment or consideration of, or making a distinction in favor of or against, a person or thing based on the group, class, or category to which that person or thing is perceived to belong to rather than on individual merit.This includes treatment of an individual or group based on their actual or perceived membership in a certain group or social category, "in a way that is worse than the way people are usually treated". [DBPedia]
+       Discrimination in Employment:
+         meaning: fsli:CI0065
+         description: Employment discrimination is a form of discrimination based on race, gender, religion, national origin, physical or mental disability, and age by employers. Earnings differentials or occupational differentiation is not in and of itself evidence of employment discrimination. Discrimination can be intended and involve disparate treatment of a group or be unintended, yet create disparate impact for a group. [Wikipedia]
+       Disease Incidence - Communicable:
+         meaning: fsli:CI0066
+         description: The occurrence of new cases of communicable disease in a population over a specified period of time [Center for Disease Control and Prevention]
+       Disease Incidence - Noncommunicable:
+         meaning: fsli:CI0067
+         description: NA [NA]
+       Disease-Related Mortality:
+         meaning: fsli:CI0068
+         description: Human deaths caused by communicable and non-communicable diseases [Self-defined. ]
+       Diseases and Pests:
+         meaning: fsli:CI0069
+         description: Organisms such as bacteria, fungi, viruses and insects that cause a deleterious impact on crops and livestock. [Self-defined]
+       Economic Participation:
+         meaning: fsli:CI0070
+         description: Includes paid employment, training and education, self-employment and enterprise development, and micro-finance [RMIT University]
+       Ecosystem Health:
+         meaning: fsli:CI0071
+         description: Ecosystem health may be defined as the capacity for maintaining biological and social organization, on the one hand, and the ability to achieve reasonable and sustainable human goals on the other. [Rapport et al. 2001]
+       Ecosystem Management:
+         meaning: fsli:CI0072
+         description: Ecosystem management is a process that aims to conserve major ecological services and restore natural resources while meeting the socioeconomic, political and cultural and needs of current and future generations. [DBPedia]
+       Ecotourism:
+         meaning: fsli:CI0073
+         description: Responsible travel to natural areas that conserves the environment and improves the well-being of local people [The International Ecotourism Society]
+       Education Access:
+         meaning: fsli:CI0074
+         description: The ability of all people to have equal opportunity in education, regardless of their social class, gender, ethnicity background or physical and mental disabilities [Wikipedia]
+       Education Equity:
+         meaning: fsli:CI0075
+         description: Fair and impartial access to education regardless of economic or social status [Sustainable Development Indicator (SDI) Group]
+       Education Infrastructure:
+         meaning: fsli:CI0076
+         description: Systematic provision of a society for the transmission of knowledge, information, and technologies [Sustainable Development Indicator (SDI) Group ]
+       Education Quality:
+         meaning: fsli:CI0077
+         description: The amount or quality of knowledge, information, and and skills acquired by the individual [Sustainable Development Indicator (SDI) Group]
+       Educational Policies:
+         meaning: fsli:CI0078
+         description: Educational policies are the principles and government policy-making in the educational sphere, as well as the collection of laws and rules that govern the operation of education systems. [Wikipedia]
+       Employee Rights:
+         meaning: fsli:CI0079
+         description: Rights are universal, and that they apply to all people in all States - regardless of the level of economic development, [does not neglect] groups with special needs, including the unemployed and migrant workers [and] recognizes that economic growth alone is not enough to ensure equity, social progress and to eradicate poverty. [International Labour Organization]
+       Employment at Will:
+         meaning: fsli:CI0080
+         description: When an employee does not have a written employment contract and the term of employment is of indefinite duration, the employer can terminate the employee for good cause, bad cause, or no cause at all. [Bureau of Labor Statistics]
+       Energy Conservation:
+         meaning: fsli:CI0081
+         description: Reduction in the amount of energy consumed in a process or system, or by an organization or society, through economy, elimination of waste, and rational use. [Business dictionary]
+       Energy Demand:
+         meaning: fsli:CI0082
+         description: The requirement for energy as an input to provide products and/or services. [US Energy Information Administration]
+       Energy Efficiency:
+         meaning: fsli:CI0083
+         description: Using less energy to provide the same service [Lawrence Berkeley National Laboratory]
+       Energy Infrastructure:
+         meaning: fsli:CI0084
+         description: The large-scale enabling technologies to transport energy from producer to consumer and direct and manage energy flow. [Self-defined]
+       Energy Policies:
+         meaning: fsli:CI0085
+         description: Energy policy is the manner in which a given entity (often governmental) has decided to address issues of energy development including energy production, distribution and consumption. [Wikipedia]
+       Energy Production:
+         meaning: fsli:CI0086
+         description: The process of producing energy or the amount of energy produced (usually for a given type of energy). [US Energy Information Administration]
+       Energy Productivity:
+         meaning: fsli:CI0087
+         description: The ratio of output divided by energy consumption [IAEE]
+       Energy Security:
+         meaning: fsli:CI0088
+         description: The IEA defines energy security as the uninterrupted availability of energy sources at an affordable price. Energy security has many aspects - long-term energy security mainly deals with timely investments to supply energy in line with economic developments and environmental needs. [International Energy Agency]
+       Enforcement of Laws and Regulations:
+         meaning: fsli:CI0089
+         description: Enforcement of principles, rules, or laws designed to control or govern conduct. [YourDictionary]
+       Equality:
+         meaning: fsli:CI0090
+         description: NA [NA]
+       Erosion:
+         meaning: fsli:CI0091
+         description: In geomorphology and geology, erosion is the action of exogenic processes (such as water flow or wind) which remove soil and rock from one location on the Earth's crust, then transport it to another location where it is deposited. [DBPedia]
+       Ethical Treatment of Animals:
+         meaning: fsli:CI0092
+         description: Ensuring that animal suffering for necessary purposes be eliminated or reduced to a minimum [Learning to Give]
+       Eutrophication:
+         meaning: fsli:CI0093
+         description: Eutrophication is the ecosystem's response to the addition of artificial or natural substances, mainly phosphates, through detergents, fertilizers, or sewage, to an aquatic system. [DBPedia]
+       Evapotranspiration:
+         meaning: fsli:CI0094
+         description: The sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. [DBPedia]
+       Family Planning:
+         meaning: fsli:CI0095
+         description: Individuals and couples to anticipate and attain their desired number of children and the spacing and timing of their births. It is achieved through use of contraceptive methods and the treatment of involuntary infertility. [World Health Organization]
+       Financial Risk:
+         meaning: fsli:CI0096
+         description: The chance that an individual, business or government will not be able to return money invested. [council for economic education]
+       Fisheries:
+         meaning: fsli:CI0097
+         description: Activities leading to the harvesting of fish, including capture of wild fish (not including aquaculture) [NOAA Fisheries Glossary]
+       Fishing & Overfishing:
+         meaning: fsli:CI0098
+         description: The activity of trying to catch fish, which may be beyond the capacity of the population to replenish their stocks. [Modified from National Agricultural Library Thesaurus]
+       Floods:
+         meaning: fsli:CI0099
+         description: An overflow of water onto normally dry land [NOAA]
+       Food Availability:
+         meaning: fsli:CI0100
+         description: The availability of sufficient quantities of food of appropriate quality, supplied through domestic production or imports (including food aid). [FAO]
+       Food Policies:
+         meaning: fsli:CI0101
+         description: The area of public policy concerning how food is produced, processed, distributed, and purchased. [DBPedia]
+       Food Provisioning:
+         meaning: fsli:CI0102
+         description: A society's mechanisms of supplying food to its populace. [Self-defined]
+       Food Safety:
+         meaning: fsli:CI0103
+         description: Protecting the food supply from microbial, chemical (i.e. rancidity, browning) and physical (i.e. drying out, infestation) hazards or contamination that may occur during all stages of food production and handling-growing, harvesting, processing, transporting, preparing, distributing and storing. The goal of food safety monitoring is to keep food wholesome. [AGROVOC]
+       Food Security:
+         meaning: fsli:CI0104
+         description: Access by all people, at all times to sufficient food for an active and healthy life. Food security includes at a minimum - the ready availability of nutritionally adequate and safe foods, and an assured ability to acquire acceptable foods in socially acceptable ways. [National Agricultural Library Thesaurus]
+       Food Security - Household:
+         meaning: fsli:CI0105
+         description: When the following three pillars are fulfilled at the household level. Food availability - sufficient quantities of food available on a consistent basis. Food access- having sufficient resources to obtain appropriate foods for a nutritious diet. Food use - appropriate use based on knowledge of basic nutrition and care, as well as adequate water and sanitation [World Health Organization]
+       Food Security - National:
+         meaning: fsli:CI0106
+         description: When the following three pillars are fulfilled at the national level. Food availability- sufficient quantities of food available on a consistent basis. Food access- having sufficient resources to obtain appropriate foods for a nutritious diet. Food use- appropriate use based on knowledge of basic nutrition and care, as well as adequate water and sanitation [World Health Organization]
+       Food Wastes:
+         meaning: fsli:CI0107
+         description: Food that is discarded or lost uneaten [United Nations]
+       Forced Labor:
+         meaning: fsli:CI0108
+         description: Forced labour refers to situations in which persons are coerced to work through the use of violence or intimidation, or by more subtle means such as accumulated debt, retention of identity papers or threats of denunciation to immigration authorities. [International Labour Organizatoin]
+       Forest Canopy Cover:
+         meaning: fsli:CI0109
+         description: Forest canopy cover is defined as the proportion of the forest floor covered by the vertical projection of the tree crowns [Jennings et al. 1999]
+       Forest Ecology:
+         meaning: fsli:CI0110
+         description: Forest ecology is the scientific study of the interrelated patterns, processes, flora, fauna and ecosystems in forests. [DBPedia]
+       Forest Management Practices:
+         meaning: fsli:CI0111
+         description: Best [forestry] management practices (BMPs) are proactive and often voluntary practical methods or practices used during forest management to achieve goals related to water quality, silviculture, wildlife and biodiversity, aesthetics, and/or recreation. [Peter Smallidge and Gary Goff, Spring 1998]
+       Forest Productivity:
+         meaning: fsli:CI0112
+         description: The annual average change in cubic feet, board feet, cords, or biomass of wood. Losses in volume to tree mortality and harvesting are also measured and subtracted from growth to provide net growth. [USDA - Forest Service]
+       Forest Products:
+         meaning: fsli:CI0113
+         description: Timber forest is the wood of the trees itself. Non-timber forest products (NTFPs) are any product or service other than timber that is produced in forests. They include fruits and nuts, vegetables, fish and game, medicinal plants, resins, essences and a range of barks and fibres such as bamboo, rattans, and a host of other palms and grasses. [CIFOR]
+       Forests:
+         meaning: fsli:CI0114
+         description: Generally, an ecosystem characterized by a more or less dense and extensive tree cover. More particularly, a plant community predominantly of trees and other woody vegetation, growing more or less closely together. [National Agricultural Library Thesaurus]
+       Formal Education - Primary:
+         meaning: fsli:CI0115
+         description: The hierarchically structured, chronologically graded 'education system', running from primary school through the university and including, in addition to general academic studies, a variety of specialized programs and institutions for full-time technical and professional training [UNESCO]
+       Formal Education - Secondary:
+         meaning: fsli:CI0116
+         description: The hierarchically structured, chronologically graded 'education system', running from primary school through the university and including, in addition to general academic studies, a variety of specialized programs and institutions for full-time technical and professional training [UNESCO]
+       Formal Education - Tertiary:
+         meaning: fsli:CI0117
+         description: The hierarchically structured, chronologically graded 'education system', running from primary school through the university and including, in addition to general academic studies, a variety of specialized programs and institutions for full-time technical and professional training [UNESCO]
+       Functional Literacy:
+         meaning: fsli:CI0118
+         description: A level of reading, writing, and calculation skills sufficient for adults to function in the particular community in which an individual lives. [UNESCO Institute for Statistics]
+       Gender Equality:
+         meaning: fsli:CI0119
+         description: Equal rights, responsibilities and opportunities of women and men and girls and boys [UN]
+       Gender Literacy:
+         meaning: fsli:CI0120
+         description: The difference among men and women, boys and girls to achieve a level of reading, writing, and calculation skills sufficient to function in the particular community in which an individual lives. [UNESCO Institute for Statistics (with components added)]
+       Gender Policy:
+         meaning: fsli:CI0121
+         description: Gender policy is characterized by the fact that societal norms regarding "masculinity" and "femininity" are broken and that women and men have equal access to power, authority and resources. []
+       Genetic Diversity within Species:
+         meaning: fsli:CI0122
+         description: The variety of alleles and genotypes present in a population and this is reflected in morphological, physiological and behavioral differences between individuals and populations [Frankham et al. 2002]
+       Governance Structure:
+         meaning: fsli:CI0123
+         description: The basis of a legal form including the organization, the individuals, members, and shareholders [KnowHow NonProfit]
+       Grasslands:
+         meaning: fsli:CI0124
+         description: Plant formation characterized by the predominance of herbaceous vegetation, mainly grasses [AGROVOC]
+       Grazing:
+         meaning: fsli:CI0125
+         description: Feeding on standing vegetation, as by livestock or wild animals. [National Agricultural Library Thesaurus]
+       Greenhouse Gas Emissions:
+         meaning: fsli:CI0126
+         description: Emissions refer to the anthropogenic or natural release of greenhouse gases and/or their precursors and aerosols into the atmosphere over a specified area and period of time. Including carbon dioxide (CO2), methane (CH4), nitrous oxide (NO2), and water vapor. [IPCC]
+       Greenhouse Gas Mitigation:
+         meaning: fsli:CI0127
+         description: Greenhouse gas mitigation refers to efforts to reduce or prevent emission of greenhouse gases. Mitigation can mean using new technologies and renewable energies, making older equipment more energy efficient, or changing management practices or consumer behavior. [United Nations Environment Programme]
+       Groundwater Contamination:
+         meaning: fsli:CI0128
+         description: Groundwater contamination occurs when pollutants are released to the ground and make their way down into groundwater [Wikipedia]
+       Groundwater Recharge and Overdraft:
+         meaning: fsli:CI0129
+         description: A hydrologic process where water moves downward from surface water to groundwater. Overdrafting is the process of extracting groundwater beyond the safe yield or equilibrium yield of the aquifer [Wikipedia]
+       Habitats:
+         meaning: fsli:CI0130
+         description: The place or type of place where a plant or animal naturally or normally lives or grows [Merriam-Webster]
+       Harrassment:
+         meaning: fsli:CI0131
+         description: The act of systematic and/or continued unwanted and annoying actions of one party or a group, including threats and demands. [The Free Dictionary]
+       Hazardous Wastes--Management:
+         meaning: fsli:CI0132
+         description: The total supervision of waste that is dangerous or potentially harmful to health or the environment, including production, handling, processing, storage, and transport from its point of generation to its final acceptable disposal. [Modified from GEMET]
+       Health Care Infrastructure:
+         meaning: fsli:CI0133
+         description: The large-scale enabling technologies that allow for the distribution of healthcare to all [Self-defined]
+       Human Exposure:
+         meaning: fsli:CI0134
+         description: The occurrence of the event where a pollutant comes into contact with the physical boundary of an individual. [Ott, W.R. 1982. ]
+       Human Rights Advocacy:
+         meaning: fsli:CI0135
+         description: The exercise of power by the citizenry for human rights in the face of the government's power [UN WOMEN]
+       Human Rights Monitoring:
+         meaning: fsli:CI0136
+         description: Human rights monitoring is a unique activity that is separate from monitoring and evaluation, as well as from research. Human rights monitoring seeks to gather information about the human rights situation in a country or region over time through readily available methods, with the goal of engaging in advocacy to address human rights violations. Human rights monitoring should be based on principles of - Accuracy, Confidentiality, Impartiality, Gender-sensitivity. [UN WOMEN]
+       Human Use of Protected Areas:
+         meaning: fsli:CI0137
+         description: Human activities inside of protected areas, whether these be benign in intent such as nature-based tourism or illegal such as unauthorized resource extraction. [Self-defined]
+       Immunization:
+         meaning: fsli:CI0138
+         description: A process by which a person becomes protected against a disease through vaccination. This term is often used interchangeably with vaccination or inoculation. [Center for Disease Control and Prevention]
+       Income Distribution:
+         meaning: fsli:CI0139
+         description: National income divided among groups of individuals, households, social classes, or factors of production, to compute an average for comparison purposes. [Business dictionary]
+       Income Generation:
+         meaning: fsli:CI0140
+         description: The process by which a company markets and sells a product or service to produce income [Business dictionary]
+       Income Growth:
+         meaning: fsli:CI0141
+         description: Net income growth is the annualized rate of growth over the previous year's net income [Wikinvest]
+       Income Smoothing:
+         meaning: fsli:CI0142
+         description: Statistical technique for removal of short term irregularities in a time-series data to improve the accuracy of forecasts. It uses moving averages, or fits a curve to the plotted data points on a graph, and is a much simpler (although cruder) method than exponential smoothing. [Business dictionary]
+       Income Stability:
+         meaning: fsli:CI0143
+         description: Income resistance to change, deterioration, or displacement [self-defined]
+       Income Sufficiency:
+         meaning: fsli:CI0144
+         description: The ability of individuals and families to consistently meet their needsâ€”including food, housing, utilities, health care, transportation, taxes, dependent care and clothing with minimal or no financial assistance or subsidies from private or public organizations. [Fairfax County]
+       Indigenous Technology and Knowledge:
+         meaning: fsli:CI0145
+         description: Indigenous knowledge (IK) is the local knowledge and technology knowledge that is unique to a given culture or society. IK contrasts with the international knowledge system generated by universities, research institutions and private firms. It is the basis for local-level decision making in agriculture, health care, food preparation, education, natural-resource management, and a host of other activities in rural communities. [World Bank ]
+       Inflation:
+         meaning: fsli:CI0146
+         description: A general increase in prices and fall in the purchasing value of money. [Oxford dictionary]
+       Informal Education:
+         meaning: fsli:CI0147
+         description: Informal Education is a general term for education outside of a standard school setting [DBPedia]
+       Information Infrastructure:
+         meaning: fsli:CI0148
+         description: All of the people, processes, procedures, tools, facilities, and technology which supports the creation, use, transport, storage, and destruction of information [Pironti 2006]
+       Inorganic Fertilizers:
+         meaning: fsli:CI0149
+         description: Inorganic fertilizer, also referred to as synthetic fertilizer, is manufactured artificially and contains minerals or synthetic chemicals. [Todays homeowner ]
+       Input Productivity:
+         meaning: fsli:CI0150
+         description: Productivity of inputs in agriculture including seeds, pesticides and herbicides [self-defined]
+       Insurance:
+         meaning: fsli:CI0151
+         description: A practice or arrangement by which a company or government agency provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment of a premium. [Oxford dictionary]
+       Interest Rates:
+         meaning: fsli:CI0152
+         description: The proportion of a loan that is charged as interest to the borrower, typically expressed as an annual percentage of the loan outstanding. [Oxford dictionary]
+       Intraregional Trade (Domestic Trade):
+         meaning: fsli:CI0153
+         description: Trade in goods and services that happens within a specific region of the world economy such as sub-Saharan Africa or the member nations of the European Union []
+       Invasive Species:
+         meaning: fsli:CI0154
+         description: Invasive alien species are animals, plants or other organisms introduced by man into places out of their natural range of distribution, where they become established and disperse, generating a negative impact on the local ecosystem and species. [IUCN]
+       Investment:
+         meaning: fsli:CI0155
+         description: The purchase of capital goods (including machinery, technology or new buildings) that are used to produce goods and services. In personal finance, the amount of money invested in stocks, bonds, mutual funds and other investment instruments. [council for economic education]
+       Investment in Education:
+         meaning: fsli:CI0156
+         description: Public and private investments in public, private, and informal education [Self-defined]
+       Investment In Health:
+         meaning: fsli:CI0157
+         description: Public and private investments in human health and human heath-related education and services [Self-defined]
+       Irrigation:
+         meaning: fsli:CI0158
+         description: Irrigation is the artificial application of water to the land or soil, used to assist in the growing of agricultural crops, maintenance of landscapes, and revegetation of disturbed soils in dry areas and during periods of inadequate rainfall. [DBPedia]
+       Job Security:
+         meaning: fsli:CI0159
+         description: Assurance (or lack of it) that an employee has about the continuity of gainful employment for his or her work life. Job security usually arises from the terms of the contract of employment, collective bargaining agreement, or labor legislation that prevents arbitrary termination, layoffs, and lockouts. It may also be affected by general economic conditions. [Business Dictionary]
+       Knowledge and Information Systems:
+         meaning: fsli:CI0160
+         description: A knowledge management system is most often used in business in applications such as information systems, business administration, computer science, public policy and general management. [Business Dictionary]
+       Labor Costs:
+         meaning: fsli:CI0161
+         description: The cost incurred by the employer in the employment of labour. The statistical concept of labour cost comprises remuneration for work performed, payments in respect of time paid for but not worked, bonuses and gratuities, the cost of food, drink and other payments in kind, cost of workers housing borne by employers, employers social security expenditures, cost to the employer for vocational training, welfare services and miscellaneous items, such as transport of workers, work clothes and recruitment, together with taxes regarded as labour cost. [International Labour Organization]
+       Labor Market:
+         meaning: fsli:CI0162
+         description: The number of workers who are available to be hired [Merriam-Webster.]
+       Labor Policy:
+         meaning: fsli:CI0163
+         description: Policies related to the workplace environment including labor compensation, income, hours works, discrimination, harrassment, etc. [Self-defined. ]
+       Labor Productivity:
+         meaning: fsli:CI0164
+         description: Rate of output per worker (or a group of workers) per unit of time as compared with an established standard or expected rate of output [Business Dictionary]
+       Labor Supply:
+         meaning: fsli:CI0165
+         description: Available labor force or human resources [Self-defined. ]
+       Land Cover:
+         meaning: fsli:CI0166
+         description: Land cover is the physical state of the land surface. It is the combination of vegetation, soil, rock, water and human-made structures, which make up the earth's landscape. The land cover is the interface between the earth's crust and the atmosphere, influencing the exchange of energy and matter in the climatic system and biogeochemical cycles. [GEMET]
+       Land Fragmentation:
+         meaning: fsli:CI0167
+         description: The spatial dispersion of a farmer's plots over a wide area, intermixed with parcels operated by other farmers. [King, R., & Burton, S. (1982). ]
+       Land Productivity:
+         meaning: fsli:CI0168
+         description: The inherent capacity or potential of a soil to produce vegetation [USDA]
+       Land Tenure:
+         meaning: fsli:CI0169
+         description: Land tenure is the name given, particularly in common law systems, to the legal regime in which land is owned by an individual, who is said to "hold" the land [DBPedia]
+       Land Use:
+         meaning: fsli:CI0170
+         description: Land use is the human use of land. Land use involves the management and modification of natural environment or wilderness into built environment such as settlements and semi-natural habitats such as arable fields, pastures, and managed woods. It also has been defined as "the arrangements, activities and inputs people undertake in a certain land cover type to produce, change or maintain it" [FAO, 1997a; FAO/UNEP, 1999 ]
+       Landscape Changes:
+         meaning: fsli:CI0171
+         description: Changes in landscape and land use, whether due to anthropogenic or natural forces [self-defined]
+       Landscape Protection:
+         meaning: fsli:CI0172
+         description: The safeguarding, for public enjoyment, of landscape and of opportunities for outdoor recreation, tourism and similar activities; the concept includes the preservation and enhancement not only of what has been inherited but the provision of new amenities and facilities. [GEMET]
+       Laws and Regulations:
+         meaning: fsli:CI0173
+         description: The act of regulating or the state of being regulated. A principle, rule, or law designed to control or govern conduct. [YourDictionary]
+       Livestock Feed:
+         meaning: fsli:CI0174
+         description: Inputs to livestock production [self-defined]
+       Livestock Management:
+         meaning: fsli:CI0175
+         description: Management practices as applied to livestock, with particular reference to practices such as rotational grazing. [WOCAT Glossary]
+       Machinery:
+         meaning: fsli:CI0176
+         description: The components of a machine. [Merriam-Webster]
+       Manmade Disasters:
+         meaning: fsli:CI0177
+         description: A Manmade disaster involves an element of human intent, negligence, or error; or involving a failure of a man-made system [US Legal]
+       Marine Economics:
+         meaning: fsli:CI0178
+         description: Economic analysis of the marine environment in its capacity to provide a broad range of goods and services, including food, transport, energy, recreation, and climate regulation. [Modified from CIESM Marine Economics Research Program]
+       Marine Protected Areas:
+         meaning: fsli:CI0179
+         description: A clearly defined geographical space in marine environments, recognised, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values. [Modified from IUCN]
+       Maritime Law:
+         meaning: fsli:CI0180
+         description: That system of law which particularly relates to marine commerce and navigation, to business transacted at sea or relating to navigation, to ships and shipping, to seamen, to the transportation of persons and property by sea, and to marine affairs generally. [GEMET]
+       Market Access:
+         meaning: fsli:CI0181
+         description: Openness of a country's markets to foreign goods and services. Market access reflects the government's economic policies regarding import substitution and free competition [BusinessDictionary]
+       Market Infrastructure:
+         meaning: fsli:CI0182
+         description: Infrastructure comprising of payment, clearing, trading, information, settlement, messaging and legal systems [Re-Define]
+       Market Performance:
+         meaning: fsli:CI0183
+         description: The relationship of selling price to costs, the size of output, the efficiency of production, progressiveness in techniques and products [Encyclopedia Brittanica]
+       Market Standards, Regulations, and Policies:
+         meaning: fsli:CI0184
+         description: A level of quality or attainment, a means to maintain that quality, and policies to ensure quality within the market [self-defined]
+       Market Structure:
+         meaning: fsli:CI0185
+         description: In economics, market structure is the number of firms producing identical products which are homogeneous. [DBPedia]
+       Market Support:
+         meaning: fsli:CI0186
+         description: []
+       Market Transparency:
+         meaning: fsli:CI0187
+         description: Transparency is the extent to which investors have ready access to any required financial information about a company such as price levels, market depth and audited financial reports. [Investopedia]
+       Maternal Health Services:
+         meaning: fsli:CI0188
+         description: Services that provide healthcare to women during pregnancy, childbirth and the postpartum period. [World Health Organization]
+       Maternal Mortality:
+         meaning: fsli:CI0189
+         description: Death of a mother before, during, or after childbirth. [World Health Organization]
+       Migrant Labor:
+         meaning: fsli:CI0190
+         description: Movement of persons from one State to another, or within their own country of residence, for the purpose of employment. [International Organization for Migration]
+       Migration:
+         meaning: fsli:CI0191
+         description: The movement of people from one place in the world to another for the purpose of taking up permanent or semipermanent residence, usually across a political boundary. [National Geographic]
+       Natural Disasters:
+         meaning: fsli:CI0192
+         description: Disasters caused by nature including avalanches, earthquakes, volcanoes, fires, flooding, landslides, tsunamis, etc. [AGROVOC]
+       Non-Hazardous Waste Management:
+         meaning: fsli:CI0193
+         description: The total supervision of waste that is not treated as hazardous, including production, handling, processing, storage, and transport from its point of generation to its final acceptable disposal. [Modified from GEMET]
+       Non-Renewable Energy:
+         meaning: fsli:CI0194
+         description: Energy sources are considered nonrenewable if they cannot be replenished (made again) in a short period of time. All fossil fuels are nonrenewable, as is uranium. [US Energy Information Administration]
+       Nutritional Value:
+         meaning: fsli:CI0195
+         description: An indication of the contribution of a food to the nutrient content of the diet. This value depends on the quantity of a food which is digested and absorbed and the amounts of the essential nutrients (protein, fat, carbohydrate, minerals, vitamins) which it contains. This value can be affected by soil and growing conditions, handling and storage, and processing. [AGROVOC]
+       Occupational Accidents:
+         meaning: fsli:CI0196
+         description: An unexpected and unplanned occurrence, including acts of violence, arising out of or in connection with work which results in one or more workers incurring a personal injury, disease or death [International Labour Organization]
+       Occupational Diseases:
+         meaning: fsli:CI0197
+         description: Physical, chemical, biological and psychosocial factors affecting workers health [International Labour Organization]
+       Occupational Health:
+         meaning: fsli:CI0198
+         description: Requirements for training aimed at reducing risk factors for injury or disease; or limitations of certain jobs to persons deemed competent by virtue of special training [Occupational Safety and Health Administration]
+       Occupational Mortality:
+         meaning: fsli:CI0199
+         description: Death caused by workplace accidents or a large number of deaths caused by a certain workplace exposure or practice [self-defined]
+       Occupational Safety:
+         meaning: fsli:CI0200
+         description: NA [NA]
+       Occupational Segregation:
+         meaning: fsli:CI0201
+         description: The division of labour, in the context of paid employment, as a result of which men and women (or members of different ethnic or religious groupings) are channelled into different types of occupational roles and tasks, such that there are two (or more) separate labour forces. It is conventional to distinguish vertical job segregation, by which (say) male or white employees are concentrated in the higher-status and better-paid positions, from horizontal job segregation (where the different sexes or ethnic groups work in different types of occupation men are engineers, women are typists, and so on). [Encyclopedia.com]
+       Ocean Acidification:
+         meaning: fsli:CI0202
+         description: Ocean acidification is the ongoing decrease in the pH of the Earth's oceans, caused by the uptake of carbon dioxide (CO2) from the atmosphere. [DBPedia]
+       Ocean Circulation:
+         meaning: fsli:CI0203
+         description: Ocean circulation is the large scale movement of waters in the ocean basins. [TOPEX/Poseidon Educational Outreach]
+       Organic Fertilizers:
+         meaning: fsli:CI0204
+         description: Organic fertilizers contain only plant- or animal-based materials that are either a byproduct or end product of naturally occurring processes, such as manures, leaves, and compost. [Todays homeowner ]
+       Other Trade Restrictions:
+         meaning: fsli:CI0205
+         description: Any government policy that limits the free flow of goods and services across borders [eHow]
+       Overnutrition:
+         meaning: fsli:CI0206
+         description: A chronic condition where intake of food is in excess of dietary energy requirements, resulting in overweight and/or obesity. [World Health Organization]
+       Ozone Depletion:
+         meaning: fsli:CI0207
+         description: The reduction of the protective layer of ozone in the Stratosphere by chemical pollution. In the stratosphere, small amounts of ozone are constantly being made by the action of sunlight on oxygen. [US Legal]
+       Pay Equity:
+         meaning: fsli:CI0208
+         description: Pay equity is a means of eliminating sex and race discrimination in the wage-setting system. Many women and people of color are still segregated into a small number of jobs such as clerical, service workers, nurses and teachers. [National Committee on Pay Equity]
+       Persistence of Poverty:
+         meaning: fsli:CI0209
+         description: ERS has defined counties as being persistently poor if 20 percent or more of their populations were living in poverty over the last 30 years [US Ecnomic Research Service]
+       Pesticides:
+         meaning: fsli:CI0210
+         description: Chemical or biological substance designed to kill or retard the growth of pests that damage or interfere with the growth of crops, shrubs, tress, timber and other vegetation desired by humans. Practically all chemical pesticides, however, are poisons and pose long-term danger to the environment and humans through their persistence in nature and body tissue. Most of the pesticides are non-specific, and may kill life forms that are harmless or useful. [Business dictionary]
+       Pharmaceutical Products:
+         meaning: fsli:CI0211
+         description: A pharmaceutical drug (also referred to as a pharmaceutical, pharmaceutical preparation, pharmaceutical product, medicinal product, medicine, medication, medicament, or simply a drug) is a drug used to diagnose, cure, treat, or prevent disease. [Wikipedia]
+       Political Participation:
+         meaning: fsli:CI0212
+         description: Political participation encompasses the many activities used by citizens to influence the selection of political leaders or the policies they pursue. [FIU]
+       Pollination:
+         meaning: fsli:CI0213
+         description: The transfer of pollen from an anther to the stigma in angiosperms or from the microsporangium to the micropyle in gymnosperms [Merriam-Webster]
+       Pollution Prevention:
+         meaning: fsli:CI0214
+         description: Eliminating the production of hazardous wastes and greenhouse gases at their source, within the production process. [GEMET]
+       Population Density:
+         meaning: fsli:CI0215
+         description: A measurement of population per unit area or unit volume; it is a quantity of type number density. It is frequently applied to living organisms, and particularly to humans. It is a key geographic term. Lists of population density of different countries are below. [DBPedia]
+       Population Dynamics:
+         meaning: fsli:CI0216
+         description: NA [NA]
+       Postnatal Care:
+         meaning: fsli:CI0218
+         description: The health care of a mother and child during the six weeks after birth [World Health Organization]
+       Potable Water:
+         meaning: fsli:CI0219
+         description: Drinking water, also known as potable water or improved drinking water, is water safe enough for drinking and food preparation. [DBPedia]
+       Poverty Alleviation Measures:
+         meaning: fsli:CI0220
+         description: Means through which the government aims to revamp and reconstruct the economy [Mustapha Muktar]
+       Poverty Incidence:
+         meaning: fsli:CI0221
+         description: The share of the population whose income or consumption is below the poverty line [World Bank]
+       Precipitation:
+         meaning: fsli:CI0222
+         description: Precipitation is any product of the condensation of atmospheric water vapour that falls under gravity. The main forms of precipitation include drizzle, rain, sleet, snow, graupel and hail. [DBPedia]
+       Prenatal Care:
+         meaning: fsli:CI0223
+         description: The health care a mother gets while she is pregnant. [US National Library of Medicine]
+       Prices:
+         meaning: fsli:CI0224
+         description: A value that will purchase a finite quantity, weight, or other measure of a good or service. [BusinessDictionary]
+       Profitability:
+         meaning: fsli:CI0225
+         description: Ability of a firm to generate net income on a consistent basis. It is often measured by price to earnings ratio. The amount of profit made, shown as a percentage of costs or sales revenue. [AGROVOC]
+       Property Transfers:
+         meaning: fsli:CI0226
+         description: The act of moving the ownership of property or shares of stock from one person to another. [InvestorWords]
+       Protected Area Encroachment:
+         meaning: fsli:CI0227
+         description: Human activities that extend into and impact the ability of protected areas to achieve conservation goals [Self-defined]
+       Protected Areas--Management:
+         meaning: fsli:CI0228
+         description: Activities including control, protection, maintenance, and rehabilitation undertaken to support the conservation goals of a protected area. [Self-defined]
+       Protection of Threatened & Rare Ecosystems:
+         meaning: fsli:CI0229
+         description: Management activities undertaken to support the maintenance and rehabilitation of ecosystems that are at risk of disappearance. [Self-defined]
+       Public Health Initiatives:
+         meaning: fsli:CI0230
+         description: Initiatives to inform, enhance, and guide public health efforts [Center for Disease Control and Prevention]
+       Quotas and Quantitative Restrictions:
+         meaning: fsli:CI0231
+         description: Quantitative restrictions are limits imposed on the volume or value of goods traded by a WTO member. The General Agreement on Tariffs and Trade (GATT) requires the general elimination of these restrictions except in defined circumstances. Members' notifications on quantitative restrictions are compiled in a WTO database, which is accessible to the public. Quantitative restrictions are typically enforced through quotas, import or export licenses or other measures, such as voluntary export restraints [World Trade Organization]
+       Rates of Waste Production:
+         meaning: fsli:CI0232
+         description: The rate of production of unwanted materials as a byproduct of economic processes. [After Sustainable Development Indicator Group]
+       Raw Materials:
+         meaning: fsli:CI0233
+         description: Crude, unprocessed or partially processed material used for a processing operation. [AGROVOC]
+       Refugees:
+         meaning: fsli:CI0234
+         description: People who has left a country because of war, or political or religious persecution [AGROVOC]
+       Remedial Action (Pollution):
+         meaning: fsli:CI0235
+         description: Changes made to nonconforming activities to ameliorate environmental problems and reduce the quantity of pollution. [Modified from Wikipedia]
+       Renewable Energy:
+         meaning: fsli:CI0236
+         description: Renewable energy sources can be replenished. Renewable energy sources include biomass, hydropower, geothermal, wind, and solar. [US Energy Information Administration]
+       Representation and Accountability:
+         meaning: fsli:CI0237
+         description: Representation - a person or group that speaks or acts for or in support of another person or group. Accountability - an obligation or willingness to accept responsibility [Merriam-Webster]
+       Research and Development:
+         meaning: fsli:CI0238
+         description: Research and development (R&D) consists of investigative activities that a business chooses to conduct with the intention of making a discovery that can either lead to the development of new products or procedures, or to improvement of existing products or procedures. Research and development is one of the means by which business can experience future growth by developing new products or processes to improve and expand their operations. [Investopedia]
+       Resource Rights:
+         meaning: fsli:CI0239
+         description: The rights that specify the claims and related obligations of different actors - individuals or groups - to the benefits of a resource [International Institute for Sustainable Development]
+       Retained Earnings:
+         meaning: fsli:CI0240
+         description: The percentage of net earnings not paid out as dividends, but retained by the company to be reinvested in its core business, or to pay debt. [Investopedia]
+       Right to Property - Customary:
+         meaning: fsli:CI0241
+         description: Customary laws created by governments in regards to how individuals can control, benefit from and transfer property. [Investopedia]
+       Right to Property - Formal:
+         meaning: fsli:CI0242
+         description: Laws created by governments in regards to how individuals can control, benefit from and transfer property. [Investopedia]
+       Rights (Legal):
+         meaning: fsli:CI0243
+         description: Legally guaranteed powers available to a legal entity in realization or defense of its just and lawful claims or interests (such as individual freedom) against 'The whole world.' Legal rights (like laws) affect every citizen, whether or not the existence such rights is publicly known. [BusinessDictionary]
+       Rule of Law:
+         meaning: fsli:CI0244
+         description: the restriction of the arbitrary exercise of power by subordinating it to well-defined and established laws. [Oxford Dictionary]
+       Runoff:
+         meaning: fsli:CI0245
+         description: The part of precipitation or irrigation water on land that has limited interaction with the landscape and ultimately reaches surface water, such as streams, ponds, impoundments, reservoirs, oceans, rivers, etc. [AGROVOC]
+       Rural Poor:
+         meaning: fsli:CI0246
+         description: Rural poverty refers to poverty found in rural areas, including factors of rural society, rural economy, and rural political systems that give rise to the poverty found there. [Janvry, A. de, E. Sadoulet, and R. Murgai. 2002. ]
+       Rural Population:
+         meaning: fsli:CI0247
+         description: Rural encompasses all population, housing, and territory not included within an urban area. Whatever is not urban is considered rural. [US HRSA]
+       Safety Education:
+         meaning: fsli:CI0248
+         description: Accurate, updated and reliable education on safety in the workplace [Self-defined. ]
+       Saline Water:
+         meaning: fsli:CI0249
+         description: Saline water is water that contains a significant concentration of dissolved salts (mainly NaCl) and is commonly known as salt water. [DBPedia]
+       Sea Level Rise:
+         meaning: fsli:CI0250
+         description: An increase in sea level primarily due to two factors related to global warming - the added water from melting land ice and the expansion of sea water as it warms. [Modified from climate.nasa.gov]
+       Sea Pollution:
+         meaning: fsli:CI0251
+         description: Any substance or energy form (heat, light, noise, etc.) which alters the state of a sea or ocean from what would naturally occur, especially associated with those altered states which human value judgements have decreed as bad. [Modified from National Agricultural Library Thesaurus]
+       Seed:
+         meaning: fsli:CI0252
+         description: Crop planting materials [Self-defined]
+       Sex Ratio:
+         meaning: fsli:CI0253
+         description: The ratio of males to females in a population [DBPedia]
+       Sexually Transmitted Diseases:
+         meaning: fsli:CI0254
+         description: An infection transmitted through sexual contact, caused by bacteria, viruses, or parasites. [World Health Organization]
+       Social Networks:
+         meaning: fsli:CI0255
+         description: NA [NA]
+       Social Participation:
+         meaning: fsli:CI0256
+         description: Social participation refers to people's social involvement and interaction with others. Activities such as volunteering, making donations, participating in sports, and recreational activities are all forms of social participation. [Canadian Government]
+       Social Stratification:
+         meaning: fsli:CI0257
+         description: NA [NA]
+       Social Support:
+         meaning: fsli:CI0258
+         description: Social support refers to the various types of support (i.e., assistance/help) that people receive from others and is generally classified into two (sometimes three) major categories - emotional, instrumental (and sometimes informational) support. [UCSF]
+       Soil Chemistry:
+         meaning: fsli:CI0259
+         description: The study of the chemical composition of the various phases of the earth and the physical and chemical processes which have produced the observed distribution of the elements and nuclides in these phases [McGraw Hill Dictionary of Science and Technical Terms]
+       Soil Pollution:
+         meaning: fsli:CI0260
+         description: NA [NA]
+       Soil Salinization:
+         meaning: fsli:CI0261
+         description: Soil salinization is the accumulation of soluble salts of sodium, magnesium and calcium in soil to the extent that soil fertility is severely reduced. [Joint Research Centre European Soil Data Centre (ESDAC)]
+       Soils--Quality:
+         meaning: fsli:CI0262
+         description: The capacity of soil to function, within natural or managed ecosystem boundaries, to sustain plant and animal productivity, maintain or enhance water and air quality, and support human health and habitation. [Karlen, D.L., wr L. 1997.]
+       Sources of Financial Capital:
+         meaning: fsli:CI0263
+         description: Finance sources can be divided into three categories, namely traditional sources, ownership capital and non-ownership capital. [Economy watch]
+       Species Diversity:
+         meaning: fsli:CI0264
+         description: The measure of the diversity within an ecological community that incorporates both species richness (the number of species in a community) and the evenness of species' abundances. [Encyclopedia of Earth]
+       Species Introduction:
+         meaning: fsli:CI0265
+         description: A species living outside its native distributional range, which has arrived there by human activity, either deliberate or accidental. [Wikipedia]
+       Species Migration:
+         meaning: fsli:CI0266
+         description: The relatively long-distance movement of individuals, usually on a seasonal basis. [Wikipedia]
+       Species Threatened with Extinction:
+         meaning: fsli:CI0267
+         description: NA [NA]
+       Stakeholder Participation:
+         meaning: fsli:CI0268
+         description: Stakeholder participation is a dynamic concept that can be applied in different contexts, in different manners and hence have different meanings. In general, stakeholder participation processes allow people to influence the outcome of plans and projects. This influence can be exerted at different levels along a continuum of engagement levels from simply informing the stakeholders to actively consulting them or even engaging in cooperative decision-making. [Dlist.org]
+       Staple Food Production:
+         meaning: fsli:CI0269
+         description: The production of food that is eaten routinely and in such quantities as to constitute a dominant portion of a standard diet. [After Wikipedia]
+       Supply/Value Chain Structure:
+         meaning: fsli:CI0270
+         description: The structure of the supply or value chain [self-defined]
+       Tariffs, Taxes, Subsidies:
+         meaning: fsli:CI0271
+         description: Tariff - a tax or duty to be paid on a particular class of imports or exports. Taxes - a compulsory contribution to state revenue, levied by the government on workers' income and business profits or added to the cost of some goods, services, and transactions. Subsidy - a sum of money granted by the government or a public body to assist an industry or business so that the price of a commodity or service may remain low or competitive. [Merriam-Webster]
+       Teacher Education:
+         meaning: fsli:CI0272
+         description: Any of the formal programs that have been established for the preparation of teachers at the elementary- and secondary-school levels [Encyclopedia Britannica]
+       Technological Expertise:
+         meaning: fsli:CI0273
+         description: Technical job skills refer to the talent and expertise a person possesses to perform a certain job or task. Also called "hard skills," as opposed to soft skills, which are personality and character traits. [Investopedia]
+       Technology Innovation:
+         meaning: fsli:CI0274
+         description: The process through which new (or improved) technologies are developed and brought into widespread use [Encyclopedia of Earth]
+       Technology Trade:
+         meaning: fsli:CI0275
+         description: Trade of technology across country borders [self-defined]
+       Technology Transfer:
+         meaning: fsli:CI0276
+         description: Technology transfer is the process of transferring skills, knowledge, technologies, methods of manufacturing, samples of manufacturing and facilities among governments or universities and other institutions to ensure that scientific and technological developments are accessible to a wider range of users who can then further develop and exploit the technology into new products, processes, applications, materials or services. [DBPedia]
+       Terrestrial Protected Areas:
+         meaning: fsli:CI0277
+         description: A clearly defined geographical space on land, recognized, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values. [Modified from IUCN]
+       Topography:
+         meaning: fsli:CI0278
+         description: The configuration of a surface including its relief, elevation and the position of its natural and man-made features. The physical or natural features of an object or entity and their structural relationships. [National Agricultural Library Thesaurus]
+       Trade Agreements:
+         meaning: fsli:CI0279
+         description: A trade pact (also known as trade agreement) is a wide-ranging tax, tariff and trade pact that often includes investment guarantees. [AGROVOC]
+       Transfer of Energy:
+         meaning: fsli:CI0280
+         description: Energy is transferred from one object to another when a reaction takes place. Energy comes in many forms and can be transferred from one object to another as heat, light, or motion, to name a few. [Chemeddl]
+       Transparency in Government:
+         meaning: fsli:CI0281
+         description: Openness, accountability, and honesty define government transparency. In a free society, transparency is government's obligation to share information with citizens. [Ballotpedia]
+       Transport Infrastructure:
+         meaning: fsli:CI0282
+         description: Transport infrastructure consists of the fixed installations including roads, railways, airways, waterways, canals and pipelines and terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fueling docks and fuel stations) and seaports [DBpedia]
+       Undernutrition - Acute:
+         meaning: fsli:CI0283
+         description: NA [NA]
+       Undernutrition - Chronic:
+         meaning: fsli:CI0284
+         description: NA [NA]
+       Urban Poor:
+         meaning: fsli:CI0285
+         description: Conventional economic definitions use income or consumption complemented by a range of other social indicators such as life expectancy, infant mortality, nutrition, the proportion of the house hold budget spent on food, literacy, school enrolment rates, access to health clinics or drinking water, to classify poor groups against a common index of material welfare. Alternative interpretations developed largely by rural anthropologists and social planners working with rural communities in the third world allow for local variation in the meaning of poverty, and expand the definition to encompass perceptions of non-material deprivation and social differentiation. [Bridge Development Gender]
+       Urban Population:
+         meaning: fsli:CI0286
+         description: Population that lives in Urbanized Areas (UAs) of 50,000 or more people; or Urban Clusters (UCs) of at least 2,500 and less than 50,000 people. [US HRSA]
+       Urbanization:
+         meaning: fsli:CI0287
+         description: NA [NA]
+       Use Rights:
+         meaning: fsli:CI0288
+         description: The legal right to use or occupy a property. [InvestorWords]
+       Value Systems and Behavioral Norms:
+         meaning: fsli:CI0289
+         description: the shared beliefs and values guiding the thinking and behavioral styles of members [Cooke 1988]
+       Veterinary Services:
+         meaning: fsli:CI0290
+         description: the governmental and non-governmental organisations that implement animal health and welfare measures and other standards and guidelines in the OIE Terrestrial Code and Aquatic Animal Health Code (Aquatic Code) in the country. The Veterinary Servicesare under the overall control and direction of the Veterinary Authority. Private veterinary organisations are normally accredited or approved to deliver functions by the veterinary authority. [World Organization for Animal Health]
+       Violence Against Women Policy:
+         meaning: fsli:CI0291
+         description: Goverment action to prevent violence against women and provide adequate punishment for those who perform violence against women [self-defined]
+       Violence-Related Mortality:
+         meaning: fsli:CI0292
+         description: NA [NA]
+       Vocational Education:
+         meaning: fsli:CI0293
+         description: Training for a specific occupation in agriculture, trade, or industry through a combination of theoretical teaching and practical experience [Merriam-Webster]
+       Volatility, Risk and Stability:
+         meaning: fsli:CI0294
+         description: Volatility is a statistical measure of the dispersion of returns for a given security or market index. Volatility can either be measured by using the standard deviation or variance between returns from that same security or market index. Commonly, the higher the volatility, the riskier the security. Risk is the chance that an investment's actual return will be different than expected. [Investopedia]
+       Waste Composting:
+         meaning: fsli:CI0295
+         description: The biodecomposition of organic material, such as animal wastes, plant residues or sludges, in the presence of air, by controlled methods including mechanical mixing and aerating. [National Agricultural Library Thesaurus]
+       Waste Prevention:
+         meaning: fsli:CI0296
+         description: Practices that reduce the amount of waste generated by a specific source through the redesigning of products or patterns of production or consumption. [GEMET]
+       Waste Recycling/Reusing:
+         meaning: fsli:CI0297
+         description: Resource recovery methods involving the collection and treatment of a waste product for use as raw material in the manufacture of the same or a similar product. [GEMET]
+       Waste/Pollution Policy:
+         meaning: fsli:CI0298
+         description: Courses or principles of action by societal organizations such as governments or businesses aimed at reducing the amount and impact of wastes or pollution. [Self-defined]
+       Wastewater:
+         meaning: fsli:CI0299
+         description: Wastewater is any water that has been adversely affected in quality by anthropogenic influence. [DBPedia]
+       Water Availability:
+         meaning: fsli:CI0300
+         description: Maintenance of adequate volumes of treatable water for human consumption, and irrigation [Global Water Forum]
+       Water Infrastructure:
+         meaning: fsli:CI0301
+         description: The large-scale enabling technologies to transport water from producer to consumer and irect and manage water flow. [Self-defined]
+       Water Productivity:
+         meaning: fsli:CI0302
+         description: The physical or economic output per unit of water application [CGIAR]
+       Water Quality:
+         meaning: fsli:CI0303
+         description: Water quality refers to the chemical, physical, biological, and radiological characteristics of water and is a measure of the condition of water relative to the requirements of one or more biotic species and or to any human need or purpose. [DBPedia]
+       Water Rights:
+         meaning: fsli:CI0304
+         description: A group of rights designed to protect the use and enjoyment of water that travels in streams, rivers, lakes, and ponds, gathers on the surface of the earth, or collects underground. [TheFreeDictionary Legal Dictionary]
+       Water Storage:
+         meaning: fsli:CI0305
+         description: Water storage water is stored for later use in natural water sources, such as groundwater aquifers, soil water and natural wetlands, and also small artificial ponds, tanks and reservoirs behind major dams. [Wikipedia]
+       Water Use:
+         meaning: fsli:CI0306
+         description: Water use can mean the amount of water used by a household or a country, or the amount used for a given task or for the production of a given quantity of some product or crop, or the amount allocated for a particular purpose. [DBPedia]
+       Water Use Efficiency:
+         meaning: fsli:CI0307
+         description: A characteristic of plants which is measured by the amount of dry matter or harvestable product produced per unit of water used by the plant. [AGROVOC]
+       Weather Hazards:
+         meaning: fsli:CI0308
+         description: Dangerous weather phenomena that threaten life and property - tornadoes, lightning, hail, flash flooding, and downbursts. [NC State University]
+       Wetlands:
+         meaning: fsli:CI0309
+         description: An area that is saturated by surface or ground water with vegetation adapted for life under those soil conditions. [National Agricultural Library Thesaurus]
+       Wild Animal Trade:
+         meaning: fsli:CI0310
+         description: Any sale or exchange of wild animal and plant resources by people. This can involve live animals and plants or a diverse range of products needed or prized by humans, including skins, medicinal ingredients, tourist curios, timber, fish and other food products. [IUCN Traffic]
+       Women Farmers:
+         meaning: fsli:CI0311
+         description: Women involved in production that relies essentially on the growth and nurturing of plants and animals, especially for food, usually with land as an important input; farming [Wikigender]
+       Women's Access to Financial Capital:
+         meaning: fsli:CI0312
+         description: Women's access to money value and which can be used in the pursuit of future revenue. [Investopedia]
+       Women's Access to Social Capital:
+         meaning: fsli:CI0313
+         description: Women's access to networks together with shared norms, values and understandings that facilitate co-operation within or among groups [OECD]
+       Women's Economic Participation:
+         meaning: fsli:CI0314
+         description: Women's economic participation promotes agricultural productivity, enterprise development at the micro, small, and medium enterprise levels, as well as enhances business management and returns on investment.In addition to boosting economic growth, investing in women produces a multiplier effect - women reinvest a large portion of their income in their families and communities. Women also play key roles in creating peaceful and stable societies as important factors for economic growth. Unfortunately, these benefits have not been universally recognized and have therefore not translated into women-s full economic participation. Women still face obstacles when trying to establish new businesses or expand existing ones. Among the biggest hurdles are discriminatory laws, regulations and business conditions, as well as women's lack of access to property rights, finance, training, technology, markets, mentors, and networks. [US Department of State]
+       Women's Political Participation:
+         meaning: fsli:CI0315
+         description: Women's political participation encompasses the many activities used by women to influence the selection of political leaders or the policies they pursue. [FIU]
+       Work Satisfaction:
+         meaning: fsli:CI0316
+         description: Employee's general affective reaction to the job without reference to any specific job facet, Linked to money, wellbeing, appreciation, work hours, work-life balance [Kovner et al. 2006]
+       Working Conditions:
+         meaning: fsli:CI0317
+         description: Working conditions cover a broad range of topics and issues, from working time (hours of work, rest periods, and work schedules) to remuneration, as well as the physical conditions and mental demands that exist in the workplace. [International Labour Organization]
+       Youth Literacy:
+         meaning: fsli:CI0318
+         description: A level of reading, writing, and calculation skills sufficient for youth to function in the particular community in which an individual lives. [UNESCO Institute for Statistics]
+       Access to Nature:
+         meaning: fsli:CI0319
+         description: PH
+       Wildfire:
+         meaning: fsli:CI0320
+         description: PH
+       Riparian Habitats:
+         meaning: fsli:CI0321
+         description: PH
+       Drought:
+         meaning: fsli:CI0322
+         description: PH
+       Housing:
+         meaning: fsli:CI0323
+         description: PH
+       Travel/transit/commuting:
+         meaning: fsli:CI0324
+         description: PH
+       Tourism:
+         meaning: fsli:CI0325
+         description: PH
+       Water Quantity:
+         meaning: fsli:CI0326
+         description: PH
