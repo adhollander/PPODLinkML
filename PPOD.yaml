@@ -20,6 +20,7 @@ prefixes:
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
   frbr: http://iflastandards.info/ns/fr/frbr/frbrer/
   dg: https://w3id.org/dingo#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
 
 imports: 
   - linkml:types
@@ -32,6 +33,7 @@ classes:
     class_uri: foaf:Organization
     slots:
       - title
+      - label
       - alias
       - is part of
       - is member of
@@ -58,12 +60,14 @@ classes:
       - is bound by 
       - has funding vehicle 
       - is certified by
+      - enforces
 
   Project:
     class_uri: foaf:Project
     is_a: ProjectProgram
     slots:
       - title # changed from "project" in script
+      - label
       - alias 
       - is part of 
       - project type
@@ -100,6 +104,7 @@ classes:
     is_a: ProjectProgram
     slots:
       - title
+      - label
       - alias
       - program type
       - lead organization
@@ -116,6 +121,7 @@ classes:
   Person:
     class_uri: foaf:Person
     slots:
+      - label
       - full name
       - last name
       - first name
@@ -129,6 +135,7 @@ classes:
     class_uri: sds:BestPracticesAndMandates
     slots:
       - title
+      - label
       - alias
       - guideline or mandate type
       - has date 
@@ -148,6 +155,7 @@ classes:
     class_uri: vivo:Dataset
     slots:
       - title
+      - label
       - created by
       - related sustainability issue
       - GM name
@@ -156,6 +164,7 @@ classes:
   Role:
     class_uri: obo:BFO_0000023
     slots:
+      - label
       - has participant
       - role of
       - involved in
@@ -170,6 +179,7 @@ classes:
     class_uri: sds:Tool
     slots:
       - title
+      - label
       - alias 
       - was created by
       - related sustainability issue
@@ -187,6 +197,10 @@ slots:
     description:
       name of the entity
     slot_uri: dc:title
+  label:
+    required: true
+    description: a captioning label for the entity
+    slot_uri: rdfs:label
   alias:
     description:
       alternative name for the entity
@@ -245,7 +259,9 @@ slots:
     description: a sustainability issue of interest to the entity
     slot_uri: fsls:FSI_000239
     multivalued: true
-    range: SustainabilityIssue # how do I express that SustainabilityIssues are composed of integrated issues and component issues?
+    any_of:  # per Unions as ranges in the experimental features of the spec
+      - range: IntegratedIssue
+      - range: ComponentIssue
   has URL: 
     description: URL of the entity 
     slot_uri: poder:hasURL
@@ -472,6 +488,11 @@ slots:
   is certified by: 
     description: The relationship where the organization is certified by a particular mandate or guideline
     slot_uri: fsls:iscertifiedby
+    multivalued: true
+    range: GuidelineMandate
+  enforces: 
+    description: The relationship where the organization enforces a particular mandate or guideline
+    slot_uri: fsls:enforces
     multivalued: true
     range: GuidelineMandate
   authorizes: 

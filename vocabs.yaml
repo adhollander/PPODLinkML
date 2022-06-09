@@ -503,10 +503,10 @@ enums:
     permissible_values:
 
 
-  SustainabilityIssue:
-    permissible_values: # does this nesting work?
-      IntegratedIssue:
-      ComponentIssue:
+##  SustainabilityIssue:
+#    permissible_values: # does this nesting work?
+#      IntegratedIssue:
+#      ComponentIssue:
 
   IntegratedIssue:
     permissible_values:
