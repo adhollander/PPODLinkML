@@ -509,7 +509,6 @@ slots:
     description: A related resource that is referenced, cited, or otherwise pointed to by the described resource.
     slot_uri: dc:references
     multivalued: false
-    range: uriorcurie
   has input:
     description: The tool has the indicated dataset as an output to its workflow
     slot_uri: obo:RO_0000087
