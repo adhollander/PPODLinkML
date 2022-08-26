@@ -14,6 +14,7 @@ prefixes:
   fsl: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsource.owl#
   fsli: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsourceindiv.rdf#
   fsls: https://raw.githubusercontent.com/adhollander/FSLschemas/main/fsisupp.owl#
+  fslp: https://raw.githubusercontent.com/adhollander/FSLschemas/main/CA_PPODterms.ttl#
   frapo: http://purl.org/cerif/frapo/
 imports: 
   - linkml:types
@@ -24,15 +25,25 @@ enums:
   OrganizationType:
     permissible_values:
       Academic:
+        meaning: fslp:oty_b922f9
       Commercial:
+        meaning: fslp:oty_390ef0
       Federal Government:
+        meaning: fslp:oty_bc6b41
       Foundation:
+        meaning: fslp:oty_10ce16
       Joint Powers Authority:
+        meaning: fslp:oty_921e90
       Local Government:
+        meaning: fslp:oty_fceff6
       Non-profit:
+        meaning: fslp:oty_cf5070
       Partnership:
+        meaning: fslp:oty_855979
       State Government:
+        meaning: fslp:oty_db5b7d
       Tribal:
+        meaning: fslp:oty_905088
 
   County: 
     permissible_values:
@@ -216,178 +227,178 @@ enums:
   CWHRHabitatType:
     permissible_values:
       ADS:
-         meaning: fsls:ADS
+         meaning: fslp:whr_ADS
          description: ALPINE DWARF-SHRUB
       AGS:
-         meaning: fsls:AGS
+         meaning: fslp:whr_AGS
          description: ANNUAL GRASSLAND
       ASC:
-         meaning: fsls:ASC
+         meaning: fslp:whr_ASC
          description: ALKALI DESERT SCRUB
       ASP:
-         meaning: fsls:ASP
+         meaning: fslp:whr_ASP
          description: ASPEN
       BAR:
-         meaning: fsls:BAR
+         meaning: fslp:whr_BAR
          description: BARREN
       BBR:
-         meaning: fsls:BBR
+         meaning: fslp:whr_BBR
          description: BITTERBRUSH
       BOP:
-         meaning: fsls:BOP
+         meaning: fslp:whr_BOP
          description: BLUE OAK-FOOTHILL PINE
       BOW:
-         meaning: fsls:BOW
+         meaning: fslp:whr_BOW
          description: BLUE OAK WOODLAND
       COW:
-         meaning: fsls:COW
+         meaning: fslp:whr_COW
          description: COASTAL OAK WOODLAND
       CPC:
-         meaning: fsls:CPC
+         meaning: fslp:whr_CPC
          description: CLOSED-CONE PINE-CYPRESS
       CRC:
-         meaning: fsls:CRC
+         meaning: fslp:whr_CRC
          description: CHAMISE-REDSHANK CHAPARRAL
       CSC:
-         meaning: fsls:CSC
+         meaning: fslp:whr_CSC
          description: COASTAL SCRUB
       DFR:
-         meaning: fsls:DFR
+         meaning: fslp:whr_DFR
          description: DOUGLAS-FIR
       DGR:
-         meaning: fsls:DGR
+         meaning: fslp:whr_DGR
          description: DRYLAND GRAIN CROPS
       DOR:
-         meaning: fsls:DOR
+         meaning: fslp:whr_DOR
          description: DECIDUOUS ORCHARD
       DRI:
-         meaning: fsls:DRI
+         meaning: fslp:whr_DRI
          description: DESERT RIPARIAN
       DSC:
-         meaning: fsls:DSC
+         meaning: fslp:whr_DSC
          description: DESERT SCRUB
       DSS:
-         meaning: fsls:DSS
+         meaning: fslp:whr_DSS
          description: DESERT SUCCULENT SHRUB
       DSW:
-         meaning: fsls:DSW
+         meaning: fslp:whr_DSW
          description: DESERT WASH
       EOR:
-         meaning: fsls:EOR
+         meaning: fslp:whr_EOR
          description: EVERGREEN ORCHARD
       EPN:
-         meaning: fsls:EPN
+         meaning: fslp:whr_EPN
          description: EASTSIDE PINE
       EST:
-         meaning: fsls:EST
+         meaning: fslp:whr_EST
          description: ESTUARINE
       EUC:
-         meaning: fsls:EUC
+         meaning: fslp:whr_EUC
          description: EUCALYPTUS
       FEW:
-         meaning: fsls:FEW
+         meaning: fslp:whr_FEW
          description: FRESH EMERGENT WETLAND
       IGR:
-         meaning: fsls:IGR
+         meaning: fslp:whr_IGR
          description: IRRIGATED GRAIN CROPS
       IRF:
-         meaning: fsls:IRF
+         meaning: fslp:whr_IRF
          description: IRRIGATED ROW AND FIELD CROPS
       IRH:
-         meaning: fsls:IRH
+         meaning: fslp:whr_IRH
          description: IRRIGATED HAYFIELD
       JPN:
-         meaning: fsls:JPN
+         meaning: fslp:whr_JPN
          description: JEFFREY PINE
       JST:
-         meaning: fsls:JST
+         meaning: fslp:whr_JST
          description: JOSHUA TREE
       JUN:
-         meaning: fsls:JUN
+         meaning: fslp:whr_JUN
          description: JUNIPER
       KMC:
-         meaning: fsls:KMC
+         meaning: fslp:whr_KMC
          description: KLAMATH MIXED CONIFER
       LAC:
-         meaning: fsls:LAC
+         meaning: fslp:whr_LAC
          description: LACUSTRINE
       LPN:
-         meaning: fsls:LPN
+         meaning: fslp:whr_LPN
          description: LODGEPOLE PINE
       LSG:
-         meaning: fsls:LSG
+         meaning: fslp:whr_LSG
          description: LOW SAGE
       MCH:
-         meaning: fsls:MCH
+         meaning: fslp:whr_MCH
          description: MIXED CHAPARRAL
       MCP:
-         meaning: fsls:MCP
+         meaning: fslp:whr_MCP
          description: MONTANE CHAPARRAL
       MHC:
-         meaning: fsls:MHC
+         meaning: fslp:whr_MHC
          description: MONTANE HARDWOOD-CONIFER
       MHW:
-         meaning: fsls:MHW
+         meaning: fslp:whr_MHW
          description: MONTANE HARDWOOD
       MRI:
-         meaning: fsls:MRI
+         meaning: fslp:whr_MRI
          description: MONTANE RIPARIAN
       PAS:
-         meaning: fsls:PAS
+         meaning: fslp:whr_PAS
          description: PASTURE
       PGS:
-         meaning: fsls:PGS
+         meaning: fslp:whr_PGS
          description: PERENNIAL GRASSLAND
       PJN:
-         meaning: fsls:PJN
+         meaning: fslp:whr_PJN
          description: PINYON-JUNIPER
       POS:
-         meaning: fsls:POS
+         meaning: fslp:whr_POS
          description: PALM OASIS
       PPN:
-         meaning: fsls:PPN
+         meaning: fslp:whr_PPN
          description: PONDEROSA PINE
       RDW:
-         meaning: fsls:RDW
+         meaning: fslp:whr_RDW
          description: REDWOOD
       RFR:
-         meaning: fsls:RFR
+         meaning: fslp:whr_RFR
          description: RED FIR
       RIC:
-         meaning: fsls:RIC
+         meaning: fslp:whr_RIC
          description: RICE
       RIV:
-         meaning: fsls:RIV
+         meaning: fslp:whr_RIV
          description: RIVERINE
       SCN:
-         meaning: fsls:SCN
+         meaning: fslp:whr_SCN
          description: SUBALPINE CONIFER
       SEW:
-         meaning: fsls:SEW
+         meaning: fslp:whr_SEW
          description: SALINE EMERGENT WETLAND
       SGB:
-         meaning: fsls:SGB
+         meaning: fslp:whr_SGB
          description: SAGEBRUSH
       SMC:
-         meaning: fsls:SMC
+         meaning: fslp:whr_SMC
          description: SIERRAN MIXED CONIFER
       URB:
-         meaning: fsls:URB
+         meaning: fslp:whr_URB
          description: URBAN
       VIN:
-         meaning: fsls:VIN
+         meaning: fslp:whr_VIN
          description: VINEYARD
       VOW:
-         meaning: fsls:VOW
+         meaning: fslp:whr_VOW
          description: VALLEY OAK WOODLAND
       VRI:
-         meaning: fsls:VRI
+         meaning: fslp:whr_VRI
          description: VALLEY FOOTHILL RIPARIAN
       WFR:
-         meaning: fsls:WFR
+         meaning: fslp:whr_WFR
          description: WHITE FIR
       WTM:
-         meaning: fsls:WTM
+         meaning: fslp:whr_WTM
          description: WET MEADOW
       
   CommodityType:
@@ -480,24 +491,40 @@ enums:
   UseCases:
     permissible_values:
       Conservation: 
-      Meat: 
+        meaning: fsls:usecaseCons
+      Meat:
+        meaning: fsls:usecaseMeat
       Sacramento: 
+        meaning: fsls:usecaseSac
       SCAG:
+        meaning: fsls:usecaseSCAG
       Ecuador:
+        meaning: fsls:usecaseEcuador
       JPA:
-      EPA: 
+        meaning: fsls:usecaseJPA
+      EPA:
+        meaning: fsls:usecaseEPA
       BayAreaRAMP:
+        meaning: fsls:usecaseBayAreaRAMP
        
   PositionType:
     permissible_values:
       Advisor:
+        meaning: fslp:positiontypedict_d610f0
       Board Member:
+        meaning: fslp:positiontypedict_d947c0
       Director:
+        meaning: fslp:positiontypedict_e7e6b1
       Employee:
+        meaning: fslp:positiontypedict_a4e917
       Faculty:
+        meaning: fslp:positiontypedict_d82b59
       Manager:
+        meaning: fslp:positiontypedict_35991c
       Member:
+        meaning: fslp:positiontypedict_7748ff
       Owner:
+        meaning: fslp:positiontypedict_ea1c97
 
   RoleType:
     permissible_values:
