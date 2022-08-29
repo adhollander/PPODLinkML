@@ -167,62 +167,107 @@ enums:
   OrganizationActivity:
     permissible_values:
       Advising:
+        meaning: fslp:oac_a091c3
       Acquisition:
-      Advocacy:
+        meaning: fslp:oac_a9771f
+      Advocacy: 
+        meaning: fslp:oac_3e7a73
       Agricultural Production:
+        meaning: fslp:oac_e10373
       Certification:
+        meaning: fslp:oac_df4226
       Construction:
+        meaning: fslp:oac_c4a039
       Coordinating:
+        meaning: fslp:oac_566d97
       Education:
+        meaning: fslp:oac_59fbdc
       Funding:
+        meaning: fslp:oac_1cb0e8
       Governing:
+        meaning: fslp:oac_b5f5c2
       Habitat Enhancement:
+        meaning: fslp:oac_96e37b
       Management:
+        meaning: fslp:oac_441396
       Planning:
+        meaning: fslp:oac_2defdd
       Policy:
+        meaning: fslp:oac_f7d100
       Production:
+        meaning: fslp:oac_9cb0b2
       Regulating:
+        meaning: fslp:oac_7c7648
       Research:
+        meaning: fslp:oac_ae9d32
 
   ProjectType:
     permissible_values:
       Acquisition:
+        meaning: fslp:pjt_a9771f
       Education:
+        meaning: fslp:pjt_59fbdc
       Habitat Enhancement:
+        meaning: fslp:pjt_96e37b
       Infrastructure:
+        meaning: fslp:pjt_1c4dc9
       Land Protection:
+        meaning: fslp:pjt_be0f57
       Management:
+        meaning: fslp:pjt_441396
       Planning:
+        meaning: fslp:pjt_2defdd
       Remediation:
+        meaning: fslp:pjt_56d846
       Research:
+        meaning: fslp:pjt_ae9d32
 
   ProgramType:
     permissible_values:
       Acquisition:
+        meaning: fslp:pgt_a9771f
       Education:
+        meaning: fslp:pgt_59fbdc
       Habitat Enhancement:
+        meaning: fslp:pgt_96e37b
       Infrastructure:
+        meaning: fslp:pgt_1c4dc9
       Land Protection:
+        meaning: fslp:pgt_1c4dc9 
       Management:
+        meaning: fslp:pgt_1c4dc9
       Planning:
+        meaning: fslp:pgt_1c4dc9
       Remediation:
+        meaning: fslp:pgt_1c4dc9
       Research:
+        meaning: fslp:pgt_ae9d32
 
   GuidelineMandateType:
     permissible_values:
       Agreement:
+        meaning: fslp:gmn_ac94d8
       Certification:
+        meaning: fslp:gmn_df4226
       Executive Order:
+        meaning: fslp:gmn_7d49e5
       Guidelines:
+        meaning: fslp:gmn_449fc4
       Legislation:
+        meaning: fslp:gmn_9a6d05
       Regulation:
+        meaning: fslp:gmn_1cb1c1
 
   GovernmentLevelType:
     permissible_values:
       Federal:
+        meaning: fslp:gvl_ed531c
       State: 
+        meaning: fslp:gvl_6252fd
       Local: 
+        meaning: fslp:gvl_4a17a7
       Private: 
+        meaning: fslp:gvl_1dbbf8
   
   CWHRHabitatType:
     permissible_values:
