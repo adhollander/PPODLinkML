@@ -489,7 +489,6 @@ slots:
     description: "Relates a work to a corporate body that is responsible for the creation of the intellectual or artistic content of the work."
     slot_uri: frbr:P2007
     multivalued: true
-    range: GuidelineMandate  
   implements: 
     description: The relationship between the funding agency (subject) and the decision, plan, program (object) that the funding agency implements and administers.
     slot_uri: dg:implements

@@ -228,6 +228,8 @@ enums:
         meaning: fslp:pgt_a9771f
       Education:
         meaning: fslp:pgt_59fbdc
+      Funding:
+        meaning: fslp:pgt_1cb0e8
       Habitat Enhancement:
         meaning: fslp:pgt_96e37b
       Infrastructure:
