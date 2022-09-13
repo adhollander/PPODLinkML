@@ -226,6 +226,8 @@ enums:
     permissible_values:
       Acquisition:
         meaning: fslp:pgt_a9771f
+      Certification:
+        meaning: fslp:pgt_df4226
       Education:
         meaning: fslp:pgt_59fbdc
       Funding:
@@ -235,13 +237,15 @@ enums:
       Infrastructure:
         meaning: fslp:pgt_1c4dc9
       Land Protection:
-        meaning: fslp:pgt_1c4dc9 
+        meaning: fslp:pgt_be0f57 
       Management:
-        meaning: fslp:pgt_1c4dc9
+        meaning: fslp:pgt_441396
       Planning:
-        meaning: fslp:pgt_1c4dc9
+        meaning: fslp:pgt_2defdd
+      Regulatory:
+        meaning: fslp:pgt_648354
       Remediation:
-        meaning: fslp:pgt_1c4dc9
+        meaning: fslp:pgt_56d846
       Research:
         meaning: fslp:pgt_ae9d32
 
