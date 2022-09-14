@@ -457,7 +457,9 @@ slots:
     description: name of role individual takes, e.g. position title
     slot_uri: obo:RO_0000081
     multivalued: true
-    range: Organization
+    any_of:
+      - range: Organization
+      - range: Project
   position type:
     description: category describing the role held by the individual in the organization
     slot_uri: fsls:positionType
