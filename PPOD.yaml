@@ -168,6 +168,7 @@ classes:
       - created by
       - related sustainability issue
       - GM name
+      - has URL
       - use case
 
   Role:
@@ -183,7 +184,6 @@ classes:
       - start year
       - end year
       - has role
-      - role type
 
   Tool: 
     class_uri: sds:Tool
@@ -238,6 +238,7 @@ slots:
     description:
       entity is in the named county 
     slot_uri: fsls:inCounty
+    range: County
     multivalued: true
   in ecoregion:
     description:
@@ -265,7 +266,10 @@ slots:
     description: the entity providing funding
     slot_uri: frapo:isFundedBy 
     multivalued: true
-    range: Organization
+    any_of:
+      - range: Organization
+      - range: Program
+      - range: Project
   has organization activity:
     description: the activity carried out by the organization
     slot_uri: obo:RO_0000056   # this is what I have in the python script but maybe we want something else?
@@ -477,11 +481,6 @@ slots:
     description: name labelling the role 
     slot_uri: obo:RO_0000087
     multivalued: false
-  role type:
-    description: a category describing the role
-    slot_uri: fsls:roleType
-    multivalued: false
-    range: RoleType
   creator of: 
     description: "Relates a corporate body to a work of which it is responsible for the creation of the intellectual or artistic content."
     slot_uri: frbr:P2008

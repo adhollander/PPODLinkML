@@ -577,8 +577,6 @@ enums:
       Owner:
         meaning: fslp:positiontypedict_ea1c97
 
-  RoleType:
-    permissible_values:
 
 
 ##  SustainabilityIssue:
