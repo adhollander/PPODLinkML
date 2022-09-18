@@ -428,7 +428,7 @@ slots:
   email:
     description: email address of the individual
     slot_uri: foaf:mbox
-    multivalued: false
+    multivalued: true
   phone:
     description: telephone number of the individual
     slot_uri: foaf:phone

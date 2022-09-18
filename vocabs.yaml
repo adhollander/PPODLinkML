@@ -566,6 +566,8 @@ enums:
         meaning: fslp:positiontypedict_d947c0
       Director:
         meaning: fslp:positiontypedict_e7e6b1
+      Elected Official:
+        meaning: fslp:positiontypedict_5c01f2
       Employee:
         meaning: fslp:positiontypedict_a4e917
       Faculty:
@@ -576,6 +578,8 @@ enums:
         meaning: fslp:positiontypedict_7748ff
       Owner:
         meaning: fslp:positiontypedict_ea1c97
+      Student:
+        meaning: fslp:positiontypedict_789e96
 
 
 
