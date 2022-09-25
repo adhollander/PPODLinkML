@@ -167,7 +167,7 @@ classes:
       - label
       - created by
       - related sustainability issue
-      - GM name
+      - mandated by
       - has URL
       - use case
 
@@ -184,6 +184,9 @@ classes:
       - start year
       - end year
       - has role
+    slot_usage:
+      title:
+        required: false
 
   Tool: 
     class_uri: sds:Tool
@@ -311,7 +314,12 @@ slots:
     multivalued: true
   GM name:
     description: name of guideline or mandate related to the entity
-    slot_uri: fsls:GM_name
+    slot_uri: fsls:GM_Name
+    multivalued: true
+    range: GuidelineMandate 
+  mandated by:
+    description: name of guideline or mandate that requires creation of the entity
+    slot_uri: fsls:mandatedBy
     multivalued: true
     range: GuidelineMandate 
   use case: 
