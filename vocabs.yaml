@@ -6,16 +6,16 @@ prefixes:
   linkml: https://w3id.org/linkml/
   foaf: http://xmlns.com/foaf/0.1/
   skos: http://www.w3.org/2004/02/skos/core#
-  dc: http://purl.org/dc/terms/
+  dcterms: http://purl.org/dc/terms/
   org: http://www.w3.org/ns/org#
-  vivo: http://vivoweb.org/ontology/core#
+  core: http://vivoweb.org/ontology/core#
   obo: http://purl.obolibrary.org/obo/
   sds: http://www.sdsconsortium.org/schemas/sds-okn.owl#
   fsl: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsource.owl#
   fsli: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsourceindiv.rdf#
   fsls: https://raw.githubusercontent.com/adhollander/FSLschemas/main/fsisupp.owl#
   fslp: https://raw.githubusercontent.com/adhollander/FSLschemas/main/CA_PPODterms.ttl#
-  frapo: http://purl.org/cerif/frapo/
+  FRAPO: http://purl.org/cerif/frapo/
 imports: 
   - linkml:types
 default_range: string
@@ -916,7 +916,7 @@ enums:
          description: The impact of human and social systems by a specific disaster [self-defined]
        Discrimination:
          meaning: fsli:CI0064
-         description: Discrimination is treatment or consideration of, or making a distinction in favor of or against, a person or thing based on the group, class, or category to which that person or thing is perceived to belong to rather than on individual merit.This includes treatment of an individual or group based on their actual or perceived membership in a certain group or social category, "in a way that is worse than the way people are usually treated". [DBPedia]
+         description: Discrimination is treatment or consideration of, or making a distinction in favor of or against, a person or thing based on the group, class, or category to which that person or thing is perceived to belong to rather than on individual merit.This includes treatment of an individual or group based on their actual or perceived membership in a certain group or social category, 'in a way that is worse than the way people are usually treated'. [DBPedia]
        Discrimination in Employment:
          meaning: fsli:CI0065
          description: Employment discrimination is a form of discrimination based on race, gender, religion, national origin, physical or mental disability, and age by employers. Earnings differentials or occupational differentiation is not in and of itself evidence of employment discrimination. Discrimination can be intended and involve disparate treatment of a group or be unintended, yet create disparate impact for a group. [Wikipedia]
@@ -1087,7 +1087,7 @@ enums:
          description: The difference among men and women, boys and girls to achieve a level of reading, writing, and calculation skills sufficient to function in the particular community in which an individual lives. [UNESCO Institute for Statistics (with components added)]
        Gender Policy:
          meaning: fsli:CI0121
-         description: Gender policy is characterized by the fact that societal norms regarding "masculinity" and "femininity" are broken and that women and men have equal access to power, authority and resources. []
+         description: Gender policy is characterized by the fact that societal norms regarding 'masculinity' and 'femininity' are broken and that women and men have equal access to power, authority and resources. []
        Genetic Diversity within Species:
          meaning: fsli:CI0122
          description: The variety of alleles and genotypes present in a population and this is reflected in morphological, physiological and behavioral differences between individuals and populations [Frankham et al. 2002]
@@ -1231,10 +1231,10 @@ enums:
          description: The inherent capacity or potential of a soil to produce vegetation [USDA]
        Land Tenure:
          meaning: fsli:CI0169
-         description: Land tenure is the name given, particularly in common law systems, to the legal regime in which land is owned by an individual, who is said to "hold" the land [DBPedia]
+         description: Land tenure is the name given, particularly in common law systems, to the legal regime in which land is owned by an individual, who is said to 'hold' the land [DBPedia]
        Land Use:
          meaning: fsli:CI0170
-         description: Land use is the human use of land. Land use involves the management and modification of natural environment or wilderness into built environment such as settlements and semi-natural habitats such as arable fields, pastures, and managed woods. It also has been defined as "the arrangements, activities and inputs people undertake in a certain land cover type to produce, change or maintain it" [FAO, 1997a; FAO/UNEP, 1999 ]
+         description: Land use is the human use of land. Land use involves the management and modification of natural environment or wilderness into built environment such as settlements and semi-natural habitats such as arable fields, pastures, and managed woods. It also has been defined as 'the arrangements, activities and inputs people undertake in a certain land cover type to produce, change or maintain it' [FAO, 1997a; FAO/UNEP, 1999 ]
        Landscape Changes:
          meaning: fsli:CI0171
          description: Changes in landscape and land use, whether due to anthropogenic or natural forces [self-defined]
@@ -1540,7 +1540,7 @@ enums:
          description: Any of the formal programs that have been established for the preparation of teachers at the elementary- and secondary-school levels [Encyclopedia Britannica]
        Technological Expertise:
          meaning: fsli:CI0273
-         description: Technical job skills refer to the talent and expertise a person possesses to perform a certain job or task. Also called "hard skills," as opposed to soft skills, which are personality and character traits. [Investopedia]
+         description: Technical job skills refer to the talent and expertise a person possesses to perform a certain job or task. Also called 'hard skills,'' as opposed to soft skills, which are personality and character traits. [Investopedia]
        Technology Innovation:
          meaning: fsli:CI0274
          description: The process through which new (or improved) technologies are developed and brought into widespread use [Encyclopedia of Earth]

@@ -6,23 +6,23 @@ prefixes:
   linkml: https://w3id.org/linkml/
   foaf: http://xmlns.com/foaf/0.1/
   skos: http://www.w3.org/2004/02/skos/core#
-  dc: http://purl.org/dc/terms/
+  dcterms: http://purl.org/dc/terms/
   org: http://www.w3.org/ns/org#
-  vivo: http://vivoweb.org/ontology/core#
+  core: http://vivoweb.org/ontology/core#
   obo: http://purl.obolibrary.org/obo/
   sds: http://www.sdsconsortium.org/schemas/sds-okn.owl#
   fsl: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsource.owl#
   fsls: https://raw.githubusercontent.com/adhollander/FSLschemas/main/fsisupp.owl#
   fsli: https://raw.githubusercontent.com/adhollander/FSLschemas/main/sustsourceindiv.rdf#
   fslp: https://raw.githubusercontent.com/adhollander/FSLschemas/main/CA_PPODterms.ttl#
-  frapo: http://purl.org/cerif/frapo/
-  poder: http://dev.poderopedia.com/vocab/
-  dbpedia: http://dbpedia.org/ontology/
-  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
-  frbr: http://iflastandards.info/ns/fr/frbr/frbrer/
+  FRAPO: http://purl.org/cerif/frapo/
+  poder: http://poderopedia.com/vocab/
+  dbpo: http://dbpedia.org/ontology/
+  wgs84: http://www.w3.org/2003/01/geo/wgs84_pos#
+  frbrer: http://iflastandards.info/ns/fr/frbr/frbrer/
   dg: https://w3id.org/dingo#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  schema: https://schema.org/
+  schema: http://schema.org/
 
 imports: 
   - linkml:types
@@ -104,7 +104,7 @@ classes:
       - use case
 
   Program: 
-    class_uri: vivo:Program
+    class_uri: core:Program
     is_a: ProjectProgram
     slots:
       - title
@@ -160,7 +160,7 @@ classes:
       - mandates
 
   Dataset:
-    class_uri: vivo:Dataset
+    class_uri: core:Dataset
     slots:
       - title
       - id
@@ -210,7 +210,7 @@ slots:
     required: true
     description:
       name of the entity
-    slot_uri: dc:title
+    slot_uri: dcterms:title
   id:
     description: Canonical identifier for the entity
     identifier: true
@@ -228,7 +228,7 @@ slots:
   is part of:
     description:
       entity is part of the related entity
-    slot_uri: dc:isPartOf
+    slot_uri: dcterms:isPartOf
     range: Organization
     multivalued: true
   is member of:
@@ -262,12 +262,12 @@ slots:
   has partner:
     description:  
       partner of the organization
-    slot_uri: vivo:hasCollaborator
+    slot_uri: core:hasCollaborator
     multivalued: true
     range: Organization
   is funded by:
     description: the entity providing funding
-    slot_uri: frapo:isFundedBy 
+    slot_uri: FRAPO:isFundedBy 
     multivalued: true
     any_of:
       - range: Organization
@@ -292,7 +292,7 @@ slots:
     range: uriorcurie
   contact: 
     description: contact information for the entity
-    slot_uri: vivo:contactInformation 
+    slot_uri: core:contactInformation 
     multivalued: false 
   taxa: 
     description: taxa of interest to the entity
@@ -344,12 +344,12 @@ slots:
     range: Organization
   funding organization:
     description: entity that provides funding for the activity
-    slot_uri: vivo:fundingAgentFor
+    slot_uri: core:fundingAgentFor
     multivalued: true
     range: Organization 
   has funding vehicle:
     description: program or activity under which funding for the effort is provided
-    slot_uri: vivo:hasFundingVehicle
+    slot_uri: core:hasFundingVehicle
     multivalued: true
   lead individual:
     description: person who is the project lead
@@ -357,7 +357,7 @@ slots:
     multivalued: false
   partner organization:
     description: an organization that is affiliated with this activity
-    slot_uri: vivo:affiliatedOrganization
+    slot_uri: core:affiliatedOrganization
     range: Organization
     multivalued: true
   located in: 
@@ -392,19 +392,19 @@ slots:
     multivalued: true
   start year:
     description: start year of the activity
-    slot_uri: dbpedia:startYear
+    slot_uri: dbpo:startYear
     multivalued: false
   end year:
     description: end year of the activity
-    slot_uri: dbpedia:endYear
+    slot_uri: dbpo:endYear
     multivalued: false
   latitude:
     description: latitude of the entity
-    slot_uri: geo:lat
+    slot_uri: wgs84:lat
     multivalued: false
   longitude:
     description: longitude of the entity
-    slot_uri: geo:long
+    slot_uri: wgs84:long
     multivalued: false
   FSL doc: 
     description: additional documentation describing the entity
@@ -418,7 +418,7 @@ slots:
     range: ProgramType
   created by:
     description: entity that created the given element
-    slot_uri: frbr:P2007
+    slot_uri: frbrer:P2007
     multivalued: true
     range: Organization
   full name:
@@ -452,7 +452,7 @@ slots:
     range: GuidelineMandateType
   has date: 
     description: date of the activity or the creation of the resource
-    slot_uri: dc:date
+    slot_uri: dcterms:date
     multivalued: false
     # range: linkml:Date
   government level:
@@ -491,12 +491,12 @@ slots:
     multivalued: false
   creator of: 
     description: "Relates a corporate body to a work of which it is responsible for the creation of the intellectual or artistic content."
-    slot_uri: frbr:P2008
+    slot_uri: frbrer:P2008
     multivalued: true
     range: GuidelineMandate # okay, this should be a superclass, probably a BFO thing.
   was created by: 
     description: "Relates a work to a corporate body that is responsible for the creation of the intellectual or artistic content of the work."
-    slot_uri: frbr:P2007
+    slot_uri: frbrer:P2007
     multivalued: true
   implements: 
     description: The relationship between the funding agency (subject) and the decision, plan, program (object) that the funding agency implements and administers.
@@ -534,7 +534,7 @@ slots:
     range: Role
   references:
     description: A related resource that is referenced, cited, or otherwise pointed to by the described resource.
-    slot_uri: dc:references
+    slot_uri: dcterms:references
     multivalued: false
   has input:
     description: The tool has the indicated dataset as an output to its workflow
