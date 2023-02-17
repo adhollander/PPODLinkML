@@ -31,6 +31,62 @@ default_range: string
 
 
 classes:
+  Container:
+    class_uri: fsls:Container
+    tree_root: true
+    slots:
+      - id
+      - organizations
+      - projects
+      - programs
+      - persons
+      - guidelinemandates 
+      - datasets 
+      - roles 
+      - tools 
+
+    # attributes:
+    #   organizations:
+    #     slot_uri: fsls:organizations
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Organization
+    #   projects:
+    #     slot_uri: fsls:projects
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Project
+    #   programs:
+    #     slot_uri: fsls:programs
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Program
+    #   persons:
+    #     slot_uri: fsls:persons
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Person
+    #   guidelinemandates:
+    #     slot_uri: fsls:guidelinemandates
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: GuidelineMandate
+    #   datasets:
+    #     slot_uri: fsls:datasets
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Dataset
+    #   roles:
+    #     slot_uri: fsls:roles
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Role
+    #   tools: 
+    #     slot_uri: fsls:tools
+    #     multivalued: true
+    #     inlined_as_list: true
+    #     range: Tool
+      
   Organization:
     class_uri: foaf:Organization
     slots:
@@ -57,7 +113,7 @@ classes:
       - GM name
       - use case
       - creator of 
-      - was created by 
+      - created by 
       - implements
       - mandates 
       - is bound by 
@@ -195,7 +251,7 @@ classes:
       - id 
       - label
       - alias 
-      - was created by
+      - created by
       - related sustainability issue
       - has URL
       - has input 
@@ -206,8 +262,50 @@ classes:
     abstract: true
       
 slots:
+  organizations:
+    slot_uri: fsls:organizations
+    multivalued: true
+    inlined_as_list: true
+    range: Organization
+  projects:
+    slot_uri: fsls:projects
+    multivalued: true
+    inlined_as_list: true
+    range: Project
+  programs:
+    slot_uri: fsls:programs
+    multivalued: true
+    inlined_as_list: true
+    range: Program
+  persons:
+    slot_uri: fsls:persons
+    multivalued: true
+    inlined_as_list: true
+    range: Person
+  guidelinemandates:
+    slot_uri: fsls:guidelinemandates
+    multivalued: true
+    inlined_as_list: true
+    range: GuidelineMandate
+  datasets:
+    slot_uri: fsls:datasets
+    multivalued: true
+    inlined_as_list: true
+    range: Dataset
+  roles:
+    slot_uri: fsls:roles
+    multivalued: true
+    inlined_as_list: true
+    range: Role
+  tools: 
+    slot_uri: fsls:tools
+    multivalued: true
+    inlined_as_list: true
+    range: Tool
+
+
   title:
-    required: true
+    required: false
     description:
       name of the entity
     slot_uri: dcterms:title
@@ -282,9 +380,10 @@ slots:
     description: a sustainability issue of interest to the entity
     slot_uri: fsls:FSI_000239
     multivalued: true
-    any_of:  # per Unions as ranges in the experimental features of the spec
-      - range: IntegratedIssue
-      - range: ComponentIssue
+    #any_of:  # per Unions as ranges in the experimental features of the spec
+     # - range: IntegratedIssue
+      #- range: ComponentIssue
+    range: Issue
   has URL: 
     description: URL of the entity 
     slot_uri: poder:hasURL
@@ -494,10 +593,10 @@ slots:
     slot_uri: frbrer:P2008
     multivalued: true
     range: GuidelineMandate # okay, this should be a superclass, probably a BFO thing.
-  was created by: 
-    description: "Relates a work to a corporate body that is responsible for the creation of the intellectual or artistic content of the work."
-    slot_uri: frbrer:P2007
-    multivalued: true
+#  was created by: 
+#    description: "Relates a work to a corporate body that is responsible for the creation of the intellectual or artistic content of the work."
+#    slot_uri: frbrer:P2007
+#    multivalued: true
   implements: 
     description: The relationship between the funding agency (subject) and the decision, plan, program (object) that the funding agency implements and administers.
     slot_uri: dg:implements
@@ -538,12 +637,12 @@ slots:
     multivalued: false
   has input:
     description: The tool has the indicated dataset as an output to its workflow
-    slot_uri: obo:RO_0000087
+    slot_uri: obo:RO_0002233
     multivalued: true
     range: Dataset
   has output:
     description: The tool has the indicated dataset as an input to its workflow
-    slot_uri: obo:RO_0002233
+    slot_uri: obo:RO_0002234
     multivalued: true
     range: Dataset
 

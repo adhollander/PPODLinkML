@@ -588,7 +588,7 @@ enums:
 #      IntegratedIssue:
 #      ComponentIssue:
 
-  IntegratedIssue:
+  Issue:
     permissible_values:
        Agricultural Sector:
          meaning: fsl:IS0001
@@ -722,9 +722,6 @@ enums:
        Women's Participation:
          meaning: fsl:IS0045
          description: Women's engagement and opportunities for engagement in political, cultural, legal, and economic decision making groups. Includes opportunities for farm and business ownership or management. Metrics include the number of women who are part of unions or cooperatives, the number of women business owners, and proportion of women on decision making boards at multiple levels of society.
-
-  ComponentIssue:
-    permissible_values:
        Access to Clean Water:
          meaning: fsli:CI0001
          description: Sources that, by nature of their construction or through active intervention, are protected from outside contamination, particularly faecal matter. It comprises piped water on premises such as piped household water connection located inside the userâ€™s dwelling, plot or yard. Other improved drinking water sources include public taps or standpipes, tube wells or boreholes, protected dug wells, protected springs and rainwater collection. [UNICEF]
