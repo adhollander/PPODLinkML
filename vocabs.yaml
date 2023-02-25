@@ -562,6 +562,8 @@ enums:
     permissible_values:
       Advisor:
         meaning: fslp:positiontypedict_d610f0
+      Affiliate:
+        meaning: fslp:positiontypedict_db8b27
       Board Member:
         meaning: fslp:positiontypedict_d947c0
       Director:
