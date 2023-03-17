@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Enum: Issue - PPOD - FSL</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Enum: Issue";
+        var mkdocs_page_input_path = "Issue.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> PPOD - FSL
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">PPOD</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="CWHRHabitatType.html">Enum: CWHRHabitatType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="CWHR_land_cover.html">Slot: CWHR land cover</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="CommodityType.html">Enum: CommodityType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Container.html">Class: Container</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="County.html">Enum: County</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Dataset.html">Class: Dataset</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="FSL_doc.html">Slot: FSL doc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="GM_name.html">Slot: GM name</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="GovernmentLevelType.html">Enum: GovernmentLevelType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="GuidelineMandate.html">Class: GuidelineMandate</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="GuidelineMandateType.html">Enum: GuidelineMandateType</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="Issue.html">Enum: Issue</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#other-properties">Other properties</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#permissible-values">Permissible Values</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Organization.html">Class: Organization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="OrganizationActivity.html">Enum: OrganizationActivity</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="OrganizationType.html">Enum: OrganizationType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Person.html">Class: Person</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="PositionType.html">Enum: PositionType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Program.html">Class: Program</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="ProgramType.html">Enum: ProgramType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Project.html">Class: Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="ProjectProgram.html">Class: ProjectProgram</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="ProjectType.html">Enum: ProjectType</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Role.html">Class: Role</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Role_title.html">Slot: title</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="Tool.html">Class: Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="UseCases.html">Enum: UseCases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="alias.html">Slot: alias</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="associated_geography.html">Slot: associated geography</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="authorizes.html">Slot: authorizes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="binds.html">Slot: binds</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="commodity.html">Slot: commodity</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="contact.html">Slot: contact</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="created_by.html">Slot: created by</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="creator_of.html">Slot: creator of</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="datasets.html">Slot: datasets</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="ecological_process.html">Slot: ecological process</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="email.html">Slot: email</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="end_year.html">Slot: end year</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="enforces.html">Slot: enforces</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="first_name.html">Slot: first name</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="full_name.html">Slot: full name</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="funding_organization.html">Slot: funding organization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="government_level.html">Slot: government level</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="guideline_or_mandate_type.html">Slot: guideline or mandate type</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="guidelinemandates.html">Slot: guidelinemandates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_URL.html">Slot: has URL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_date.html">Slot: has date</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_funding_vehicle.html">Slot: has funding vehicle</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_indicator.html">Slot: has indicator</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_input.html">Slot: has input</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_organization_activity.html">Slot: has organization activity</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_organization_type.html">Slot: has organization type</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_output.html">Slot: has output</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_participant.html">Slot: has participant</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_partner.html">Slot: has partner</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_role.html">Slot: has role</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="has_strategy.html">Slot: has strategy</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="id.html">Slot: id</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="implements.html">Slot: implements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="in_county.html">Slot: in county</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="in_ecoregion.html">Slot: in ecoregion</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="in_watershed.html">Slot: in watershed</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="input_of.html">Slot: input of</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="involved_in.html">Slot: involved in</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="is_bound_by.html">Slot: is bound by</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="is_certified_by.html">Slot: is certified by</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="is_funded_by.html">Slot: is funded by</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="is_member_of.html">Slot: is member of</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="is_part_of.html">Slot: is part of</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="label.html">Slot: label</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="last_name.html">Slot: last name</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="latitude.html">Slot: latitude</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="lead_individual.html">Slot: lead individual</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="lead_organization.html">Slot: lead organization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="located_in.html">Slot: located in</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="longitude.html">Slot: longitude</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="mandated_by.html">Slot: mandated by</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="mandates.html">Slot: mandates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="note.html">Slot: note</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="occurs_in.html">Slot: occurs in</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="organizations.html">Slot: organizations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="output_of.html">Slot: output of</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="partner_organization.html">Slot: partner organization</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="persons.html">Slot: persons</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="phone.html">Slot: phone</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="position_type.html">Slot: position type</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="program_type.html">Slot: program type</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="programs.html">Slot: programs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="project_details.html">Slot: project details</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="project_type.html">Slot: project type</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="projects.html">Slot: projects</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="references.html">Slot: references</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="related_sustainability_issue.html">Slot: related sustainability issue</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="role_of.html">Slot: role of</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="roles.html">Slot: roles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="start_year.html">Slot: start year</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="taxa.html">Slot: taxa</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="title.html">Slot: title</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="tools.html">Slot: tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="use_case.html">Slot: use case</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Types</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Boolean.html">Type: boolean</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Curie.html">Type: curie</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Date.html">Type: date</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/DateOrDatetime.html">Type: date_or_datetime</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Datetime.html">Type: datetime</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Decimal.html">Type: decimal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Double.html">Type: double</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Float.html">Type: float</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Integer.html">Type: integer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Ncname.html">Type: ncname</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Nodeidentifier.html">Type: nodeidentifier</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Objectidentifier.html">Type: objectidentifier</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/String.html">Type: string</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Time.html">Type: time</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Uri.html">Type: uri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="types/Uriorcurie.html">Type: uriorcurie</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PPOD - FSL</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Enum: Issue</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="enum-issue">Enum: Issue</h1>
+<p>URI: <a href="https://github.com/adhollander/ppod/Issue">https://github.com/adhollander/ppod/Issue</a></p>
+<h2 id="other-properties">Other properties</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Text</th>
+<th align="center">Description</th>
+<th align="center">Meaning</th>
+<th align="right">Other Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Agricultural Sector</td>
+<td align="center">Refers to the role of agriculture in regional and national economies.</td>
+<td align="center">fsl:IS0001</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Air &amp; Climate</td>
+<td align="center">GHG emissions, ozone layer depletion, air quality, climate change influenced and extreme weather events, shifts in growing zones for key crops due to climate change.</td>
+<td align="center">fsl:IS0002</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Biodiversity</td>
+<td align="center">Number of total species, number of endemic species, species loss or introduction, species threatened with extinction or endangerment, trade in wildlife and captive-bred animal species, trophic integrity of ecosystems, extent of specific habitats (or extent of habitat fragmentation), biodiversity as a source of genetic pool for food/medicine.</td>
+<td align="center">fsl:IS0003</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Common Pool Resources</td>
+<td align="center">Resources that are not the private property of any individual or group, but rather are used by many people for their benefit.</td>
+<td align="center">fsl:IS0004</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Deforestation</td>
+<td align="center">Removal of forest cover, and conversion to other uses including farming or grazing. Laws and regulations related to preventing deforestation and their enforcement.</td>
+<td align="center">fsl:IS0005</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disasters</td>
+<td align="center">Occurrence, frequency, and severity of natural disasters and human influenced disasters such as civil conflict and war, economic crises, and epidemics, in a given area. The number of people affected or projected to be affected, the risk of particular crop or growing region to disasters, and mechanisms for disaster resilience including governmental support and insurance are themes of this issue.</td>
+<td align="center">fsl:IS0006</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Diseases</td>
+<td align="center">Rates of incidence and information about transmission risks of diseases in a given area, or among a certain population. This issue relates to human diseases; diseases that affect plants or other animals are captured in food production and productivity or other issues.</td>
+<td align="center">fsl:IS0007</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ecosystem Services</td>
+<td align="center">The benefits people obtain from ecosystems. These include provisioning services such as food and water; regulating services such as flood and disease control; cultural services such as spiritual, recreational, and cultural benefits; and supporting services such as nutrient cycling that maintain the conditions for life on earth.</td>
+<td align="center">fsl:IS0008</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Educational Resources</td>
+<td align="center">Educational opportunities and achievement, with attention to gender-based access dimensions. Includes formal education, informal or traditional knowledge transfer, extension services, and vocational training, especially related to improved agricultural practices. Also includes access to legal, public, and reproductive health education services.</td>
+<td align="center">fsl:IS0009</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy</td>
+<td align="center">Proportion and type of renewable or fossil fuel used for energy production, emissions and other impacts associated with energy production, prices of energy by type and as a proportion of household income; access to energy - including liquid fuel, gas, and electricity; energy production and distribution infrastructures; energy regulations, policies, and their enforcement.</td>
+<td align="center">fsl:IS0010</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Finance</td>
+<td align="center">Access to financial capital including loans, equity investments, and grants; reliable secured savings systems; crop or production insurance against risk, associated costs, and interest rates.</td>
+<td align="center">fsl:IS0011</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Production</td>
+<td align="center">Food produced for direct human consumption; the ratio of cash crops to staple crops or biofuels to food crops Includes food availability and access to a nutritious and culturally acceptable range of food products. Also relates to stability or stochasticity in food access, food prices, and the policies, initiatives, and regulations to support agroecological systems.</td>
+<td align="center">fsl:IS0012</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Geographical Distribution</td>
+<td align="center">Describes the proportions of total population (often at a national or broader level) that live in rural, suburban, and urban areas; densities of populations across different agro-ecological zones; and seasonal or other forms of migration (may include different/additional geographical classifications).</td>
+<td align="center">fsl:IS0013</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Governance</td>
+<td align="center">Organizational management, decision-making structure for rules, laws, regulations, and policies across scales and levels. Emphases include diversity and representation of stakeholders involved in decision making and governance; transparency and accessibility of mechanisms for dispute resolution; and enforcement policies and procedures.</td>
+<td align="center">fsl:IS0014</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Human Mortality</td>
+<td align="center">Average lifespan, rates of infant mortality, child mortality, maternal mortality in a given population.</td>
+<td align="center">fsl:IS0015</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Human Rights</td>
+<td align="center">Respect for human rights to life, liberty, non-discrimination, privacy, freedom of movement, marriage, property ownership, thought, religion, fair remuneration, safe and dignified working conditions, association, education, food, and all other rights applicable at national, regional, local, and global levels.</td>
+<td align="center">fsl:IS0016</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income</td>
+<td align="center">Adequacy, stability, and dependability of financial flows from labor, investment, rents, and goods sold - particularly among primary producers of agricultural raw materials.</td>
+<td align="center">fsl:IS0017</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Inputs</td>
+<td align="center">Availability, accessibility, adequacy, and/or responsible use of chemical and organic fertilizer, insecticides, fungicides, and improved seed varieties.</td>
+<td align="center">fsl:IS0018</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Institutions</td>
+<td align="center">Institutions are the humanly devised constraints that structure political, economic and social interaction. They consist of both informal constraints (sanctions, taboos, customs, traditions, and codes of conduct), and formal rules (constitutions, laws, property rights). Throughout history, institutions have been devised by human beings to create order and reduce uncertainty in exchange. (D.C. North, 1991. J. Economic Perspectives 5:97-112). We focus on the institutions at many levels that affect the food and agriculture supply chain.</td>
+<td align="center">fsl:IS0019</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Labor</td>
+<td align="center">Includes employment and labor conditions in the agricultural production sector, as well as dynamics that affect labor relations such as landholding size, crop production type, and wealth status. Also includes issues of access to labor, i.e. are there enough employable people in a given production system to maximize productivity.</td>
+<td align="center">fsl:IS0020</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Land &amp; Soil</td>
+<td align="center">Characteristics of and changes in land use, land cover, soil quality. Connected themes include crop yield, production practices, characteristics of arable or pasture land, erosion, desertification, and measures of habitat fragmentation and connectivity.</td>
+<td align="center">fsl:IS0021</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Literacy</td>
+<td align="center">Rate of literacy in a given population, often classified by age group and gender.</td>
+<td align="center">fsl:IS0022</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Markets</td>
+<td align="center">Access to markets at local, regional, and global levels. Includes issues of fair pricing, price stability, knowledge transfer, and information to support negotiation and timing of transactions the number, role and communications among mid-supply chain actors. Includes policies to promote more equitable sourcing from small scale, historically underrepresented producers in global supply chains.</td>
+<td align="center">fsl:IS0023</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Nutritional Status</td>
+<td align="center">Malnutrition - including under-nutrition, stunting, wasting, or failure to thrive as well as over-consumption; macronutrient sufficiency, micronutrient sufficiency, incidence of nutrition related diseases.</td>
+<td align="center">fsl:IS0024</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Oceans &amp; Coasts</td>
+<td align="center">Water quality in oceans and coastal areas, ecosystem health of harbors, bays, and estuaries; human populations living in coastal areas, risk of coastal areas to sea level rise due to climate change.</td>
+<td align="center">fsl:IS0025</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Participation</td>
+<td align="center">Opportunities for and the extent to which producers participate in organizations and institutions in which they can share resources, knowledge, and negotiate collectively. Can include metrics related to participation in cooperatives, unions, or other civil organizations, as well as metrics related to the inclusion of women or underrepresented minority stakeholders in civil society.</td>
+<td align="center">fsl:IS0026</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Physical Infrastructure</td>
+<td align="center">Existence, maintenance, quality, and accessibility of physical and manufactured capital needed to support livelihoods, economies, natural resource management, and ecosystem sustainability. Includes transportation systems; water supply, storage, and sanitation facilities; energy-related infrastructure; and communications infrastructure.</td>
+<td align="center">fsl:IS0027</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Population Growth</td>
+<td align="center">Growth of population in a given region, local to global. Population growth (which can also be negative) interacts with many of the other issues as a driver or outcome.</td>
+<td align="center">fsl:IS0028</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Population Structure</td>
+<td align="center">Composition of the population of a given region in terms of age, experience, gender, education, or other variables.</td>
+<td align="center">fsl:IS0029</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Poverty</td>
+<td align="center">A multi-dimensional condition or outcome that includes deprivation related to human capabilities including consumption and food security, health, education, rights, voice, security, dignity, self-determination, and decent work.</td>
+<td align="center">fsl:IS0030</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Productivity</td>
+<td align="center">The connection between inputs - both bio-physical and human - and outcomes in agricultural contexts - the net production of agricultural practices. Themes and connected with this issue include crop yields, net farm income, input prices, and efficiency of labor.</td>
+<td align="center">fsl:IS0031</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Property Rights</td>
+<td align="center">Formal and informal rights, policies, and institutions and the methods, equity, and transparency of enforcement and redress that characterizes access to and use of land and other resources.</td>
+<td align="center">fsl:IS0032</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Protected Areas</td>
+<td align="center">Land or resources with special status, subject to regulations that restrict human access or resource use. Themes include measures of proportion of land or marine areas in protected status (per given geography), institutional norms of respect for protected area designation, and enforcement of protected status regulations.</td>
+<td align="center">fsl:IS0033</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Public Health</td>
+<td align="center">The creation and maintenance of the infrastructure, information, capacity, equipment and supplies, and opportunities for the population of a given region to remain in good general health. Themes within this issue include- sanitation, access to reliable safe drinking water, access to healthcare including preventative services, accurate knowledge about nutrition, and food security.</td>
+<td align="center">fsl:IS0034</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Reproductive Health</td>
+<td align="center">Access to and decision-making authority over family planning, preand post-natal health care. Understanding of and ability to prevent sexually transmitted diseases.</td>
+<td align="center">fsl:IS0036</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Safety</td>
+<td align="center">The health and safety regulations that ensure safe conditions for agricultural workers. This issue also covers occurrence or risk of accidents in agricultural production systems, and the governmental or corporate responses to accidents.</td>
+<td align="center">fsl:IS0037</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Social Structure</td>
+<td align="center">Aspects of social organization including distribution of power, leadership, and decision-making authority. Includes households, institutions, norms, rules, laws, and policies about management and control of public funds in a given society. Indicators include those related to corruption among other themes.</td>
+<td align="center">fsl:IS0038</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Sociocultural Systems</td>
+<td align="center">The social and cultural aspects of a given society that shape material assets; economic, political, and social structures; values and norms; and language. Includes systems of ethics, traditional knowledge in agricultural communities, and cultural traditions.</td>
+<td align="center">fsl:IS0039</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Technology</td>
+<td align="center">Access to, maintenance of, and innovation in technologies including new seed, plant, or livestock varieties, new production technique innovations, information systems, and other tangible innovations.</td>
+<td align="center">fsl:IS0040</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Trade Policies</td>
+<td align="center">The laws, regulations, policies, and norms - locally, regionally, and especially internationally - that govern the trade of agricultural raw materials, and the inputs needed to produce them. This includes public policy as well as private or cooperative trade policies.</td>
+<td align="center">fsl:IS0041</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Wastes &amp; Pollution</td>
+<td align="center">Waste management; domestic, agricultural, and industrial effluents; treatment of hazardous wastes, proportion of waste that is recycled or returned to nutrient cycling, emissions of pollutants especially by farming practices, livestock, or other production practices.</td>
+<td align="center">fsl:IS0042</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water</td>
+<td align="center">Access to and availability of appropriate quality water across time and space. Refers broadly to water quantity, water quality, annual renewable freshwater resources per capita, sector, or agro-ecological system. Includes access to drinking, cooking, and cleaning water by individuals, as well as issues of access to and use of water for farming - irrigation, ground water, animal hydration, and in primary processing. Can also include water treatment issues (e.g., desalination) and water at larger geographic scale, e.g. watershed health, riparian ecosystem health.</td>
+<td align="center">fsl:IS0043</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women &amp; Wages</td>
+<td align="center">The fair and appropriate compensation of women employees, laborers, and all women working in agricultural production. Includes employment opportunities and business or farm ownership opportunities for women.</td>
+<td align="center">fsl:IS0044</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women's Participation</td>
+<td align="center">Women's engagement and opportunities for engagement in political, cultural, legal, and economic decision making groups. Includes opportunities for farm and business ownership or management. Metrics include the number of women who are part of unions or cooperatives, the number of women business owners, and proportion of women on decision making boards at multiple levels of society.</td>
+<td align="center">fsl:IS0045</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Clean Water</td>
+<td align="center">Sources that, by nature of their construction or through active intervention, are protected from outside contamination, particularly faecal matter. It comprises piped water on premises such as piped household water connection located inside the userâ€™s dwelling, plot or yard. Other improved drinking water sources include public taps or standpipes, tube wells or boreholes, protected dug wells, protected springs and rainwater collection. [UNICEF]</td>
+<td align="center">fsli:CI0001</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Finance</td>
+<td align="center">Access to finance refers to the availability of financial services in the form of deposits, credit, payments, or insurance to individuals or enterprises. The availability of such services can be constrained for instance by physical access, affordability or eligibility. [Making Finance Work for Africa Partnership]</td>
+<td align="center">fsli:CI0002</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Healthcare</td>
+<td align="center">The timely use of personal health services to achieve the best health outcomes [Institute of Medicine, Committee on Monitoring Access to Personal Health Care Services. ]</td>
+<td align="center">fsli:CI0003</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Information and Communication</td>
+<td align="center">Access to any communication device or application, encompassing - radio, television, cellular phones, computer and network hardware and software, satellite systems and so on, as well as the various services and applications associated with them, such as videoconferencing and distance learning. [TechTarget]</td>
+<td align="center">fsli:CI0004</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Sanitation</td>
+<td align="center">Access to the provision of facilities and services for the safe disposal of human urine and faeces. [World Health Organization]</td>
+<td align="center">fsli:CI0005</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Technology</td>
+<td align="center">Human access to internet and other technology [self-defined]</td>
+<td align="center">fsli:CI0006</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Accident Benefits</td>
+<td align="center">Fringe benefits provided to employees for sickness, accidental injury, or accidental death. These benefits include payment of hospital and medical expenses as well as income payments. [Investopedia]</td>
+<td align="center">fsli:CI0007</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Age Distribution</td>
+<td align="center">The proportionate numbers of persons in successive age categories in a given population. [Encyclopedia Britannica]</td>
+<td align="center">fsli:CI0008</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Barter</td>
+<td align="center">Trading an agricultural good or service directly for another good or service, without using money or credit. [self-defined]</td>
+<td align="center">fsli:CI0009</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Debt</td>
+<td align="center">Money owed by agricultural enterprises [self-defined]</td>
+<td align="center">fsli:CI0010</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Education</td>
+<td align="center">The teaching of agriculture, natural resources, and land management through hands on experience and guidance to prepare students for entry level jobs or to further education to prepare them for advanced agricultural jobs. [DBPedia]</td>
+<td align="center">fsli:CI0011</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Employment</td>
+<td align="center">People working for pay or in a family-owned agricultural enterprise or farm. [self-defined]</td>
+<td align="center">fsli:CI0012</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Exports</td>
+<td align="center">Agricultural products sold for use outside of the country of production [self-defined]</td>
+<td align="center">fsli:CI0013</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Imports</td>
+<td align="center">Agricultural products purchased from sellers outside of a given country [self-defined]</td>
+<td align="center">fsli:CI0014</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Intermediate Goods</td>
+<td align="center">A good that is used in the production of final agricultural goods and services. [self-defined]</td>
+<td align="center">fsli:CI0015</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Prices</td>
+<td align="center">The amount of money paid for an agricultural good or service [self-defined]</td>
+<td align="center">fsli:CI0016</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Production Costs</td>
+<td align="center">The total sum of money needed for the production of a particular quantity of agricultural output. [self-defined]</td>
+<td align="center">fsli:CI0017</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Productivity</td>
+<td align="center">Agricultural productivity is measured as the ratio of agricultural outputs to agricultural inputs. [DBPedia]</td>
+<td align="center">fsli:CI0018</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Subsidies</td>
+<td align="center">Export subsidies consist of all subsidies on goods and services that become payable to resident producers when the goods leave the economic territory or when the services are delivered to non-resident units [OECD glossary of statistical terms]</td>
+<td align="center">fsli:CI0019</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Tariffs and Quotas</td>
+<td align="center">A tax on an imported Agricultural good or service. [self-defined]</td>
+<td align="center">fsli:CI0020</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Taxes</td>
+<td align="center">Compulsory payments to governments by agricultural businesses. [self-defined]</td>
+<td align="center">fsli:CI0021</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agricultural Value Added</td>
+<td align="center">The difference between the value of an agricultural output and the value of the intermediate goods used in the production of that output. [self-defined]</td>
+<td align="center">fsli:CI0022</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Agrobiodiversity</td>
+<td align="center">Agrobiodiversity refers to all crops and animal breeds, their wild relatives, and the species that interact with and support these species, e.g.,pollinators, symbionts, pests, parasites, predators,decomposers, and competitors, together with the wholerange of environments in which agriculture is practiced,not just crop lands or fields. [Food and Agriculture Organization of the United Nations]</td>
+<td align="center">fsli:CI0023</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Air Pollution</td>
+<td align="center">Air pollution occurs when the air contains gases, dust, fumes or odour in harmful amounts. [EPA]</td>
+<td align="center">fsli:CI0024</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Air Quality</td>
+<td align="center">A measurement of the pollutants in the air; a description of healthiness and safety of the atmosphere [Dictionary.com]</td>
+<td align="center">fsli:CI0025</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Animal Production</td>
+<td align="center">The technology applied to the keeping of animals for profit. Includes feeding, breeding, housing and marketing. Of great importance is the making of the financial arrangements necessary to the successful carrying out of each enterprise in the light of the market conditions for the sale of the end products. [TheFreeDictionary]</td>
+<td align="center">fsli:CI0026</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Aquaculture</td>
+<td align="center">The cultivation of aquatic animals and plants, including freshwater and marine species, for food or other purposes. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0027</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Banking Systems</td>
+<td align="center">The structural network of institutions that offer financial services within a county. The members of the banking system and the functions they typically perform include - (1) commercial banks that take deposits and make loans, (2) investment banks which specialize in capital market issues and trading, and (3) national central banks that issue currency and set monetary policy. [Business dictionary]</td>
+<td align="center">fsli:CI0028</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Basic Needs</td>
+<td align="center">The basic needs approach is one of the major approaches to the measurement of absolute poverty in developing countries. It attempts to define the absolute minimum resources necessary for long-term physical well-being, usually in terms of consumption goods. The poverty line is then defined as the amount of income required to satisfy those needs. The 'basic needs' approach was introduced by the International Labour Organization's World Employment Conference in 1976. [DBPedia]</td>
+<td align="center">fsli:CI0029</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Birth Defects</td>
+<td align="center">Structural or functional anomalies (e.g. metabolic disorders) that occur during intrauterine life and can be identified prenatally, at birth or later in life. [World Health Organization]</td>
+<td align="center">fsli:CI0030</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Buildings</td>
+<td align="center">A structure (such as a house, hospital, school, etc.) with a roof and walls that is used as a place for people to live, work, do activities, store things, etc. [Merriam-Webster]</td>
+<td align="center">fsli:CI0031</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Capacity for Participation</td>
+<td align="center">A set of dynamic community traits, resources, and associational patterns that can be brought to bear for community building and community health improvement [Norton B et al. 2002]</td>
+<td align="center">fsli:CI0032</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Capital Productivity</td>
+<td align="center">Capital productivity growth shows how a change in the volume of assets, such as buildings, machinery, computers and IT, and land, affect output growth. [Statistics NZ]</td>
+<td align="center">fsli:CI0033</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Carbon Sequestration</td>
+<td align="center">Both natural and deliberate processes by which CO2 is either removed from the atmosphere or diverted from emission sources and stored in the ocean, terrestrial environments (vegetation, soils, and sediments), and geologic formations. [United States Geological Survey]</td>
+<td align="center">fsli:CI0034</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Cash Food Crops</td>
+<td align="center">Crops that are intended entirely or primarily for market [Crop Post Harvest Programme]</td>
+<td align="center">fsli:CI0035</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Certification</td>
+<td align="center">Certification refers to the confirmation of certain characteristics of an object, person, or organization. This confirmation is often, but not always, provided by some form of external review, education, assessment, or audit. Accreditation is a specific organization's process of certification. [DBPedia]</td>
+<td align="center">fsli:CI0036</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Child Labor</td>
+<td align="center">Child labour refers to the employment of children in any work that deprives children of their childhood, interferes with their ability to attend regular school, and that is mentally, physically, socially or morally dangerous and harmful. [DBPedia]</td>
+<td align="center">fsli:CI0037</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Child Mortality</td>
+<td align="center">Deaths that might somehow be attributed to obstetric events, such as stillbirths and neonatal deaths in the first week of life. [World Health Organization]</td>
+<td align="center">fsli:CI0038</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Civil Rights</td>
+<td align="center">the rights of citizens to political and social freedom and equality [Oxford Dictionary]</td>
+<td align="center">fsli:CI0039</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Climate Change</td>
+<td align="center">Climate change refers to a change in the state of the climate that can be identified (e.g., by using statistical tests) by changes in the mean and/orthe variability of its properties, and that persists for an extended period,typically decades or longer. Climate change may be due to natural internalprocesses or external forcings, or to persistent anthropogenic changes inthe composition of the atmosphere or in land use. [IPCC]</td>
+<td align="center">fsli:CI0040</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Climate Change Adaptation</td>
+<td align="center">Adjustment in natural or human systems in response to actual or expected climatic stimuli or their effects, which moderates harm or exploits beneficial opportunities. [IPCC]</td>
+<td align="center">fsli:CI0041</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Commercial Policies</td>
+<td align="center">The basic attitudes underlying a companyâ€™s marketing activities [AGROVOC]</td>
+<td align="center">fsli:CI0042</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Community Participation</td>
+<td align="center">Community engagement or community action through consulting, information, involvement and collaboration [Tasmanian Government]</td>
+<td align="center">fsli:CI0043</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Compensation</td>
+<td align="center">All payments by producers of wages and salaries to their employees, in kind as well as in cash, and of contributions in respect of their employees to social security and to private pension, casualty insurance, life insurance and similar schemes. [International Labour Organization]</td>
+<td align="center">fsli:CI0044</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Compliance Costs</td>
+<td align="center">Compliance costs are the costs incurred by the taxpayer for making arrangements for the payment of taxes and for meeting the statutory compliance requirements for such payment. Compliance costs include the value of the taxpayer's time and resources, along with any out-of-pocket costs paid to tax preparers and other tax advisors, etc. [US Legal.dictionary]</td>
+<td align="center">fsli:CI0045</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Contamination</td>
+<td align="center">Introduction into or onto water, air, soil or other media of microorganisms, chemicals, toxic substances, wastes, wastewater or other pollutants in a concentration that makes the medium unfit for its next intended use. [GEMET]</td>
+<td align="center">fsli:CI0046</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Contraception</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0047</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Corruption</td>
+<td align="center">The abuse of entrusted power for private gain. Corruption can be classified as grand, petty and political, depending on the amounts of money lost and the sector where it occurs. [Transparency International]</td>
+<td align="center">fsli:CI0048</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Crop Yield</td>
+<td align="center">The amount of plant crop (such as cereal, grain or legume) harvested per unit area for a given time. [AGROVOC]</td>
+<td align="center">fsli:CI0049</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Cropping Systems</td>
+<td align="center">The pattern of crops grown on a given piece of land, or order in which the crops are cultivated over a fixed period. [AGROVOC]</td>
+<td align="center">fsli:CI0050</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Cultural Appropriateness of Foods</td>
+<td align="center">Food that corresponds to individual and collective consumer demand and preferences, in line with national and international law as applicable. [Food and Agriculture Organization of the United Nations]</td>
+<td align="center">fsli:CI0051</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Cultural Protection and Conservation</td>
+<td align="center">The deliberate act of keeping cultural heritage from the present for the future is known as preservation (American English) or conservation (British English), though these terms may have more specific or technical meaning in the same contexts in the other dialect. [Wikipedia (as cultural heritage)]</td>
+<td align="center">fsli:CI0052</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Cultural Services</td>
+<td align="center">Nonmaterial benefits people obtain from ecosystems through spiritual enrichment, cognitive development, reflection, recreation, and aesthetic experiences. [Millennium Ecosystem Assessment]</td>
+<td align="center">fsli:CI0053</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Desertification</td>
+<td align="center">Desertification is a type of land degradation in which a relatively dry land region becomes increasingly arid, typically losing its bodies of water as well as vegetation and wildlife. [DBPedia]</td>
+<td align="center">fsli:CI0054</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Diet</td>
+<td align="center">Food and drink regularly provided or consumed [Merriam-Webster]</td>
+<td align="center">fsli:CI0055</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disaster Mitigation</td>
+<td align="center">Disaster mitigation is permanent reduction of the risk of a disaster. Primary mitigation refers to reducing the resistance of the hazard and reducing vulnerability. Mitigation includes recognizing that disasters will occur; attempts are made to reduce the harmful effects of a disaster, and to limit their impact on human suffering and economic assets. [World Health Organization]</td>
+<td align="center">fsli:CI0056</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disaster Preparedness</td>
+<td align="center">Process of ensuring that an organization has complied with the preventive measures, is in a state of readiness to contain the effects of a forecasted disastrous event to minimize loss of life, injury, and damage to property. [AGROVOC]</td>
+<td align="center">fsli:CI0057</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disaster Prevention</td>
+<td align="center">Defined as those activities taken to prevent a natural phenomenon or potential hazard from having harmful effects on either people or economic assets. Delayed actions drain the economy and the resources for emergency response within a region. For developing nations, prevention is perhaps the most critical components in managing disasters, however, it is clearly one of the most difficult to promote. Prevention planning is based on two issues - hazard identification (identifying the actual threats facing a community) and vulnerability assessment (evaluating the risk and capacity of a community to handle the consequences of the disaster). Once these issues put in order of priority, emergency managers can determine the appropriate prevention strategies. Disaster prevention refers to measures taken to eliminate the root-causes that make people vulnerable to disasters. [World Health Organization]</td>
+<td align="center">fsli:CI0058</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disaster Relief</td>
+<td align="center">Disaster relief (or emergency management) refers to the process of responding to a catastrophic situation, providing humanitarian aid to persons and communities who have suffered from some form of disaster. [New World Encyclopedia]</td>
+<td align="center">fsli:CI0059</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disasters - Economic Impact</td>
+<td align="center">The economic impact of a specific disaster [self-defined]</td>
+<td align="center">fsli:CI0060</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disasters - Environmental Impact</td>
+<td align="center">The environmental impact of a specific disaster [self-defined]</td>
+<td align="center">fsli:CI0061</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disasters - Health Impact</td>
+<td align="center">The impact of human health and health systems by a specific disaster [self-defined]</td>
+<td align="center">fsli:CI0062</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disasters - Human and Social Impact</td>
+<td align="center">The impact of human and social systems by a specific disaster [self-defined]</td>
+<td align="center">fsli:CI0063</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Discrimination</td>
+<td align="center">Discrimination is treatment or consideration of, or making a distinction in favor of or against, a person or thing based on the group, class, or category to which that person or thing is perceived to belong to rather than on individual merit.This includes treatment of an individual or group based on their actual or perceived membership in a certain group or social category, 'in a way that is worse than the way people are usually treated'. [DBPedia]</td>
+<td align="center">fsli:CI0064</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Discrimination in Employment</td>
+<td align="center">Employment discrimination is a form of discrimination based on race, gender, religion, national origin, physical or mental disability, and age by employers. Earnings differentials or occupational differentiation is not in and of itself evidence of employment discrimination. Discrimination can be intended and involve disparate treatment of a group or be unintended, yet create disparate impact for a group. [Wikipedia]</td>
+<td align="center">fsli:CI0065</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disease Incidence - Communicable</td>
+<td align="center">The occurrence of new cases of communicable disease in a population over a specified period of time [Center for Disease Control and Prevention]</td>
+<td align="center">fsli:CI0066</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disease Incidence - Noncommunicable</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0067</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Disease-Related Mortality</td>
+<td align="center">Human deaths caused by communicable and non-communicable diseases [Self-defined. ]</td>
+<td align="center">fsli:CI0068</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Diseases and Pests</td>
+<td align="center">Organisms such as bacteria, fungi, viruses and insects that cause a deleterious impact on crops and livestock. [Self-defined]</td>
+<td align="center">fsli:CI0069</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Economic Participation</td>
+<td align="center">Includes paid employment, training and education, self-employment and enterprise development, and micro-finance [RMIT University]</td>
+<td align="center">fsli:CI0070</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ecosystem Health</td>
+<td align="center">Ecosystem health may be defined as the capacity for maintaining biological and social organization, on the one hand, and the ability to achieve reasonable and sustainable human goals on the other. [Rapport et al. 2001]</td>
+<td align="center">fsli:CI0071</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ecosystem Management</td>
+<td align="center">Ecosystem management is a process that aims to conserve major ecological services and restore natural resources while meeting the socioeconomic, political and cultural and needs of current and future generations. [DBPedia]</td>
+<td align="center">fsli:CI0072</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ecotourism</td>
+<td align="center">Responsible travel to natural areas that conserves the environment and improves the well-being of local people [The International Ecotourism Society]</td>
+<td align="center">fsli:CI0073</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Education Access</td>
+<td align="center">The ability of all people to have equal opportunity in education, regardless of their social class, gender, ethnicity background or physical and mental disabilities [Wikipedia]</td>
+<td align="center">fsli:CI0074</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Education Equity</td>
+<td align="center">Fair and impartial access to education regardless of economic or social status [Sustainable Development Indicator (SDI) Group]</td>
+<td align="center">fsli:CI0075</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Education Infrastructure</td>
+<td align="center">Systematic provision of a society for the transmission of knowledge, information, and technologies [Sustainable Development Indicator (SDI) Group ]</td>
+<td align="center">fsli:CI0076</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Education Quality</td>
+<td align="center">The amount or quality of knowledge, information, and and skills acquired by the individual [Sustainable Development Indicator (SDI) Group]</td>
+<td align="center">fsli:CI0077</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Educational Policies</td>
+<td align="center">Educational policies are the principles and government policy-making in the educational sphere, as well as the collection of laws and rules that govern the operation of education systems. [Wikipedia]</td>
+<td align="center">fsli:CI0078</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Employee Rights</td>
+<td align="center">Rights are universal, and that they apply to all people in all States - regardless of the level of economic development, [does not neglect] groups with special needs, including the unemployed and migrant workers [and] recognizes that economic growth alone is not enough to ensure equity, social progress and to eradicate poverty. [International Labour Organization]</td>
+<td align="center">fsli:CI0079</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Employment at Will</td>
+<td align="center">When an employee does not have a written employment contract and the term of employment is of indefinite duration, the employer can terminate the employee for good cause, bad cause, or no cause at all. [Bureau of Labor Statistics]</td>
+<td align="center">fsli:CI0080</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Conservation</td>
+<td align="center">Reduction in the amount of energy consumed in a process or system, or by an organization or society, through economy, elimination of waste, and rational use. [Business dictionary]</td>
+<td align="center">fsli:CI0081</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Demand</td>
+<td align="center">The requirement for energy as an input to provide products and/or services. [US Energy Information Administration]</td>
+<td align="center">fsli:CI0082</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Efficiency</td>
+<td align="center">Using less energy to provide the same service [Lawrence Berkeley National Laboratory]</td>
+<td align="center">fsli:CI0083</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Infrastructure</td>
+<td align="center">The large-scale enabling technologies to transport energy from producer to consumer and direct and manage energy flow. [Self-defined]</td>
+<td align="center">fsli:CI0084</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Policies</td>
+<td align="center">Energy policy is the manner in which a given entity (often governmental) has decided to address issues of energy development including energy production, distribution and consumption. [Wikipedia]</td>
+<td align="center">fsli:CI0085</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Production</td>
+<td align="center">The process of producing energy or the amount of energy produced (usually for a given type of energy). [US Energy Information Administration]</td>
+<td align="center">fsli:CI0086</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Productivity</td>
+<td align="center">The ratio of output divided by energy consumption [IAEE]</td>
+<td align="center">fsli:CI0087</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Energy Security</td>
+<td align="center">The IEA defines energy security as the uninterrupted availability of energy sources at an affordable price. Energy security has many aspects - long-term energy security mainly deals with timely investments to supply energy in line with economic developments and environmental needs. [International Energy Agency]</td>
+<td align="center">fsli:CI0088</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Enforcement of Laws and Regulations</td>
+<td align="center">Enforcement of principles, rules, or laws designed to control or govern conduct. [YourDictionary]</td>
+<td align="center">fsli:CI0089</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Equality</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0090</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Erosion</td>
+<td align="center">In geomorphology and geology, erosion is the action of exogenic processes (such as water flow or wind) which remove soil and rock from one location on the Earth's crust, then transport it to another location where it is deposited. [DBPedia]</td>
+<td align="center">fsli:CI0091</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ethical Treatment of Animals</td>
+<td align="center">Ensuring that animal suffering for necessary purposes be eliminated or reduced to a minimum [Learning to Give]</td>
+<td align="center">fsli:CI0092</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Eutrophication</td>
+<td align="center">Eutrophication is the ecosystem's response to the addition of artificial or natural substances, mainly phosphates, through detergents, fertilizers, or sewage, to an aquatic system. [DBPedia]</td>
+<td align="center">fsli:CI0093</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Evapotranspiration</td>
+<td align="center">The sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. [DBPedia]</td>
+<td align="center">fsli:CI0094</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Family Planning</td>
+<td align="center">Individuals and couples to anticipate and attain their desired number of children and the spacing and timing of their births. It is achieved through use of contraceptive methods and the treatment of involuntary infertility. [World Health Organization]</td>
+<td align="center">fsli:CI0095</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Financial Risk</td>
+<td align="center">The chance that an individual, business or government will not be able to return money invested. [council for economic education]</td>
+<td align="center">fsli:CI0096</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Fisheries</td>
+<td align="center">Activities leading to the harvesting of fish, including capture of wild fish (not including aquaculture) [NOAA Fisheries Glossary]</td>
+<td align="center">fsli:CI0097</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Fishing &amp; Overfishing</td>
+<td align="center">The activity of trying to catch fish, which may be beyond the capacity of the population to replenish their stocks. [Modified from National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0098</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Floods</td>
+<td align="center">An overflow of water onto normally dry land [NOAA]</td>
+<td align="center">fsli:CI0099</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Availability</td>
+<td align="center">The availability of sufficient quantities of food of appropriate quality, supplied through domestic production or imports (including food aid). [FAO]</td>
+<td align="center">fsli:CI0100</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Policies</td>
+<td align="center">The area of public policy concerning how food is produced, processed, distributed, and purchased. [DBPedia]</td>
+<td align="center">fsli:CI0101</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Provisioning</td>
+<td align="center">A society's mechanisms of supplying food to its populace. [Self-defined]</td>
+<td align="center">fsli:CI0102</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Safety</td>
+<td align="center">Protecting the food supply from microbial, chemical (i.e. rancidity, browning) and physical (i.e. drying out, infestation) hazards or contamination that may occur during all stages of food production and handling-growing, harvesting, processing, transporting, preparing, distributing and storing. The goal of food safety monitoring is to keep food wholesome. [AGROVOC]</td>
+<td align="center">fsli:CI0103</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Security</td>
+<td align="center">Access by all people, at all times to sufficient food for an active and healthy life. Food security includes at a minimum - the ready availability of nutritionally adequate and safe foods, and an assured ability to acquire acceptable foods in socially acceptable ways. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0104</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Security - Household</td>
+<td align="center">When the following three pillars are fulfilled at the household level. Food availability - sufficient quantities of food available on a consistent basis. Food access- having sufficient resources to obtain appropriate foods for a nutritious diet. Food use - appropriate use based on knowledge of basic nutrition and care, as well as adequate water and sanitation [World Health Organization]</td>
+<td align="center">fsli:CI0105</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Security - National</td>
+<td align="center">When the following three pillars are fulfilled at the national level. Food availability- sufficient quantities of food available on a consistent basis. Food access- having sufficient resources to obtain appropriate foods for a nutritious diet. Food use- appropriate use based on knowledge of basic nutrition and care, as well as adequate water and sanitation [World Health Organization]</td>
+<td align="center">fsli:CI0106</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Food Wastes</td>
+<td align="center">Food that is discarded or lost uneaten [United Nations]</td>
+<td align="center">fsli:CI0107</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forced Labor</td>
+<td align="center">Forced labour refers to situations in which persons are coerced to work through the use of violence or intimidation, or by more subtle means such as accumulated debt, retention of identity papers or threats of denunciation to immigration authorities. [International Labour Organizatoin]</td>
+<td align="center">fsli:CI0108</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forest Canopy Cover</td>
+<td align="center">Forest canopy cover is defined as the proportion of the forest floor covered by the vertical projection of the tree crowns [Jennings et al. 1999]</td>
+<td align="center">fsli:CI0109</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forest Ecology</td>
+<td align="center">Forest ecology is the scientific study of the interrelated patterns, processes, flora, fauna and ecosystems in forests. [DBPedia]</td>
+<td align="center">fsli:CI0110</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forest Management Practices</td>
+<td align="center">Best [forestry] management practices (BMPs) are proactive and often voluntary practical methods or practices used during forest management to achieve goals related to water quality, silviculture, wildlife and biodiversity, aesthetics, and/or recreation. [Peter Smallidge and Gary Goff, Spring 1998]</td>
+<td align="center">fsli:CI0111</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forest Productivity</td>
+<td align="center">The annual average change in cubic feet, board feet, cords, or biomass of wood. Losses in volume to tree mortality and harvesting are also measured and subtracted from growth to provide net growth. [USDA - Forest Service]</td>
+<td align="center">fsli:CI0112</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forest Products</td>
+<td align="center">Timber forest is the wood of the trees itself. Non-timber forest products (NTFPs) are any product or service other than timber that is produced in forests. They include fruits and nuts, vegetables, fish and game, medicinal plants, resins, essences and a range of barks and fibres such as bamboo, rattans, and a host of other palms and grasses. [CIFOR]</td>
+<td align="center">fsli:CI0113</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Forests</td>
+<td align="center">Generally, an ecosystem characterized by a more or less dense and extensive tree cover. More particularly, a plant community predominantly of trees and other woody vegetation, growing more or less closely together. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0114</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Formal Education - Primary</td>
+<td align="center">The hierarchically structured, chronologically graded 'education system', running from primary school through the university and including, in addition to general academic studies, a variety of specialized programs and institutions for full-time technical and professional training [UNESCO]</td>
+<td align="center">fsli:CI0115</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Formal Education - Secondary</td>
+<td align="center">The hierarchically structured, chronologically graded 'education system', running from primary school through the university and including, in addition to general academic studies, a variety of specialized programs and institutions for full-time technical and professional training [UNESCO]</td>
+<td align="center">fsli:CI0116</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Formal Education - Tertiary</td>
+<td align="center">The hierarchically structured, chronologically graded 'education system', running from primary school through the university and including, in addition to general academic studies, a variety of specialized programs and institutions for full-time technical and professional training [UNESCO]</td>
+<td align="center">fsli:CI0117</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Functional Literacy</td>
+<td align="center">A level of reading, writing, and calculation skills sufficient for adults to function in the particular community in which an individual lives. [UNESCO Institute for Statistics]</td>
+<td align="center">fsli:CI0118</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Gender Equality</td>
+<td align="center">Equal rights, responsibilities and opportunities of women and men and girls and boys [UN]</td>
+<td align="center">fsli:CI0119</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Gender Literacy</td>
+<td align="center">The difference among men and women, boys and girls to achieve a level of reading, writing, and calculation skills sufficient to function in the particular community in which an individual lives. [UNESCO Institute for Statistics (with components added)]</td>
+<td align="center">fsli:CI0120</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Gender Policy</td>
+<td align="center">Gender policy is characterized by the fact that societal norms regarding 'masculinity' and 'femininity' are broken and that women and men have equal access to power, authority and resources. []</td>
+<td align="center">fsli:CI0121</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Genetic Diversity within Species</td>
+<td align="center">The variety of alleles and genotypes present in a population and this is reflected in morphological, physiological and behavioral differences between individuals and populations [Frankham et al. 2002]</td>
+<td align="center">fsli:CI0122</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Governance Structure</td>
+<td align="center">The basis of a legal form including the organization, the individuals, members, and shareholders [KnowHow NonProfit]</td>
+<td align="center">fsli:CI0123</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Grasslands</td>
+<td align="center">Plant formation characterized by the predominance of herbaceous vegetation, mainly grasses [AGROVOC]</td>
+<td align="center">fsli:CI0124</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Grazing</td>
+<td align="center">Feeding on standing vegetation, as by livestock or wild animals. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0125</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Greenhouse Gas Emissions</td>
+<td align="center">Emissions refer to the anthropogenic or natural release of greenhouse gases and/or their precursors and aerosols into the atmosphere over a specified area and period of time. Including carbon dioxide (CO2), methane (CH4), nitrous oxide (NO2), and water vapor. [IPCC]</td>
+<td align="center">fsli:CI0126</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Greenhouse Gas Mitigation</td>
+<td align="center">Greenhouse gas mitigation refers to efforts to reduce or prevent emission of greenhouse gases. Mitigation can mean using new technologies and renewable energies, making older equipment more energy efficient, or changing management practices or consumer behavior. [United Nations Environment Programme]</td>
+<td align="center">fsli:CI0127</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Groundwater Contamination</td>
+<td align="center">Groundwater contamination occurs when pollutants are released to the ground and make their way down into groundwater [Wikipedia]</td>
+<td align="center">fsli:CI0128</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Groundwater Recharge and Overdraft</td>
+<td align="center">A hydrologic process where water moves downward from surface water to groundwater. Overdrafting is the process of extracting groundwater beyond the safe yield or equilibrium yield of the aquifer [Wikipedia]</td>
+<td align="center">fsli:CI0129</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Habitats</td>
+<td align="center">The place or type of place where a plant or animal naturally or normally lives or grows [Merriam-Webster]</td>
+<td align="center">fsli:CI0130</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Harrassment</td>
+<td align="center">The act of systematic and/or continued unwanted and annoying actions of one party or a group, including threats and demands. [The Free Dictionary]</td>
+<td align="center">fsli:CI0131</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Hazardous Wastes--Management</td>
+<td align="center">The total supervision of waste that is dangerous or potentially harmful to health or the environment, including production, handling, processing, storage, and transport from its point of generation to its final acceptable disposal. [Modified from GEMET]</td>
+<td align="center">fsli:CI0132</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Health Care Infrastructure</td>
+<td align="center">The large-scale enabling technologies that allow for the distribution of healthcare to all [Self-defined]</td>
+<td align="center">fsli:CI0133</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Human Exposure</td>
+<td align="center">The occurrence of the event where a pollutant comes into contact with the physical boundary of an individual. [Ott, W.R. 1982. ]</td>
+<td align="center">fsli:CI0134</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Human Rights Advocacy</td>
+<td align="center">The exercise of power by the citizenry for human rights in the face of the government's power [UN WOMEN]</td>
+<td align="center">fsli:CI0135</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Human Rights Monitoring</td>
+<td align="center">Human rights monitoring is a unique activity that is separate from monitoring and evaluation, as well as from research. Human rights monitoring seeks to gather information about the human rights situation in a country or region over time through readily available methods, with the goal of engaging in advocacy to address human rights violations. Human rights monitoring should be based on principles of - Accuracy, Confidentiality, Impartiality, Gender-sensitivity. [UN WOMEN]</td>
+<td align="center">fsli:CI0136</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Human Use of Protected Areas</td>
+<td align="center">Human activities inside of protected areas, whether these be benign in intent such as nature-based tourism or illegal such as unauthorized resource extraction. [Self-defined]</td>
+<td align="center">fsli:CI0137</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Immunization</td>
+<td align="center">A process by which a person becomes protected against a disease through vaccination. This term is often used interchangeably with vaccination or inoculation. [Center for Disease Control and Prevention]</td>
+<td align="center">fsli:CI0138</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income Distribution</td>
+<td align="center">National income divided among groups of individuals, households, social classes, or factors of production, to compute an average for comparison purposes. [Business dictionary]</td>
+<td align="center">fsli:CI0139</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income Generation</td>
+<td align="center">The process by which a company markets and sells a product or service to produce income [Business dictionary]</td>
+<td align="center">fsli:CI0140</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income Growth</td>
+<td align="center">Net income growth is the annualized rate of growth over the previous year's net income [Wikinvest]</td>
+<td align="center">fsli:CI0141</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income Smoothing</td>
+<td align="center">Statistical technique for removal of short term irregularities in a time-series data to improve the accuracy of forecasts. It uses moving averages, or fits a curve to the plotted data points on a graph, and is a much simpler (although cruder) method than exponential smoothing. [Business dictionary]</td>
+<td align="center">fsli:CI0142</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income Stability</td>
+<td align="center">Income resistance to change, deterioration, or displacement [self-defined]</td>
+<td align="center">fsli:CI0143</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Income Sufficiency</td>
+<td align="center">The ability of individuals and families to consistently meet their needsâ€”including food, housing, utilities, health care, transportation, taxes, dependent care and clothing with minimal or no financial assistance or subsidies from private or public organizations. [Fairfax County]</td>
+<td align="center">fsli:CI0144</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Indigenous Technology and Knowledge</td>
+<td align="center">Indigenous knowledge (IK) is the local knowledge and technology knowledge that is unique to a given culture or society. IK contrasts with the international knowledge system generated by universities, research institutions and private firms. It is the basis for local-level decision making in agriculture, health care, food preparation, education, natural-resource management, and a host of other activities in rural communities. [World Bank ]</td>
+<td align="center">fsli:CI0145</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Inflation</td>
+<td align="center">A general increase in prices and fall in the purchasing value of money. [Oxford dictionary]</td>
+<td align="center">fsli:CI0146</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Informal Education</td>
+<td align="center">Informal Education is a general term for education outside of a standard school setting [DBPedia]</td>
+<td align="center">fsli:CI0147</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Information Infrastructure</td>
+<td align="center">All of the people, processes, procedures, tools, facilities, and technology which supports the creation, use, transport, storage, and destruction of information [Pironti 2006]</td>
+<td align="center">fsli:CI0148</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Inorganic Fertilizers</td>
+<td align="center">Inorganic fertilizer, also referred to as synthetic fertilizer, is manufactured artificially and contains minerals or synthetic chemicals. [Todays homeowner ]</td>
+<td align="center">fsli:CI0149</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Input Productivity</td>
+<td align="center">Productivity of inputs in agriculture including seeds, pesticides and herbicides [self-defined]</td>
+<td align="center">fsli:CI0150</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Insurance</td>
+<td align="center">A practice or arrangement by which a company or government agency provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment of a premium. [Oxford dictionary]</td>
+<td align="center">fsli:CI0151</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Interest Rates</td>
+<td align="center">The proportion of a loan that is charged as interest to the borrower, typically expressed as an annual percentage of the loan outstanding. [Oxford dictionary]</td>
+<td align="center">fsli:CI0152</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Intraregional Trade (Domestic Trade)</td>
+<td align="center">Trade in goods and services that happens within a specific region of the world economy such as sub-Saharan Africa or the member nations of the European Union []</td>
+<td align="center">fsli:CI0153</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Invasive Species</td>
+<td align="center">Invasive alien species are animals, plants or other organisms introduced by man into places out of their natural range of distribution, where they become established and disperse, generating a negative impact on the local ecosystem and species. [IUCN]</td>
+<td align="center">fsli:CI0154</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Investment</td>
+<td align="center">The purchase of capital goods (including machinery, technology or new buildings) that are used to produce goods and services. In personal finance, the amount of money invested in stocks, bonds, mutual funds and other investment instruments. [council for economic education]</td>
+<td align="center">fsli:CI0155</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Investment in Education</td>
+<td align="center">Public and private investments in public, private, and informal education [Self-defined]</td>
+<td align="center">fsli:CI0156</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Investment In Health</td>
+<td align="center">Public and private investments in human health and human heath-related education and services [Self-defined]</td>
+<td align="center">fsli:CI0157</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Irrigation</td>
+<td align="center">Irrigation is the artificial application of water to the land or soil, used to assist in the growing of agricultural crops, maintenance of landscapes, and revegetation of disturbed soils in dry areas and during periods of inadequate rainfall. [DBPedia]</td>
+<td align="center">fsli:CI0158</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Job Security</td>
+<td align="center">Assurance (or lack of it) that an employee has about the continuity of gainful employment for his or her work life. Job security usually arises from the terms of the contract of employment, collective bargaining agreement, or labor legislation that prevents arbitrary termination, layoffs, and lockouts. It may also be affected by general economic conditions. [Business Dictionary]</td>
+<td align="center">fsli:CI0159</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Knowledge and Information Systems</td>
+<td align="center">A knowledge management system is most often used in business in applications such as information systems, business administration, computer science, public policy and general management. [Business Dictionary]</td>
+<td align="center">fsli:CI0160</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Labor Costs</td>
+<td align="center">The cost incurred by the employer in the employment of labour. The statistical concept of labour cost comprises remuneration for work performed, payments in respect of time paid for but not worked, bonuses and gratuities, the cost of food, drink and other payments in kind, cost of workers housing borne by employers, employers social security expenditures, cost to the employer for vocational training, welfare services and miscellaneous items, such as transport of workers, work clothes and recruitment, together with taxes regarded as labour cost. [International Labour Organization]</td>
+<td align="center">fsli:CI0161</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Labor Market</td>
+<td align="center">The number of workers who are available to be hired [Merriam-Webster.]</td>
+<td align="center">fsli:CI0162</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Labor Policy</td>
+<td align="center">Policies related to the workplace environment including labor compensation, income, hours works, discrimination, harrassment, etc. [Self-defined. ]</td>
+<td align="center">fsli:CI0163</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Labor Productivity</td>
+<td align="center">Rate of output per worker (or a group of workers) per unit of time as compared with an established standard or expected rate of output [Business Dictionary]</td>
+<td align="center">fsli:CI0164</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Labor Supply</td>
+<td align="center">Available labor force or human resources [Self-defined. ]</td>
+<td align="center">fsli:CI0165</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Land Cover</td>
+<td align="center">Land cover is the physical state of the land surface. It is the combination of vegetation, soil, rock, water and human-made structures, which make up the earth's landscape. The land cover is the interface between the earth's crust and the atmosphere, influencing the exchange of energy and matter in the climatic system and biogeochemical cycles. [GEMET]</td>
+<td align="center">fsli:CI0166</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Land Fragmentation</td>
+<td align="center">The spatial dispersion of a farmer's plots over a wide area, intermixed with parcels operated by other farmers. [King, R., &amp; Burton, S. (1982). ]</td>
+<td align="center">fsli:CI0167</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Land Productivity</td>
+<td align="center">The inherent capacity or potential of a soil to produce vegetation [USDA]</td>
+<td align="center">fsli:CI0168</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Land Tenure</td>
+<td align="center">Land tenure is the name given, particularly in common law systems, to the legal regime in which land is owned by an individual, who is said to 'hold' the land [DBPedia]</td>
+<td align="center">fsli:CI0169</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Land Use</td>
+<td align="center">Land use is the human use of land. Land use involves the management and modification of natural environment or wilderness into built environment such as settlements and semi-natural habitats such as arable fields, pastures, and managed woods. It also has been defined as 'the arrangements, activities and inputs people undertake in a certain land cover type to produce, change or maintain it' [FAO, 1997a; FAO/UNEP, 1999 ]</td>
+<td align="center">fsli:CI0170</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Landscape Changes</td>
+<td align="center">Changes in landscape and land use, whether due to anthropogenic or natural forces [self-defined]</td>
+<td align="center">fsli:CI0171</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Landscape Protection</td>
+<td align="center">The safeguarding, for public enjoyment, of landscape and of opportunities for outdoor recreation, tourism and similar activities; the concept includes the preservation and enhancement not only of what has been inherited but the provision of new amenities and facilities. [GEMET]</td>
+<td align="center">fsli:CI0172</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Laws and Regulations</td>
+<td align="center">The act of regulating or the state of being regulated. A principle, rule, or law designed to control or govern conduct. [YourDictionary]</td>
+<td align="center">fsli:CI0173</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Livestock Feed</td>
+<td align="center">Inputs to livestock production [self-defined]</td>
+<td align="center">fsli:CI0174</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Livestock Management</td>
+<td align="center">Management practices as applied to livestock, with particular reference to practices such as rotational grazing. [WOCAT Glossary]</td>
+<td align="center">fsli:CI0175</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Machinery</td>
+<td align="center">The components of a machine. [Merriam-Webster]</td>
+<td align="center">fsli:CI0176</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Manmade Disasters</td>
+<td align="center">A Manmade disaster involves an element of human intent, negligence, or error; or involving a failure of a man-made system [US Legal]</td>
+<td align="center">fsli:CI0177</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Marine Economics</td>
+<td align="center">Economic analysis of the marine environment in its capacity to provide a broad range of goods and services, including food, transport, energy, recreation, and climate regulation. [Modified from CIESM Marine Economics Research Program]</td>
+<td align="center">fsli:CI0178</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Marine Protected Areas</td>
+<td align="center">A clearly defined geographical space in marine environments, recognised, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values. [Modified from IUCN]</td>
+<td align="center">fsli:CI0179</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Maritime Law</td>
+<td align="center">That system of law which particularly relates to marine commerce and navigation, to business transacted at sea or relating to navigation, to ships and shipping, to seamen, to the transportation of persons and property by sea, and to marine affairs generally. [GEMET]</td>
+<td align="center">fsli:CI0180</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Access</td>
+<td align="center">Openness of a country's markets to foreign goods and services. Market access reflects the government's economic policies regarding import substitution and free competition [BusinessDictionary]</td>
+<td align="center">fsli:CI0181</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Infrastructure</td>
+<td align="center">Infrastructure comprising of payment, clearing, trading, information, settlement, messaging and legal systems [Re-Define]</td>
+<td align="center">fsli:CI0182</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Performance</td>
+<td align="center">The relationship of selling price to costs, the size of output, the efficiency of production, progressiveness in techniques and products [Encyclopedia Brittanica]</td>
+<td align="center">fsli:CI0183</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Standards, Regulations, and Policies</td>
+<td align="center">A level of quality or attainment, a means to maintain that quality, and policies to ensure quality within the market [self-defined]</td>
+<td align="center">fsli:CI0184</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Structure</td>
+<td align="center">In economics, market structure is the number of firms producing identical products which are homogeneous. [DBPedia]</td>
+<td align="center">fsli:CI0185</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Support</td>
+<td align="center">[]</td>
+<td align="center">fsli:CI0186</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Market Transparency</td>
+<td align="center">Transparency is the extent to which investors have ready access to any required financial information about a company such as price levels, market depth and audited financial reports. [Investopedia]</td>
+<td align="center">fsli:CI0187</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Maternal Health Services</td>
+<td align="center">Services that provide healthcare to women during pregnancy, childbirth and the postpartum period. [World Health Organization]</td>
+<td align="center">fsli:CI0188</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Maternal Mortality</td>
+<td align="center">Death of a mother before, during, or after childbirth. [World Health Organization]</td>
+<td align="center">fsli:CI0189</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Migrant Labor</td>
+<td align="center">Movement of persons from one State to another, or within their own country of residence, for the purpose of employment. [International Organization for Migration]</td>
+<td align="center">fsli:CI0190</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Migration</td>
+<td align="center">The movement of people from one place in the world to another for the purpose of taking up permanent or semipermanent residence, usually across a political boundary. [National Geographic]</td>
+<td align="center">fsli:CI0191</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Natural Disasters</td>
+<td align="center">Disasters caused by nature including avalanches, earthquakes, volcanoes, fires, flooding, landslides, tsunamis, etc. [AGROVOC]</td>
+<td align="center">fsli:CI0192</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Non-Hazardous Waste Management</td>
+<td align="center">The total supervision of waste that is not treated as hazardous, including production, handling, processing, storage, and transport from its point of generation to its final acceptable disposal. [Modified from GEMET]</td>
+<td align="center">fsli:CI0193</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Non-Renewable Energy</td>
+<td align="center">Energy sources are considered nonrenewable if they cannot be replenished (made again) in a short period of time. All fossil fuels are nonrenewable, as is uranium. [US Energy Information Administration]</td>
+<td align="center">fsli:CI0194</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Nutritional Value</td>
+<td align="center">An indication of the contribution of a food to the nutrient content of the diet. This value depends on the quantity of a food which is digested and absorbed and the amounts of the essential nutrients (protein, fat, carbohydrate, minerals, vitamins) which it contains. This value can be affected by soil and growing conditions, handling and storage, and processing. [AGROVOC]</td>
+<td align="center">fsli:CI0195</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Occupational Accidents</td>
+<td align="center">An unexpected and unplanned occurrence, including acts of violence, arising out of or in connection with work which results in one or more workers incurring a personal injury, disease or death [International Labour Organization]</td>
+<td align="center">fsli:CI0196</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Occupational Diseases</td>
+<td align="center">Physical, chemical, biological and psychosocial factors affecting workers health [International Labour Organization]</td>
+<td align="center">fsli:CI0197</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Occupational Health</td>
+<td align="center">Requirements for training aimed at reducing risk factors for injury or disease; or limitations of certain jobs to persons deemed competent by virtue of special training [Occupational Safety and Health Administration]</td>
+<td align="center">fsli:CI0198</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Occupational Mortality</td>
+<td align="center">Death caused by workplace accidents or a large number of deaths caused by a certain workplace exposure or practice [self-defined]</td>
+<td align="center">fsli:CI0199</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Occupational Safety</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0200</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Occupational Segregation</td>
+<td align="center">The division of labour, in the context of paid employment, as a result of which men and women (or members of different ethnic or religious groupings) are channelled into different types of occupational roles and tasks, such that there are two (or more) separate labour forces. It is conventional to distinguish vertical job segregation, by which (say) male or white employees are concentrated in the higher-status and better-paid positions, from horizontal job segregation (where the different sexes or ethnic groups work in different types of occupation men are engineers, women are typists, and so on). [Encyclopedia.com]</td>
+<td align="center">fsli:CI0201</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ocean Acidification</td>
+<td align="center">Ocean acidification is the ongoing decrease in the pH of the Earth's oceans, caused by the uptake of carbon dioxide (CO2) from the atmosphere. [DBPedia]</td>
+<td align="center">fsli:CI0202</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ocean Circulation</td>
+<td align="center">Ocean circulation is the large scale movement of waters in the ocean basins. [TOPEX/Poseidon Educational Outreach]</td>
+<td align="center">fsli:CI0203</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Organic Fertilizers</td>
+<td align="center">Organic fertilizers contain only plant- or animal-based materials that are either a byproduct or end product of naturally occurring processes, such as manures, leaves, and compost. [Todays homeowner ]</td>
+<td align="center">fsli:CI0204</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Other Trade Restrictions</td>
+<td align="center">Any government policy that limits the free flow of goods and services across borders [eHow]</td>
+<td align="center">fsli:CI0205</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Overnutrition</td>
+<td align="center">A chronic condition where intake of food is in excess of dietary energy requirements, resulting in overweight and/or obesity. [World Health Organization]</td>
+<td align="center">fsli:CI0206</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Ozone Depletion</td>
+<td align="center">The reduction of the protective layer of ozone in the Stratosphere by chemical pollution. In the stratosphere, small amounts of ozone are constantly being made by the action of sunlight on oxygen. [US Legal]</td>
+<td align="center">fsli:CI0207</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Pay Equity</td>
+<td align="center">Pay equity is a means of eliminating sex and race discrimination in the wage-setting system. Many women and people of color are still segregated into a small number of jobs such as clerical, service workers, nurses and teachers. [National Committee on Pay Equity]</td>
+<td align="center">fsli:CI0208</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Persistence of Poverty</td>
+<td align="center">ERS has defined counties as being persistently poor if 20 percent or more of their populations were living in poverty over the last 30 years [US Ecnomic Research Service]</td>
+<td align="center">fsli:CI0209</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Pesticides</td>
+<td align="center">Chemical or biological substance designed to kill or retard the growth of pests that damage or interfere with the growth of crops, shrubs, tress, timber and other vegetation desired by humans. Practically all chemical pesticides, however, are poisons and pose long-term danger to the environment and humans through their persistence in nature and body tissue. Most of the pesticides are non-specific, and may kill life forms that are harmless or useful. [Business dictionary]</td>
+<td align="center">fsli:CI0210</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Pharmaceutical Products</td>
+<td align="center">A pharmaceutical drug (also referred to as a pharmaceutical, pharmaceutical preparation, pharmaceutical product, medicinal product, medicine, medication, medicament, or simply a drug) is a drug used to diagnose, cure, treat, or prevent disease. [Wikipedia]</td>
+<td align="center">fsli:CI0211</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Political Participation</td>
+<td align="center">Political participation encompasses the many activities used by citizens to influence the selection of political leaders or the policies they pursue. [FIU]</td>
+<td align="center">fsli:CI0212</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Pollination</td>
+<td align="center">The transfer of pollen from an anther to the stigma in angiosperms or from the microsporangium to the micropyle in gymnosperms [Merriam-Webster]</td>
+<td align="center">fsli:CI0213</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Pollution Prevention</td>
+<td align="center">Eliminating the production of hazardous wastes and greenhouse gases at their source, within the production process. [GEMET]</td>
+<td align="center">fsli:CI0214</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Population Density</td>
+<td align="center">A measurement of population per unit area or unit volume; it is a quantity of type number density. It is frequently applied to living organisms, and particularly to humans. It is a key geographic term. Lists of population density of different countries are below. [DBPedia]</td>
+<td align="center">fsli:CI0215</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Population Dynamics</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0216</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Postnatal Care</td>
+<td align="center">The health care of a mother and child during the six weeks after birth [World Health Organization]</td>
+<td align="center">fsli:CI0218</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Potable Water</td>
+<td align="center">Drinking water, also known as potable water or improved drinking water, is water safe enough for drinking and food preparation. [DBPedia]</td>
+<td align="center">fsli:CI0219</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Poverty Alleviation Measures</td>
+<td align="center">Means through which the government aims to revamp and reconstruct the economy [Mustapha Muktar]</td>
+<td align="center">fsli:CI0220</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Poverty Incidence</td>
+<td align="center">The share of the population whose income or consumption is below the poverty line [World Bank]</td>
+<td align="center">fsli:CI0221</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Precipitation</td>
+<td align="center">Precipitation is any product of the condensation of atmospheric water vapour that falls under gravity. The main forms of precipitation include drizzle, rain, sleet, snow, graupel and hail. [DBPedia]</td>
+<td align="center">fsli:CI0222</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Prenatal Care</td>
+<td align="center">The health care a mother gets while she is pregnant. [US National Library of Medicine]</td>
+<td align="center">fsli:CI0223</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Prices</td>
+<td align="center">A value that will purchase a finite quantity, weight, or other measure of a good or service. [BusinessDictionary]</td>
+<td align="center">fsli:CI0224</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Profitability</td>
+<td align="center">Ability of a firm to generate net income on a consistent basis. It is often measured by price to earnings ratio. The amount of profit made, shown as a percentage of costs or sales revenue. [AGROVOC]</td>
+<td align="center">fsli:CI0225</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Property Transfers</td>
+<td align="center">The act of moving the ownership of property or shares of stock from one person to another. [InvestorWords]</td>
+<td align="center">fsli:CI0226</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Protected Area Encroachment</td>
+<td align="center">Human activities that extend into and impact the ability of protected areas to achieve conservation goals [Self-defined]</td>
+<td align="center">fsli:CI0227</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Protected Areas--Management</td>
+<td align="center">Activities including control, protection, maintenance, and rehabilitation undertaken to support the conservation goals of a protected area. [Self-defined]</td>
+<td align="center">fsli:CI0228</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Protection of Threatened &amp; Rare Ecosystems</td>
+<td align="center">Management activities undertaken to support the maintenance and rehabilitation of ecosystems that are at risk of disappearance. [Self-defined]</td>
+<td align="center">fsli:CI0229</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Public Health Initiatives</td>
+<td align="center">Initiatives to inform, enhance, and guide public health efforts [Center for Disease Control and Prevention]</td>
+<td align="center">fsli:CI0230</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Quotas and Quantitative Restrictions</td>
+<td align="center">Quantitative restrictions are limits imposed on the volume or value of goods traded by a WTO member. The General Agreement on Tariffs and Trade (GATT) requires the general elimination of these restrictions except in defined circumstances. Members' notifications on quantitative restrictions are compiled in a WTO database, which is accessible to the public. Quantitative restrictions are typically enforced through quotas, import or export licenses or other measures, such as voluntary export restraints [World Trade Organization]</td>
+<td align="center">fsli:CI0231</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Rates of Waste Production</td>
+<td align="center">The rate of production of unwanted materials as a byproduct of economic processes. [After Sustainable Development Indicator Group]</td>
+<td align="center">fsli:CI0232</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Raw Materials</td>
+<td align="center">Crude, unprocessed or partially processed material used for a processing operation. [AGROVOC]</td>
+<td align="center">fsli:CI0233</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Refugees</td>
+<td align="center">People who has left a country because of war, or political or religious persecution [AGROVOC]</td>
+<td align="center">fsli:CI0234</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Remedial Action (Pollution)</td>
+<td align="center">Changes made to nonconforming activities to ameliorate environmental problems and reduce the quantity of pollution. [Modified from Wikipedia]</td>
+<td align="center">fsli:CI0235</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Renewable Energy</td>
+<td align="center">Renewable energy sources can be replenished. Renewable energy sources include biomass, hydropower, geothermal, wind, and solar. [US Energy Information Administration]</td>
+<td align="center">fsli:CI0236</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Representation and Accountability</td>
+<td align="center">Representation - a person or group that speaks or acts for or in support of another person or group. Accountability - an obligation or willingness to accept responsibility [Merriam-Webster]</td>
+<td align="center">fsli:CI0237</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Research and Development</td>
+<td align="center">Research and development (R&amp;D) consists of investigative activities that a business chooses to conduct with the intention of making a discovery that can either lead to the development of new products or procedures, or to improvement of existing products or procedures. Research and development is one of the means by which business can experience future growth by developing new products or processes to improve and expand their operations. [Investopedia]</td>
+<td align="center">fsli:CI0238</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Resource Rights</td>
+<td align="center">The rights that specify the claims and related obligations of different actors - individuals or groups - to the benefits of a resource [International Institute for Sustainable Development]</td>
+<td align="center">fsli:CI0239</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Retained Earnings</td>
+<td align="center">The percentage of net earnings not paid out as dividends, but retained by the company to be reinvested in its core business, or to pay debt. [Investopedia]</td>
+<td align="center">fsli:CI0240</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Right to Property - Customary</td>
+<td align="center">Customary laws created by governments in regards to how individuals can control, benefit from and transfer property. [Investopedia]</td>
+<td align="center">fsli:CI0241</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Right to Property - Formal</td>
+<td align="center">Laws created by governments in regards to how individuals can control, benefit from and transfer property. [Investopedia]</td>
+<td align="center">fsli:CI0242</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Rights (Legal)</td>
+<td align="center">Legally guaranteed powers available to a legal entity in realization or defense of its just and lawful claims or interests (such as individual freedom) against 'The whole world.' Legal rights (like laws) affect every citizen, whether or not the existence such rights is publicly known. [BusinessDictionary]</td>
+<td align="center">fsli:CI0243</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Rule of Law</td>
+<td align="center">the restriction of the arbitrary exercise of power by subordinating it to well-defined and established laws. [Oxford Dictionary]</td>
+<td align="center">fsli:CI0244</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Runoff</td>
+<td align="center">The part of precipitation or irrigation water on land that has limited interaction with the landscape and ultimately reaches surface water, such as streams, ponds, impoundments, reservoirs, oceans, rivers, etc. [AGROVOC]</td>
+<td align="center">fsli:CI0245</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Rural Poor</td>
+<td align="center">Rural poverty refers to poverty found in rural areas, including factors of rural society, rural economy, and rural political systems that give rise to the poverty found there. [Janvry, A. de, E. Sadoulet, and R. Murgai. 2002. ]</td>
+<td align="center">fsli:CI0246</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Rural Population</td>
+<td align="center">Rural encompasses all population, housing, and territory not included within an urban area. Whatever is not urban is considered rural. [US HRSA]</td>
+<td align="center">fsli:CI0247</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Safety Education</td>
+<td align="center">Accurate, updated and reliable education on safety in the workplace [Self-defined. ]</td>
+<td align="center">fsli:CI0248</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Saline Water</td>
+<td align="center">Saline water is water that contains a significant concentration of dissolved salts (mainly NaCl) and is commonly known as salt water. [DBPedia]</td>
+<td align="center">fsli:CI0249</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Sea Level Rise</td>
+<td align="center">An increase in sea level primarily due to two factors related to global warming - the added water from melting land ice and the expansion of sea water as it warms. [Modified from climate.nasa.gov]</td>
+<td align="center">fsli:CI0250</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Sea Pollution</td>
+<td align="center">Any substance or energy form (heat, light, noise, etc.) which alters the state of a sea or ocean from what would naturally occur, especially associated with those altered states which human value judgements have decreed as bad. [Modified from National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0251</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Seed</td>
+<td align="center">Crop planting materials [Self-defined]</td>
+<td align="center">fsli:CI0252</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Sex Ratio</td>
+<td align="center">The ratio of males to females in a population [DBPedia]</td>
+<td align="center">fsli:CI0253</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Sexually Transmitted Diseases</td>
+<td align="center">An infection transmitted through sexual contact, caused by bacteria, viruses, or parasites. [World Health Organization]</td>
+<td align="center">fsli:CI0254</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Social Networks</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0255</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Social Participation</td>
+<td align="center">Social participation refers to people's social involvement and interaction with others. Activities such as volunteering, making donations, participating in sports, and recreational activities are all forms of social participation. [Canadian Government]</td>
+<td align="center">fsli:CI0256</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Social Stratification</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0257</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Social Support</td>
+<td align="center">Social support refers to the various types of support (i.e., assistance/help) that people receive from others and is generally classified into two (sometimes three) major categories - emotional, instrumental (and sometimes informational) support. [UCSF]</td>
+<td align="center">fsli:CI0258</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Soil Chemistry</td>
+<td align="center">The study of the chemical composition of the various phases of the earth and the physical and chemical processes which have produced the observed distribution of the elements and nuclides in these phases [McGraw Hill Dictionary of Science and Technical Terms]</td>
+<td align="center">fsli:CI0259</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Soil Pollution</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0260</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Soil Salinization</td>
+<td align="center">Soil salinization is the accumulation of soluble salts of sodium, magnesium and calcium in soil to the extent that soil fertility is severely reduced. [Joint Research Centre European Soil Data Centre (ESDAC)]</td>
+<td align="center">fsli:CI0261</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Soils--Quality</td>
+<td align="center">The capacity of soil to function, within natural or managed ecosystem boundaries, to sustain plant and animal productivity, maintain or enhance water and air quality, and support human health and habitation. [Karlen, D.L., wr L. 1997.]</td>
+<td align="center">fsli:CI0262</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Sources of Financial Capital</td>
+<td align="center">Finance sources can be divided into three categories, namely traditional sources, ownership capital and non-ownership capital. [Economy watch]</td>
+<td align="center">fsli:CI0263</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Species Diversity</td>
+<td align="center">The measure of the diversity within an ecological community that incorporates both species richness (the number of species in a community) and the evenness of species' abundances. [Encyclopedia of Earth]</td>
+<td align="center">fsli:CI0264</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Species Introduction</td>
+<td align="center">A species living outside its native distributional range, which has arrived there by human activity, either deliberate or accidental. [Wikipedia]</td>
+<td align="center">fsli:CI0265</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Species Migration</td>
+<td align="center">The relatively long-distance movement of individuals, usually on a seasonal basis. [Wikipedia]</td>
+<td align="center">fsli:CI0266</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Species Threatened with Extinction</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0267</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Stakeholder Participation</td>
+<td align="center">Stakeholder participation is a dynamic concept that can be applied in different contexts, in different manners and hence have different meanings. In general, stakeholder participation processes allow people to influence the outcome of plans and projects. This influence can be exerted at different levels along a continuum of engagement levels from simply informing the stakeholders to actively consulting them or even engaging in cooperative decision-making. [Dlist.org]</td>
+<td align="center">fsli:CI0268</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Staple Food Production</td>
+<td align="center">The production of food that is eaten routinely and in such quantities as to constitute a dominant portion of a standard diet. [After Wikipedia]</td>
+<td align="center">fsli:CI0269</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Supply/Value Chain Structure</td>
+<td align="center">The structure of the supply or value chain [self-defined]</td>
+<td align="center">fsli:CI0270</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Tariffs, Taxes, Subsidies</td>
+<td align="center">Tariff - a tax or duty to be paid on a particular class of imports or exports. Taxes - a compulsory contribution to state revenue, levied by the government on workers' income and business profits or added to the cost of some goods, services, and transactions. Subsidy - a sum of money granted by the government or a public body to assist an industry or business so that the price of a commodity or service may remain low or competitive. [Merriam-Webster]</td>
+<td align="center">fsli:CI0271</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Teacher Education</td>
+<td align="center">Any of the formal programs that have been established for the preparation of teachers at the elementary- and secondary-school levels [Encyclopedia Britannica]</td>
+<td align="center">fsli:CI0272</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Technological Expertise</td>
+<td align="center">Technical job skills refer to the talent and expertise a person possesses to perform a certain job or task. Also called 'hard skills,'' as opposed to soft skills, which are personality and character traits. [Investopedia]</td>
+<td align="center">fsli:CI0273</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Technology Innovation</td>
+<td align="center">The process through which new (or improved) technologies are developed and brought into widespread use [Encyclopedia of Earth]</td>
+<td align="center">fsli:CI0274</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Technology Trade</td>
+<td align="center">Trade of technology across country borders [self-defined]</td>
+<td align="center">fsli:CI0275</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Technology Transfer</td>
+<td align="center">Technology transfer is the process of transferring skills, knowledge, technologies, methods of manufacturing, samples of manufacturing and facilities among governments or universities and other institutions to ensure that scientific and technological developments are accessible to a wider range of users who can then further develop and exploit the technology into new products, processes, applications, materials or services. [DBPedia]</td>
+<td align="center">fsli:CI0276</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Terrestrial Protected Areas</td>
+<td align="center">A clearly defined geographical space on land, recognized, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values. [Modified from IUCN]</td>
+<td align="center">fsli:CI0277</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Topography</td>
+<td align="center">The configuration of a surface including its relief, elevation and the position of its natural and man-made features. The physical or natural features of an object or entity and their structural relationships. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0278</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Trade Agreements</td>
+<td align="center">A trade pact (also known as trade agreement) is a wide-ranging tax, tariff and trade pact that often includes investment guarantees. [AGROVOC]</td>
+<td align="center">fsli:CI0279</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Transfer of Energy</td>
+<td align="center">Energy is transferred from one object to another when a reaction takes place. Energy comes in many forms and can be transferred from one object to another as heat, light, or motion, to name a few. [Chemeddl]</td>
+<td align="center">fsli:CI0280</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Transparency in Government</td>
+<td align="center">Openness, accountability, and honesty define government transparency. In a free society, transparency is government's obligation to share information with citizens. [Ballotpedia]</td>
+<td align="center">fsli:CI0281</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Transport Infrastructure</td>
+<td align="center">Transport infrastructure consists of the fixed installations including roads, railways, airways, waterways, canals and pipelines and terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fueling docks and fuel stations) and seaports [DBpedia]</td>
+<td align="center">fsli:CI0282</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Undernutrition - Acute</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0283</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Undernutrition - Chronic</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0284</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Urban Poor</td>
+<td align="center">Conventional economic definitions use income or consumption complemented by a range of other social indicators such as life expectancy, infant mortality, nutrition, the proportion of the house hold budget spent on food, literacy, school enrolment rates, access to health clinics or drinking water, to classify poor groups against a common index of material welfare. Alternative interpretations developed largely by rural anthropologists and social planners working with rural communities in the third world allow for local variation in the meaning of poverty, and expand the definition to encompass perceptions of non-material deprivation and social differentiation. [Bridge Development Gender]</td>
+<td align="center">fsli:CI0285</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Urban Population</td>
+<td align="center">Population that lives in Urbanized Areas (UAs) of 50,000 or more people; or Urban Clusters (UCs) of at least 2,500 and less than 50,000 people. [US HRSA]</td>
+<td align="center">fsli:CI0286</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Urbanization</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0287</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Use Rights</td>
+<td align="center">The legal right to use or occupy a property. [InvestorWords]</td>
+<td align="center">fsli:CI0288</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Value Systems and Behavioral Norms</td>
+<td align="center">the shared beliefs and values guiding the thinking and behavioral styles of members [Cooke 1988]</td>
+<td align="center">fsli:CI0289</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Veterinary Services</td>
+<td align="center">the governmental and non-governmental organisations that implement animal health and welfare measures and other standards and guidelines in the OIE Terrestrial Code and Aquatic Animal Health Code (Aquatic Code) in the country. The Veterinary Servicesare under the overall control and direction of the Veterinary Authority. Private veterinary organisations are normally accredited or approved to deliver functions by the veterinary authority. [World Organization for Animal Health]</td>
+<td align="center">fsli:CI0290</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Violence Against Women Policy</td>
+<td align="center">Goverment action to prevent violence against women and provide adequate punishment for those who perform violence against women [self-defined]</td>
+<td align="center">fsli:CI0291</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Violence-Related Mortality</td>
+<td align="center">NA [NA]</td>
+<td align="center">fsli:CI0292</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Vocational Education</td>
+<td align="center">Training for a specific occupation in agriculture, trade, or industry through a combination of theoretical teaching and practical experience [Merriam-Webster]</td>
+<td align="center">fsli:CI0293</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Volatility, Risk and Stability</td>
+<td align="center">Volatility is a statistical measure of the dispersion of returns for a given security or market index. Volatility can either be measured by using the standard deviation or variance between returns from that same security or market index. Commonly, the higher the volatility, the riskier the security. Risk is the chance that an investment's actual return will be different than expected. [Investopedia]</td>
+<td align="center">fsli:CI0294</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Waste Composting</td>
+<td align="center">The biodecomposition of organic material, such as animal wastes, plant residues or sludges, in the presence of air, by controlled methods including mechanical mixing and aerating. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0295</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Waste Prevention</td>
+<td align="center">Practices that reduce the amount of waste generated by a specific source through the redesigning of products or patterns of production or consumption. [GEMET]</td>
+<td align="center">fsli:CI0296</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Waste Recycling/Reusing</td>
+<td align="center">Resource recovery methods involving the collection and treatment of a waste product for use as raw material in the manufacture of the same or a similar product. [GEMET]</td>
+<td align="center">fsli:CI0297</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Waste/Pollution Policy</td>
+<td align="center">Courses or principles of action by societal organizations such as governments or businesses aimed at reducing the amount and impact of wastes or pollution. [Self-defined]</td>
+<td align="center">fsli:CI0298</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Wastewater</td>
+<td align="center">Wastewater is any water that has been adversely affected in quality by anthropogenic influence. [DBPedia]</td>
+<td align="center">fsli:CI0299</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Availability</td>
+<td align="center">Maintenance of adequate volumes of treatable water for human consumption, and irrigation [Global Water Forum]</td>
+<td align="center">fsli:CI0300</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Infrastructure</td>
+<td align="center">The large-scale enabling technologies to transport water from producer to consumer and irect and manage water flow. [Self-defined]</td>
+<td align="center">fsli:CI0301</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Productivity</td>
+<td align="center">The physical or economic output per unit of water application [CGIAR]</td>
+<td align="center">fsli:CI0302</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Quality</td>
+<td align="center">Water quality refers to the chemical, physical, biological, and radiological characteristics of water and is a measure of the condition of water relative to the requirements of one or more biotic species and or to any human need or purpose. [DBPedia]</td>
+<td align="center">fsli:CI0303</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Rights</td>
+<td align="center">A group of rights designed to protect the use and enjoyment of water that travels in streams, rivers, lakes, and ponds, gathers on the surface of the earth, or collects underground. [TheFreeDictionary Legal Dictionary]</td>
+<td align="center">fsli:CI0304</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Storage</td>
+<td align="center">Water storage water is stored for later use in natural water sources, such as groundwater aquifers, soil water and natural wetlands, and also small artificial ponds, tanks and reservoirs behind major dams. [Wikipedia]</td>
+<td align="center">fsli:CI0305</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Use</td>
+<td align="center">Water use can mean the amount of water used by a household or a country, or the amount used for a given task or for the production of a given quantity of some product or crop, or the amount allocated for a particular purpose. [DBPedia]</td>
+<td align="center">fsli:CI0306</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Use Efficiency</td>
+<td align="center">A characteristic of plants which is measured by the amount of dry matter or harvestable product produced per unit of water used by the plant. [AGROVOC]</td>
+<td align="center">fsli:CI0307</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Weather Hazards</td>
+<td align="center">Dangerous weather phenomena that threaten life and property - tornadoes, lightning, hail, flash flooding, and downbursts. [NC State University]</td>
+<td align="center">fsli:CI0308</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Wetlands</td>
+<td align="center">An area that is saturated by surface or ground water with vegetation adapted for life under those soil conditions. [National Agricultural Library Thesaurus]</td>
+<td align="center">fsli:CI0309</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Wild Animal Trade</td>
+<td align="center">Any sale or exchange of wild animal and plant resources by people. This can involve live animals and plants or a diverse range of products needed or prized by humans, including skins, medicinal ingredients, tourist curios, timber, fish and other food products. [IUCN Traffic]</td>
+<td align="center">fsli:CI0310</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women Farmers</td>
+<td align="center">Women involved in production that relies essentially on the growth and nurturing of plants and animals, especially for food, usually with land as an important input; farming [Wikigender]</td>
+<td align="center">fsli:CI0311</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women's Access to Financial Capital</td>
+<td align="center">Women's access to money value and which can be used in the pursuit of future revenue. [Investopedia]</td>
+<td align="center">fsli:CI0312</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women's Access to Social Capital</td>
+<td align="center">Women's access to networks together with shared norms, values and understandings that facilitate co-operation within or among groups [OECD]</td>
+<td align="center">fsli:CI0313</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women's Economic Participation</td>
+<td align="center">Women's economic participation promotes agricultural productivity, enterprise development at the micro, small, and medium enterprise levels, as well as enhances business management and returns on investment.In addition to boosting economic growth, investing in women produces a multiplier effect - women reinvest a large portion of their income in their families and communities. Women also play key roles in creating peaceful and stable societies as important factors for economic growth. Unfortunately, these benefits have not been universally recognized and have therefore not translated into women-s full economic participation. Women still face obstacles when trying to establish new businesses or expand existing ones. Among the biggest hurdles are discriminatory laws, regulations and business conditions, as well as women's lack of access to property rights, finance, training, technology, markets, mentors, and networks. [US Department of State]</td>
+<td align="center">fsli:CI0314</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Women's Political Participation</td>
+<td align="center">Women's political participation encompasses the many activities used by women to influence the selection of political leaders or the policies they pursue. [FIU]</td>
+<td align="center">fsli:CI0315</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Work Satisfaction</td>
+<td align="center">Employee's general affective reaction to the job without reference to any specific job facet, Linked to money, wellbeing, appreciation, work hours, work-life balance [Kovner et al. 2006]</td>
+<td align="center">fsli:CI0316</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Working Conditions</td>
+<td align="center">Working conditions cover a broad range of topics and issues, from working time (hours of work, rest periods, and work schedules) to remuneration, as well as the physical conditions and mental demands that exist in the workplace. [International Labour Organization]</td>
+<td align="center">fsli:CI0317</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Youth Literacy</td>
+<td align="center">A level of reading, writing, and calculation skills sufficient for youth to function in the particular community in which an individual lives. [UNESCO Institute for Statistics]</td>
+<td align="center">fsli:CI0318</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Access to Nature</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0319</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Wildfire</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0320</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Riparian Habitats</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0321</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Drought</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0322</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Housing</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0323</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Travel/transit/commuting</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0324</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Tourism</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0325</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Water Quantity</td>
+<td align="center">PH</td>
+<td align="center">fsli:CI0326</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="GuidelineMandateType.html" class="btn btn-neutral float-left" title="Enum: GuidelineMandateType"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="Organization.html" class="btn btn-neutral float-right" title="Class: Organization">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="GuidelineMandateType.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="Organization.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
