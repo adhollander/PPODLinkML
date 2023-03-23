@@ -1,7 +1,9 @@
-# PPOD LinkML schema
+# PPOD LinkML schema for UC Davis Food Systems Lab information
 
-id: https://github.com/adhollander/ppod 
-name: PPOD
+id: https://github.com/PPODschema/PPOD_FSL
+name: PPOD_FSL
+version: v0.9.1
+license: https://creativecommons.org/publicdomain/zero/1.0/
 prefixes:
   linkml: https://w3id.org/linkml/
   foaf: http://xmlns.com/foaf/0.1/
