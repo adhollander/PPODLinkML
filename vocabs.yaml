@@ -16,6 +16,7 @@ prefixes:
   fsls: https://raw.githubusercontent.com/adhollander/FSLschemas/main/fsisupp.owl#
   fslp: https://raw.githubusercontent.com/adhollander/FSLschemas/main/CA_PPODterms.ttl#
   FRAPO: http://purl.org/cerif/frapo/
+  idt: https://www.cisa.gov/sites/default/files/2022-11/Taxonomy_V4_Final_22Jun2011.pdf#
 imports: 
   - linkml:types
 default_range: string
@@ -582,6 +583,60 @@ enums:
         meaning: fslp:positiontypedict_ea1c97
       Student:
         meaning: fslp:positiontypedict_789e96
+        
+  
+  InfrastructureType:
+    permissable_values:
+      Blue - Estuary:
+      Blue - Lake/Pond:
+      Blue - Ocean:
+      Blue - River/Stream:
+      Blue - Wetland:
+      Energy - Geothermal:
+        meaning: idt:5.1.1.2.3
+      Energy - Natural Gas-fired Generator:
+        meaning: idt:5.1.1.3.2
+      Energy - Other Electric Power Generation:
+        meaning: idt:5.1.1.5
+      Energy - Powerhouse:
+      Energy - Pumped Storage Facility:
+        meaning: idt:5.1.1.2
+      Energy - Solar:
+        meaning: idt:5.1.1.2.2
+      Energy - Transmission Line:
+        meaning: idt:5.1.2.1
+      Energy - Transmission Substation:
+        meaning: idt:5.1.2.2
+      Energy - Wind:
+        meaning: idt:5.1.1.2.1
+      Food - Animal Production:
+        meaning: idt:1.1.2
+      Food - Crop Production:
+        meaning: idt:1.1.1
+      Green - Conservation Area (Easement):
+      Green - Conservation Area (Fee Title):
+      Green - Conservation Area (Marine):
+      Green - Greenbelt:
+      Green - Mitigation Bank:
+      Green - Wildlife Corridor:
+      Water - Canal:
+        meaning: idt:16.1.3.1
+      Water - Floodway:
+      Water - Ground Water:
+        meaning: idt:12.1.2
+      Water - Levee:
+        meaning: idt:16.2.1.1
+      Water - Pumping Station:
+        meaning: idt:16.2.2.1
+      Water - Recharge Facility:
+      Water - Reservoir:
+        meaning: idt:16.1.4
+      Water - Water Pipeline:
+        meaning: idt:12.2.2
+      Water - Water Retention Structure:
+        meaning: idt:16.1.1
+      Water - Weir:    
+
 
 
 
