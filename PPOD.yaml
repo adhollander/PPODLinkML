@@ -2,7 +2,7 @@
 
 id: https://github.com/PPODschema/PPOD_FSL
 name: PPOD_FSL
-version: v0.9.1
+version: v0.9.8
 license: https://creativecommons.org/publicdomain/zero/1.0/
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -25,6 +25,9 @@ prefixes:
   dg: https://w3id.org/dingo#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   schema: http://schema.org/
+  agrovoc: http://aims.fao.org/aos/agrovoc/
+  sio: http://semanticscience.org/resource/
+  opengis: http://www.opengis.net/ont/geosparql#
 
 imports: 
   - linkml:types
@@ -35,6 +38,7 @@ default_range: string
 classes:
   Container:
     class_uri: fsls:Container
+    description: A class holding a list of entities in the system
     tree_root: true
     slots:
       - id
@@ -46,6 +50,7 @@ classes:
       - datasets 
       - roles 
       - tools 
+      - infrastructures
 
     # attributes:
     #   organizations:
@@ -91,219 +96,276 @@ classes:
       
   Organization:
     class_uri: foaf:Organization
+    description: A class corresponding to social instititutions such as companies, societies etc.
     slots:
       - title
       - id
       - label
       - alias
-      - is part of
-      - is member of
-      - in county
-      - in ecoregion
-      - associated geography
-      - has organization type
-      - has partner
-      - is funded by
-      - has organization activity
-      - related sustainability issue
-      - has URL
+      - is_part_of
+      - is_member_of
+      - in_county
+      - in_ecoregion
+      - associated_geography
+      - has_organization_type
+      - has_partner
+      - is_funded_by
+      - has_organization_activity
+      - related_sustainability_issue
+      - has_url
       - contact
       - taxa
-      - CWHR land cover
+      - cwhr_land_cover
       - commodity
-      - ecological process
-      - GM name
-      - use case
-      - creator of 
-      - created by 
+      - ecological_process
+      - gm_name
+      - use_case
+      - creator_of 
+      - created_by 
       - implements
       - mandates 
-      - is bound by 
-      - has funding vehicle 
-      - is certified by
+      - is_bound_by 
+      - has_funding_vehicle 
+      - is_certified_by
       - enforces
 
   Project:
     class_uri: foaf:Project
+    description: A class representing a project or collective endeavour of some kind
     is_a: ProjectProgram
     slots:
       - title # changed from "project" in script
       - id
       - label
       - alias 
-      - is part of 
-      - project type
-      - occurs in 
-      - lead organization 
-      - funding organization
-      - has funding vehicle 
-      - lead individual 
-      - partner organization 
-      - located in 
-      - in county 
-      - in ecoregion 
-      - in watershed 
-      - related sustainability issue 
-      - project details
-      - has indicator 
-      - input of 
-      - output of 
-      - has strategy 
-      - has URL 
+      - is_part_of 
+      - project_type
+      - occurs_in 
+      - lead_organization 
+      - funding_organization
+      - has_funding_vehicle 
+      - lead_individual 
+      - partner_organization 
+      - located_in 
+      - in_county 
+      - in_ecoregion 
+      - in_watershed 
+      - related_sustainability_issue 
+      - project_details
+      - has_indicator 
+      - input_of 
+      - output_of 
+      - has_strategy 
+      - has_url 
       - taxa 
-      - CWHR land cover 
-      - ecological process
-      - start year
-      - end year 
-      - is funded by 
+      - cwhr_land_cover 
+      - ecological_process
+      - start_year
+      - end_year 
+      - is_funded_by 
       - latitude 
       - longitude 
-      - FSL doc 
-      - use case
+      - fsl_doc 
+      - use_case
+      - is_contained_in
+      - contains
+      - intersects
+      - creator_of 
 
   Program: 
     class_uri: core:Program
+    description: A plan of action to accomplish a specified end, usually taken as an initiative by an organization
     is_a: ProjectProgram
     slots:
       - title
       - id
       - label
       - alias
-      - program type
-      - lead organization
-      - partner organization
-      - related sustainability issue
-      - lead individual
-      - GM name
-      - in county
-      - in ecoregion
-      - has URL
+      - program_type
+      - lead_organization
+      - partner_organization
+      - related_sustainability_issue
+      - lead_individual
+      - gm_name
+      - in_county
+      - in_ecoregion
+      - has_url
       - taxa
-      - use case
+      - use_case
 
   Person:
     class_uri: foaf:Person
+    description: A class representing a person
     slots:
       - label
       - id 
-      - full name
-      - last name
-      - first name
+      - full_name
+      - last_name
+      - first_name
       - email 
       - phone 
-      - related sustainability issue
+      - related_sustainability_issue
       - note 
-      - use case
+      - use_case
 
   GuidelineMandate: 
     class_uri: sds:BestPracticesAndMandates
+    description: A class representing a mandate or a guideline such as specific regulations or certification standards
     slots:
       - title
       - id
       - label
       - alias
-      - related sustainability issue
-      - guideline or mandate type
-      - has date 
-      - government level
-      - in county
-      - in ecoregion
-      - has URL
+      - related_sustainability_issue
+      - guideline_or_mandate_type
+      - has_date 
+      - government_level
+      - in_county
+      - in_ecoregion
+      - has_url
       - taxa
-      - CWHR land cover
-      - ecological process
-      - use case
+      - cwhr_land_cover
+      - ecological_process
+      - use_case
       - authorizes
       - binds 
       - mandates
 
   Dataset:
     class_uri: core:Dataset
+    description: A named collection of data, usually containing only one type of data
     slots:
       - title
       - id
       - label
-      - created by
-      - related sustainability issue
-      - mandated by
-      - has URL
-      - use case
+      - created_by
+      - related_sustainability_issue
+      - mandated_by
+      - has_url
+      - use_case
 
   Role:
     class_uri: obo:BFO_0000023
+    description: A function or position of an entity with respect to another entity, for instance a person within an organization
     slots:
       - label
       - id
-      - has participant
-      - role of
-      - involved in
+      - has_participant
+      - role_of
+      - involved_in
       - title
-      - position type
-      - start year
-      - end year
-      - has role
+      - position_type
+      - start_year
+      - end_year
+      - has_role
     slot_usage:
       title:
         required: false
 
   Tool: 
     class_uri: sds:Tool
+    description: A physical implement, procedure, software, or method used to analyse or take a closer look at something 
     slots:
       - title
       - id 
       - label
       - alias 
-      - created by
-      - related sustainability issue
-      - has URL
-      - has input 
-      - has output
+      - created_by
+      - related_sustainability_issue
+      - has_url
+      - has_input 
+      - has_output
       - references
 
+  Infrastructure:
+#    class_uri: agrovoc:c_26790
+    class_uri: fsls:infrastructure
+    description: The basic facilities, equipment, or underlying framework that are necessary for a system or organization to function.
+    slots:
+      - title
+      - id
+      - label
+      - alias
+      - infrastructure_type
+      - is_part_of_infrastructure
+      - organization_owner
+      - organization_manager
+      - organization_user
+      - involved_in
+#      - in_project
+#      - in_program
+      - has_capacity
+      - in_county
+      - in_ecoregion
+      - issue_addressed_on_purpose
+      - other_issues_affected
+      - associated_geography
+      - upstream_infrastructure
+      - downstream_infrastructure
+      - adjacent_infrastructure
+      - intersecting_infrastructure
+      - has_url
+      - taxa
+      - cwhr_land_cover
   ProjectProgram:
+    description: An abstract class that is the union of the project and program classes.
     abstract: true
       
 slots:
   organizations:
     slot_uri: fsls:organizations
+    description: a list of URIs of the organizations in this database
     multivalued: true
     inlined_as_list: true
     range: Organization
   projects:
     slot_uri: fsls:projects
+    description: a list of URIs of the projects in this database
     multivalued: true
     inlined_as_list: true
     range: Project
   programs:
     slot_uri: fsls:programs
+    description: a list of URIs of the programs in this database
     multivalued: true
     inlined_as_list: true
     range: Program
   persons:
     slot_uri: fsls:persons
+    description: a list of URIs of the people in this database
     multivalued: true
     inlined_as_list: true
     range: Person
   guidelinemandates:
     slot_uri: fsls:guidelinemandates
+    description: a list of URIs of the guidelines/mandates in this database
     multivalued: true
     inlined_as_list: true
     range: GuidelineMandate
   datasets:
     slot_uri: fsls:datasets
+    description: a list of URIs of the datasets in this database
     multivalued: true
     inlined_as_list: true
     range: Dataset
   roles:
     slot_uri: fsls:roles
+    description: a list of URIs of the roles in this database
     multivalued: true
     inlined_as_list: true
     range: Role
   tools: 
     slot_uri: fsls:tools
+    description: a list of URIs of the tools in this database
     multivalued: true
     inlined_as_list: true
     range: Tool
+  infrastructures:
+    slot_uri: fsls:infrastructure
+    description: a list of URIs of the infrastructure elements in this database
+    multivalued: true
+    inlined_as_list: true
+    range: Infrastructure
 
 
   title:
@@ -325,47 +387,47 @@ slots:
       alternative name for the entity
     slot_uri: skos:altLabel
     multivalued: true
-  is part of:
+  is_part_of:
     description:
       entity is part of the related entity
     slot_uri: dcterms:isPartOf
-    range: Organization
+#    range: Organization   # also applies to infrastructure, but how is LinkML with multiple ranges these days?
     multivalued: true
-  is member of:
+  is_member_of:
     description:
       is a member of the related entity
     slot_uri: org:memberOf 
     range: Organization
     multivalued: true
-  in county:
+  in_county:
     description:
       entity is in the named county 
     slot_uri: fsls:inCounty
     range: County
     multivalued: true
-  in ecoregion:
+  in_ecoregion:
     description:
       entity is in the named ecoregion 
     slot_uri: fsls:inEcoregion
     multivalued: true  
-  associated geography:
+  associated_geography:
     description:
       entity has the associated geography
     slot_uri: fsls:assocGeo
     multivalued: true
-  has organization type:
+  has_organization_type:
     description:
       the type of the organization
     slot_uri: org:classification
     multivalued: true
     range: OrganizationType
-  has partner:
+  has_partner:
     description:  
       partner of the organization
     slot_uri: core:hasCollaborator
     multivalued: true
     range: Organization
-  is funded by:
+  is_funded_by:
     description: the entity providing funding
     slot_uri: FRAPO:isFundedBy 
     multivalued: true
@@ -373,12 +435,12 @@ slots:
       - range: Organization
       - range: Program
       - range: Project
-  has organization activity:
+  has_organization_activity:
     description: the activity carried out by the organization
     slot_uri: obo:RO_0000056   # this is what I have in the python script but maybe we want something else?
     multivalued: true
     range: OrganizationActivity
-  related sustainability issue:
+  related_sustainability_issue:
     description: a sustainability issue of interest to the entity
     slot_uri: fsls:FSI_000239
     multivalued: true
@@ -386,7 +448,7 @@ slots:
      # - range: IntegratedIssue
       #- range: ComponentIssue
     range: Issue
-  has URL: 
+  has_url: 
     description: URL of the entity 
     slot_uri: poder:hasURL
     multivalued: true
@@ -399,7 +461,7 @@ slots:
     description: taxa of interest to the entity
     slot_uri: fsls:taxa
     multivalued: true
-  CWHR land cover:
+  cwhr_land_cover:
     description: land cover classification according to the California Wildlife Habitat Relationships classification system
     slot_uri: fsls:habitatType
     multivalued: true
@@ -409,94 +471,94 @@ slots:
     slot_uri: fsls:commodity
     multivalued: true
     range: CommodityType
-  ecological process:
+  ecological_process:
     description: ecological process of interest to the entity
     slot_uri: fsls:ecologicalProcess
     multivalued: true
-  GM name:
+  gm_name:
     description: name of guideline or mandate related to the entity
     slot_uri: fsls:GM_Name
     multivalued: true
     range: GuidelineMandate 
-  mandated by:
+  mandated_by:
     description: name of guideline or mandate that requires creation of the entity
     slot_uri: fsls:mandatedBy
     multivalued: true
     range: GuidelineMandate 
-  use case: 
+  use_case: 
     description: use case the entity participates in
     slot_uri: fsls:usecase
     multivalued: true
     range: UseCases
-  project type:
+  project_type:
     description: category describing the project
     slot_uri: fsls:projType
     multivalued: true
     range: ProjectType 
-  occurs in: 
+  occurs_in: 
     description: activity takes place in related entity
     slot_uri: obo:BFO_0000066
     multivalued: true
     range: uriorcurie
-  lead organization:
+  lead_organization:
     description: organization leading the project
     slot_uri: fsls:leadOrg
     multivalued: true
     range: Organization
-  funding organization:
+  funding_organization:
     description: entity that provides funding for the activity
     slot_uri: core:fundingAgentFor
     multivalued: true
     range: Organization 
-  has funding vehicle:
+  has_funding_vehicle:
     description: program or activity under which funding for the effort is provided
     slot_uri: core:hasFundingVehicle
     multivalued: true
-  lead individual:
+  lead_individual:
     description: person who is the project lead
     slot_uri: fsls:leadIndividual
     multivalued: false
-  partner organization:
+  partner_organization:
     description: an organization that is affiliated with this activity
     slot_uri: core:affiliatedOrganization
     range: Organization
     multivalued: true
-  located in: 
+  located_in: 
     description: area of occurrence of the activity
     slot_uri: obo:RO_0001025
     multivalued: false
-  in watershed:
+  in_watershed:
     description: activity occurs in the given watershed
     slot_uri: fsls:inWatershed
     multivalued: true
-  project details:
+  project_details:
     description: description of details of the project
     slot_uri: fsls:projDetails
     multivalued: false
-  has indicator:
+  has_indicator:
     description: uses the associated environmental indicator
     slot_uri: fsls:hasIndicator
     multivalued: true
-  input of: 
-    description: activity is the input of the referred-to entity
+  input_of: 
+    description: activity is the input_of the referred-to entity
     slot_uri: obo:RO_0002352
     multivalued: true
     range: Dataset
-  output of: 
-    description: activity is the output of the referred-to entity
+  output_of: 
+    description: activity is the output_of the referred-to entity
     slot_uri: obo:RO_0002353
     multivalued: true
     range: Dataset
-  has strategy:
+  has_strategy:
     description: activity uses the listed strategy
     slot_uri: fsls:hasStrategy
     multivalued: true
-  start year:
-    description: start year of the activity
+  start_year:
+    description: start_year of the activity
     slot_uri: dbpo:startYear
     multivalued: false
-  end year:
-    description: end year of the activity
+  end_year:
+    description: end_year of the activity
     slot_uri: dbpo:endYear
     multivalued: false
   latitude:
@@ -507,30 +569,30 @@ slots:
     description: longitude of the entity
     slot_uri: wgs84:long
     multivalued: false
-  FSL doc: 
+  fsl_doc: 
     description: additional documentation describing the entity
     slot_uri: fsls:FSLdoc
     multivalued: false
     range: uriorcurie
-  program type:
+  program_type:
     description: category describing the program
     slot_uri: fsls:progType
     multivalued: true
     range: ProgramType
-  created by:
+  created_by:
     description: entity that created the given element
     slot_uri: frbrer:P2007
     multivalued: true
     range: Organization
-  full name:
+  full_name:
     description: full name of the individual
     slot_uri: foaf:name 
     multivalued: false
-  last name:
+  last_name:
     description: last name of the individual
     slot_uri: foaf:lastName
     multivalued: false
-  first name: 
+  first_name: 
     description: first name of the individual
     slot_uri: foaf:firstName
     multivalued: false
@@ -546,39 +608,39 @@ slots:
     description: additional text information about the entity
     slot_uri: fsls:FSI_000243
     multivalued: false
-  guideline or mandate type:
+  guideline_or_mandate_type:
     description: category describing the guideline or the mandate
     slot_uri: fsls:gmType
     multivalued: true
     range: GuidelineMandateType
-  has date: 
+  has_date: 
     description: date of the activity or the creation of the resource
     slot_uri: dcterms:date
     multivalued: false
     # range: linkml:Date
-  government level:
+  government_level:
     description: level of government the activity occurs under
     slot_uri: fsls:govLevel
     multivalued: true
     range: GovernmentLevelType
-  has participant:
+  has_participant:
     description: the activity such as a role includes this person as a participant
     slot_uri: obo:RO_0000057
     multivalued: true
     range: Person 
-  role of:
+  role_of:
     description: name of role individual takes, e.g. position title
     slot_uri: obo:RO_0000081
     multivalued: true
     any_of:
       - range: Organization
       - range: Project
-  position type:
+  position_type:
     description: category describing the role held by the individual in the organization
     slot_uri: fsls:positionType
     multivalued: false
     range: PositionType
-  involved in:
+  involved_in:
     description: the project or program a person with a given role is involved In
     slot_uri: obo:RO_0002331
     multivalued: false
@@ -586,16 +648,16 @@ slots:
       - range: Project 
       - range: Program
     # range: ProjectProgram # this does not work with SHACL validation
-  has role: 
+  has_role: 
     description: name labelling the role 
     slot_uri: obo:RO_0000087
     multivalued: false
-  creator of: 
+  creator_of: 
     description: "Relates a corporate body to a work of which it is responsible for the creation of the intellectual or artistic content."
     slot_uri: frbrer:P2008
     multivalued: true
-    range: GuidelineMandate # okay, this should be a superclass, probably a BFO thing.
-#  was created by: 
+#    range: GuidelineMandate # okay, this should be a superclass, probably a BFO thing.
+#  was created_by: 
 #    description: "Relates a work to a corporate body that is responsible for the creation of the intellectual or artistic content of the work."
 #    slot_uri: frbrer:P2007
 #    multivalued: true
@@ -608,13 +670,13 @@ slots:
     description: The relationship where the organization mandates a particular activity or action
     slot_uri: fsls:mandates
     multivalued: true
-  is bound by: 
-    description: The relationship where the organization is bound by a particular activity or action
+  is_bound_by: 
+    description: The relationship where the organization is_bound_by a particular activity or action
     slot_uri: fsls:isboundby
     multivalued: true
     range: GuidelineMandate 
-  is certified by: 
-    description: The relationship where the organization is certified by a particular mandate or guideline
+  is_certified_by: 
+    description: The relationship where the organization is_certified_by a particular mandate or guideline
     slot_uri: fsls:iscertifiedby
     multivalued: true
     range: GuidelineMandate
@@ -637,16 +699,101 @@ slots:
     description: A related resource that is referenced, cited, or otherwise pointed to by the described resource.
     slot_uri: dcterms:references
     multivalued: false
-  has input:
+  has_input:
     description: The tool has the indicated dataset as an output to its workflow
     slot_uri: obo:RO_0002233
     multivalued: true
     range: Dataset
-  has output:
+  has_output:
     description: The tool has the indicated dataset as an input to its workflow
     slot_uri: obo:RO_0002234
     multivalued: true
     range: Dataset
+# infrastructure slots
+  infrastructure_type:
+    description: The category of infrastructure designated by the resources
+    slot_uri: fsls:infrastructureType
+    multivalued: false
+    range: InfrastructureType
+  is_part_of_infrastructure:
+    description: Infrastructure that is part of another piece of infrastructure
+    slot_uri: fsls:isPartOfInfra
+    multivalued: true
+    range: Infrastructure
+  organization_owner:
+    description: The organization that is the owner of the piece of infrastructure
+    slot_uri: fsls:orgOwner
+    multivalued: true
+    range: Organization
+  organization_manager:
+    description: The organization that manages the piece of infrastructure
+    slot_uri: fsls:orgManager
+    multivalued: true
+    range: Organization
+  organization_user:
+    description: The organization that uses the piece of infrastructure
+    slot_uri: fsls:orgUser
+    multivalued: true
+    range: Organization
+  issue_addressed_on_purpose:
+    description: The sustainability issues that the piece of infrastructure specifically address
+    slot_uri: fsls:issuesPurpose
+    multivalued: true
+    range: Issue
+  other_issues_affected:
+    description: The sustainability issues that the piece of infrastructure also affect
+    slot_uri: fsls:issuesOther
+    multivalued: true
+    range: Issue
+  in_project:
+    description: The project that the piece of infrastructure is part of or was created_by
+    slot_uri: fsls:inProject
+    multivalued: true
+    range: Project
+  in_program:
+    description: The program under which the piece of infrastructure falls
+    slot_uri: fsls:inProgram
+    multivalued: true
+    range: Program
+  has_capacity:
+    description: The capacity of the piece of infrastructure, in units appropriate to its type (e.g. acre-feet, megawatts)
+    slot_uri: fsls:hasCapacity
+    multivalued: false  
+  upstream_infrastructure:
+    description: Infrastructure that is upstream of the piece of infrastructure of interest
+    slot_uri: fsls:infrastructureUpstream
+    multivalued: true
+    range: Infrastructure
+  downstream_infrastructure:
+    description: Infrastructure that is downstream of the piece of infrastructure of interest
+    slot_uri: fsls:infrastructureDownstream
+    multivalued: true
+    range: Infrastructure
+  adjacent_infrastructure:
+    description: Infrastructure that is adjacent to the piece of infrastructure of interest
+    slot_uri: fsls:infrastructureAdjacent
+    multivalued: true
+    range: Infrastructure
+  intersecting_infrastructure:
+    description: Infrastructure that intersects the piece of infrastructure of interest
+    slot_uri: fsls:infrastructureIntersect
+    multivalued: true
+    range: Infrastructure
+  contains:
+    description: A contains B iff the spatial region occupied by A has the spatial region occupied by B as a part, and B is not part of A. 
+    slot_uri: sio:SIO_000202
+    multivalued: true
+  is_contained_in:
+    description: A is contained in B iff the spatial region occupied by A is part of the spatial region occupied by B and A is not part of B. 
+    slot_uri: sio:SIO_000128 
+    multivalued: true
+  intersects:
+    description: Represents spatial relations in which two geometries (or the places they represent) have at least one point in common.
+    slot_uri: opengis:sfIntersects
+    multivalued: true
+    
+    
+  
 
 
 

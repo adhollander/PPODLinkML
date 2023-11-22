@@ -586,56 +586,91 @@ enums:
         
   
   InfrastructureType:
-    permissable_values:
+    permissible_values:
       Blue - Estuary:
+        meaning: fslp:ift_b29a13
+#        meaning: fsls:blueEstuary
       Blue - Lake/Pond:
+        meaning: fslp:ift_aa03d4
       Blue - Ocean:
+        meaning: fslp:ift_c0a7d6
       Blue - River/Stream:
+        meaning: fslp:ift_ddc056
       Blue - Wetland:
+        meaning: fslp:ift_8687e4
       Energy - Geothermal:
-        meaning: idt:5.1.1.2.3
+        meaning: fslp:ift_d14beb
+#        meaning: idt:5.1.1.2.3
       Energy - Natural Gas-fired Generator:
-        meaning: idt:5.1.1.3.2
+        meaning: fslp:ift_747c10
+#        meaning: idt:5.1.1.3.2
       Energy - Other Electric Power Generation:
-        meaning: idt:5.1.1.5
+        meaning: fslp:ift_c14d30
+#        meaning: idt:5.1.1.5
       Energy - Powerhouse:
+        meaning: fslp:ift_45316a
       Energy - Pumped Storage Facility:
-        meaning: idt:5.1.1.2
+        meaning: fslp:ift_c8d03a
+#        meaning: idt:5.1.1.2
       Energy - Solar:
-        meaning: idt:5.1.1.2.2
+        meaning: fslp:ift_5656b9
+#        meaning: idt:5.1.1.2.2
       Energy - Transmission Line:
-        meaning: idt:5.1.2.1
+        meaning: fslp:ift_502112
+#        meaning: idt:5.1.2.1
       Energy - Transmission Substation:
-        meaning: idt:5.1.2.2
+        meaning: fslp:ift_6283b4
+#        meaning: idt:5.1.2.2
       Energy - Wind:
-        meaning: idt:5.1.1.2.1
+        meaning: fslp:ift_23a4f6
+#        meaning: idt:5.1.1.2.1
       Food - Animal Production:
-        meaning: idt:1.1.2
+        meaning: fslp:ift_365268     
+#        meaning: idt:1.1.2
       Food - Crop Production:
-        meaning: idt:1.1.1
+        meaning: fslp:ift_bc59d7
+#        meaning: idt:1.1.1
       Green - Conservation Area (Easement):
+        meaning: fslp:ift_db5b18
       Green - Conservation Area (Fee Title):
+        meaning: fslp:ift_5ee6b3
       Green - Conservation Area (Marine):
+        meaning: fslp:ift_cf13cd
       Green - Greenbelt:
+        meaning: fslp:ift_c96bc3
       Green - Mitigation Bank:
+        meaning: fslp:ift_8e8ac8
       Green - Wildlife Corridor:
+        meaning: fslp:ift_eb203d
       Water - Canal:
-        meaning: idt:16.1.3.1
+        meaning: fslp:ift_d9c84e
+#        meaning: idt:16.1.3.1
       Water - Floodway:
+        meaning: fslp:ift_459f17
       Water - Ground Water:
-        meaning: idt:12.1.2
+#        meaning: idt:12.1.2
+        meaning: fslp:ift_e22040
       Water - Levee:
-        meaning: idt:16.2.1.1
+        meaning: fslp:ift_db7fc1
+#        meaning: idt:16.2.1.1
       Water - Pumping Station:
-        meaning: idt:16.2.2.1
+        meaning: fslp:ift_741753
+#        meaning: idt:16.2.2.1
       Water - Recharge Facility:
+        meaning: fslp:ift_62f257
       Water - Reservoir:
-        meaning: idt:16.1.4
+#        meaning: idt:16.1.4
+        meaning: fslp:ift_b53e73
       Water - Water Pipeline:
-        meaning: idt:12.2.2
+#        meaning: idt:12.2.2
+        meaning: fslp:ift_f4b531
       Water - Water Retention Structure:
-        meaning: idt:16.1.1
-      Water - Weir:    
+#        meaning: idt:16.1.1
+        meaning: fslp:ift_94d65d
+      Water - Weir: 
+        meaning: fslp:ift_2f3b5a
+      Sensor - Camera Trap:
+        meaning: fslp:ift_d33569
 
 
 
@@ -1754,3 +1789,5 @@ enums:
        Water Quantity:
          meaning: fsli:CI0326
          description: PH
+
+
